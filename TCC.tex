@@ -57,6 +57,8 @@ brazil,				% o último idioma é o principal do documento
 \setmainfont{Source Han Sans CN}
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{graphicx}
+\usepackage{graphics}
 
 % ---
 % Pacotes adicionais, usados no anexo do modelo de folha de identificação
@@ -76,8 +78,18 @@ brazil,				% o último idioma é o principal do documento
 % CONFIGURAÇÕES DE PACOTES
 % ---
 
+% Enumeração extendível
 \usepackage{enumitem}
 \setlist{nolistsep}
+
+% Caminho dos arquivos-imagem
+\graphicspath{
+  {./Imagens/}
+  {./Imagens/Linux}
+  {./Imagens/WM}
+  {./Imagens/BenchMarks}
+  {./Imagens/Running}
+}
 
 % ---
 % Configurações do pacote backref
@@ -100,7 +112,7 @@ brazil,				% o último idioma é o principal do documento
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
 \titulo{Softwares Livres na Academia e na Indústria}
-\autor{Aluno: Pedro G. Branquinho \\ Orientador:Wei-Liang Qian, 钱卫良}
+\autor{Aluno: Pedro G. Branquinho \\ Orientador: Dr. Wei-Liang Qian, 钱卫良}
 \local{Lorena, São Paulo}
 \data{\today}%13 de Fevereiro de 2020}
 \instituicao{%
@@ -144,10 +156,10 @@ brazil,				% o último idioma é o principal do documento
 % ---
 
 % % O tamanho do parágrafo é dado por:
-% \setlength{\parindent}{0.8cm}
+\setlength{\parindent}{0.8cm}
 
 % % Controle do espaçamento entre um parágrafo e outro:
-% \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
 
 % ---
 % compila o indice
@@ -213,29 +225,68 @@ brazil,				% o último idioma é o principal do documento
 \chapter[Introdução]{Introdução}
 % \addcontentsline{toc}{chapter}{Introdução}
 
+Na formação de um engenheiro físico, o qual, por definição, é um profissional generalista, os softwares abertos (FOSS - Free and Open Source Software) e a participação da comunidade Open Source são detrimentais para sua formação.
+
+A diversidade os quais softwares extensíveis acaretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de ciêntistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte.
+
+Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}{}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
+
+Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade global de participantes, com as mais distintas especializações profissionais. Também, beneficia-se a computação com a comunidade aberta, e especialização eclética de membros e softwares.
+
 % <<O que são os softwares livres e como se aplicam no contexto acadêmico e industrial>>
+
+% É notório o fato de que optimizações 
 
 \section{Objetivo}
 
 % Demonstrar a importância dessa categoria de softwares, e da comuniadade aberta, no desenvolvimento tecnológico.
 
 \chapter{Revisão Bibliográfica}
+\section{Open Source}
+\label{sec:opensource}
+Qualquer programa que permita o usuário-programador ter as seguintes liberdades:
+
+\begin{enumerate}
+\item Direito de rodar o programa, como você desejar, para qualquer fim.
+\item Direito ao acesso ao código-fonte, para estudá-lo.
+\item Direito de cópia e distribuição.
+\item Direito à modificação do software.
+\end{enumerate}
+
+De maneira prática, a comunidade Open Source, fundamentalmente, se baseia no compartilhamento de suas configurações. As vantagens de existirem inúmeras outras pessoas utilizando o mesmo software é de que a melhoria da fronteira do programa é expandida de forma acrescida, em comparação a de um time restrito de usuários.
+
+\subsection{Diversidade}
+\label{sec:diversidade}
+
+Dado que um direito fundamental dos softwares livres é a modificação e propagação das versões modificadas, existe uma diversidade de expressividade, sem paralelos em outras áreas da tecnologia.
+
+Por exemplo, uma parte de software fundamental na configuração de um computador é seu gerenciador de interfaces (Window Manager). Onde, um programa é devotado a gerenciar como outros programas gráficos devem se dispor na tela de computador. Enquanto sistemas operacionais (Operational Systems) privados, como Windows e MacOS possuem versões lançadas frequentemente - vinte e cinco versões lançadas de Windows \cite{} e vinte de MacOS \cite{} -, os usuários são cerciados do direito de extender ou alterar os comportamentos programados no sistema e vítimas do suporte de suas versões.
+
+Em contra partida, existem, paralelamente, por volta de 278 distribuições de Linux \cite{}. Onde, existem as distribuições raízes, com princípios e filosofias de desenvolvimentos teóricos e práticos diferentes.
+
+Assim, bem como em qualquer outro escopo de software, a variação dos softwares abertos e livres (FOSS) sempre serão superiores aos monopolizados.
+
+% \begin{}
+
+\section{O Linux}
+
+Existem distribuições raízes de linux, das quais muitas distribuições existem como ramificações. Nomeia-se, de forma genêrica, devido aos princípios base de uma classe de distribuições, como famílias. Cita-se algumas das mais influentes e populares, Red Hat Linux, Debian, CentOS, Fedora,Pacman-based, OpenSUSE, Gentoo-based, Ubuntu-based, Slackware, Open Sourced-based e as distribuições Independetes.
+
+É possível apreciarmos visualmente a riqueza de distribuições pela \autoref{fig:linux-genealogy}.
+
+\begin{figure}[!htb]
+  \caption{\label{fig:linux-genealogy} Genealogia Distribuições Linux}
+  \includegraphics[height=\textwidth, angle=-90]{diversidade}
+  \legend{Histórico de evolução das distribuições Linux \cite{}}
+\end{figure}
 
 \section{O \LaTeX}
 
-O \LaTeX{} foca na separação das tarefas constituintes da produção de um
-documento. A linguagem separa as tarefas de formatação do texto, da
-escrita de seu conteúdo. Desta forma, o usuário concentra-se
-exclusivamente em seu conteúdo - o que vai escrever -, em um
-estágio da escrita do texto. E, na formatação de sua aparência, em
-outro momento.
+O \LaTeX{} possui separação entra as tarefas de produção de um
+documento. A linguagem permite-nos separar as tarefas de formatação do texto, da escrita de seu conteúdo. Desta forma, o usuário concentra-se
+exclusivamente em seu conteúdo, em um estágio da escrita do documento. E, na formatação de sua aparência, em outro momento.
 
-Assim, ganha-se em
-qualidade de produção. Bem como, total autonomia sob o documento, pois
-a programação da disposição gráfica dos elementos textuais depende apenas do usuário, e
-pode ser indefinidamente extensível - isto é, modificada indefinidamente, a partir dos
-comportamentos padrões dos pacotes utilizados -, por ser \textit{open source}. O sistema tipográfico de \LaTeX{} - o
-\TeX{} - já chegou a ser considerado o sistema digital de
+Assim, ganha-se em qualidade de produção. Bem como, ganha total autonomia sob o documento, pois a programação da disposição gráfica dos elementos textuais pode ser programada - isto é, modificada indefinidamente, a partir dos comportamentos padrões dos pacotes utilizados. O sistema tipográfico de \LaTeX{} chegou a ser considerado o sistema digital de
 tipografia mais sofisticado que existe, devido a essa paradigma de
 programação funcional, \textit{bottom-up} \cite{haralambous2007}.
 
