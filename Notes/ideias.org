@@ -1,5 +1,5 @@
 #+AUTHOR: Pedro G. Branquinho
-#+PROPERTY: header-args:clojure :tangle ~/PP/Clojure/clojure2d-examples/src/NOC/ch07/wolframca_figures_7_2.clj :mkdirp
+# #+PROPERTY: header-args:clojure :tangle ~/PP/Clojure/clojure2d-examples/src/NOC/ch07/wolframca_figures_7_2.clj :mkdirp
 
 
 * Clojure
@@ -1104,3 +1104,58 @@ lengths = [hailLength(x0) for x0 in 2:10^7]
    #+end_src
 
    #+RESULTS: 1db5c553-f4c1-4da0-a8e5-f9e1ac2e2351
+
+** Differential Equations 
+   #+begin_src julia
+     # Carrega o gerenciador de pacotes, Pkg e instala, se preciso, o pacote.
+     using Pkg
+     Pkg.add("DifferentialEquations")
+     # Porta as utilidades do pacote, sem necessitar de referí-lo no meio do código
+     using DifferentialEquations
+   #+end_src
+
+* Do you know Julian Assange?
+[[file:/usr/share/emacs/27.2/lisp/windmove.el.gz::Julian Assange (proff@iq.org)][Julian Assange used and extend Emacs]]
+
+* Ditaa diagrams 
+** Freqtrade API
+   #+begin_src ditaa :tangle ditaa.txt :file none.png
+	 +-----------+        +---------+  
+	 |    PLC    |        |         |                
+	 |  Network  +<------>+   PLC   +<---=---------+ 
+	 |    cRED   |        |  c707   |              | 
+	 +-----------+        +----+----+              | 
+				   ^                   | 
+				   |                   | 
+				   |  +----------------|-----------------+
+				   |  |                |                 |
+				   v  v                v                 v
+	   +----------+       +----+--+--+      +-------+---+      +-----+-----+   Cliente local - Instâncias
+	   |          |       |          |      |           |      |           |      +----+      +----+
+	   | Database +<----->+  Shared  +<---->+ Executive +<-=-->+ Operator  +<---->|cYEL| . . .|cYEL|
+	   |   c707   |       |  Memory  |      |   c707    |      | Server    |      |    |      |    |
+	   +--+----+--+       |{d} cGRE  |      +------+----+      |   c707    |      +----+      +----+
+	      ^    ^          +----------+             ^           +-------+---+
+	      |    |                                   |                        
+	      |    +--------=--------------------------+                    
+	      v                                                             
+     +--------+--------+                                                         
+     |                 |                                                         
+     | Millwide System |            -------- Data ---------                      
+     | cBLU            |            --=----- Signals ---=--                      
+     +-----------------+
+   #+end_src
+
+   #+results:
+   [[file:none.png]]
+
+#+BEGIN_SRC ditaa  :file images/hello-world.png :tangle hello-ditaa.txt :mkdirp t
++--------------+
+|              |
+| Hello World! |
+|              |
++--------------+
+#+END_SRC
+
+#+results:
+[[file:images/hello-world.png]]

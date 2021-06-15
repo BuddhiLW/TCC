@@ -207,6 +207,14 @@ brazil,				% o último idioma é o principal do documento
 
 
 % ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
 % inserir o sumario
 % ---
 \pdfbookmark[0]{\contentsname}{toc}
@@ -227,11 +235,11 @@ brazil,				% o último idioma é o principal do documento
 
 Na formação de um engenheiro físico, o qual, por definição, é um profissional generalista, os softwares abertos (FOSS - Free and Open Source Software) e a participação da comunidade Open Source são detrimentais para sua formação.
 
-A diversidade os quais softwares extensíveis acaretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de ciêntistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte.
+A diversidade os quais softwares extensíveis acarretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de cientistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte \cite{knuth1968art}.
 
-Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}{}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
+Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
 
-Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade global de participantes, com as mais distintas especializações profissionais. Também, beneficia-se a computação com a comunidade aberta, e especialização eclética de membros e softwares.
+Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade global de participantes, com as mais distintas especializações profissionais. Também, beneficia-se a computação com a comunidade aberta, e especialização eclética, tanto de membros quanto de softwares.
 
 % <<O que são os softwares livres e como se aplicam no contexto acadêmico e industrial>>
 
@@ -240,6 +248,11 @@ Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade g
 \section{Objetivo}
 
 % Demonstrar a importância dessa categoria de softwares, e da comuniadade aberta, no desenvolvimento tecnológico.
+Demonstramos a defassagem que um profissional de engenharia apresentaria, sem forte formação dentro da computação. Ademais, ao partir da gama de aplicações, em estado da arte, as quais são partilhadas de forma aberta e livre, pretende-se reinterar o caso da necessidade de compreensão do fenômeno dos softwares abertos. Pois, essa lógica e dinâmica não possui paralelos nem na economia, nem na comunidade científica \cite{hippel2003open,peters2009open}.
+
+Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
+
+
 
 \chapter{Revisão Bibliográfica}
 \section{Open Source}
@@ -260,13 +273,18 @@ De maneira prática, a comunidade Open Source, fundamentalmente, se baseia no co
 
 Dado que um direito fundamental dos softwares livres é a modificação e propagação das versões modificadas, existe uma diversidade de expressividade, sem paralelos em outras áreas da tecnologia.
 
-Por exemplo, uma parte de software fundamental na configuração de um computador é seu gerenciador de interfaces (Window Manager). Onde, um programa é devotado a gerenciar como outros programas gráficos devem se dispor na tela de computador. Enquanto sistemas operacionais (Operational Systems) privados, como Windows e MacOS possuem versões lançadas frequentemente - vinte e cinco versões lançadas de Windows \cite{} e vinte de MacOS \cite{} -, os usuários são cerciados do direito de extender ou alterar os comportamentos programados no sistema e vítimas do suporte de suas versões.
+Por exemplo, uma parte de software fundamental na configuração de um computador é seu gerenciador de interfaces (Window Manager). Onde, um programa é devotado a gerenciar como outros programas gráficos devem se dispor na tela de computador.
 
-Em contra partida, existem, paralelamente, por volta de 278 distribuições de Linux \cite{}. Onde, existem as distribuições raízes, com princípios e filosofias de desenvolvimentos teóricos e práticos diferentes.
+Enquanto sistemas operacionais (Operational Systems) privados, como Windows e MacOS possuem versões lançadas frequentemente - vinte e cinco versões lançadas de Windows. O Windows possui apenas quatro versões, com suporte ativo \cite{wikipedia_2021W}.
+
+São vinte lançamentos de MacOS, e quatro verões mantidas \cite{wikipedia_2021Mac}.
+
+Essa estreiteza de versões se dá, dentre os fatores, pois os usuários são cerciados do direito de extender ou alterar os comportamentos programados no sistema. Assim, vítimas do suporte descontinuado e de sua atualização de versões restritivas.
+
+Em contra partida, existem, paralelamente, por volta de 278 distribuições de Linux \cite{wikipedia_2021Linux}. Onde, existem as distribuições raízes, com princípios e filosofias de desenvolvimentos teóricos e práticos diferentes.
 
 Assim, bem como em qualquer outro escopo de software, a variação dos softwares abertos e livres (FOSS) sempre serão superiores aos monopolizados.
 
-% \begin{}
 
 \section{O Linux}
 
@@ -277,10 +295,192 @@ Existem distribuições raízes de linux, das quais muitas distribuições exist
 \begin{figure}[!htb]
   \caption{\label{fig:linux-genealogy} Genealogia Distribuições Linux}
   \includegraphics[height=\textwidth, angle=-90]{diversidade}
-  \legend{Histórico de evolução das distribuições Linux \cite{}}
+  \legend{Histórico de evolução das distribuições Linux \cite{wikipedia_2021Linux}}
 \end{figure}
 
-\section{O \LaTeX}
+\subsection{\label{sec:origem-linux} Origem Histórica}
+O projeto do GNU/Linux iniciou-se separadamente, por duas frentes. O
+GNU - abreviação de, GNU's Not Unix - por usuários revoltados com o
+sistema de seguraça dos computadores do MIT (Laboratory of Computer
+Science - LCS) \cite{stallman2002my,emacswiki2021history}. Dentre
+eles, o ainda ativo Richard Stallman, após já dez anos de evolução do
+editor de texto \cite{emacswiki2021history}.
+
+Paralelamente, Linus Torvalds desenvolveu um sistema operacional
+portável aberto, como sua tese de mestrado
+\cite{torvalds1997linux}. Por fim, houve uma junção dos projetos, os
+quais colaboravam o Linux, como sistema operacional, e GNU com todas
+as aplicações utilitarias do sistema \cite{stallman1997}.
+
+
+\subsection{O Emacs}
+
+Como foi visto na \href{sec:origem-linux}, o projeto GNU possuia muitas utilidades as quais foram incorporadas ao kernel Linux, para dar corpo a um sistema operacional. O Emacs, particularmente, caracteriza um dos primeiros softwares extensivamente estendidos dentro do projeto. Sendo classificado como um editor de texto, escrito em Elisp, o qual é um dialeto da família de linguagens Lisp.
+
+Por mais que seja um editor de texto, por natureza, dada a larga possibilidade de expansão de suas utilidades, existem pacotes e maneiras de o configurar como um sistema completo de Window Manager. Ou seja, pode-se servir como interface gráfica e gerenciadora de outras aplicações.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:exwm1} EXWM - Emacs X Window Manager}
+  \includegraphics[width=\linewidth]{exwm2.png}
+  \legend{Fonte: foto do ambiente de WM do autor.}
+\end{figure}
+
+A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
+
+\section{Aplicações na Indústria}
+\subsection{Freqtrade}
+O software \emph{Freqtrade} contém as peças essenciais para se rodar
+um aplicação de trocas-automatizadas entre crypto-moedas. Por meio de
+APIs, pode-se estender a aplicação para comunicar-se com o
+telegram. O programa foi escrito em Python e seu código é aberto à
+estensão, possuindo centro e quarenta e sete contruibuidores, com existência datando de Maio de 2017 \cite{fang2020cryptocurrency}.
+
+O funcionamento das trocas-automatizadas se por meio de uma
+comunicação de mão dupla entre o computador local e um
+servidor-plataforma de trocas - a qual seria análoga a uma
+plataforma-corretora.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
+    comunicação cliente-servidor}
+  \includegraphics[width=0.6\linewidth]{Imagens/server-client-fq_4.png}
+  \legend{Fonte: O autor.}
+\end{figure}
+
+Grande parte do trabalho de se escrever um robô autômato, para
+qualquer fim, compraz em programar protocólogos de comunicação com
+servidores. Pois, o robô deverá ser capaz de dizer o servidor quais
+operações devem ocorrer, tanto gerando respostas ao cliente - dados a
+serem armazenados no computador local -, quanto operações internas ao
+servidor - como, executar uma compra e venda de criptomoeda.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:diagrama-freqtrade2} Diagrama esquemático -
+    comunicação cliente-servidor}
+  \includegraphics[width=1\linewidth]{ditaa_4.png}
+  \legend{Fonte: O autor.}
+\end{figure}
+
+Assim, um diagrama completo o qual captura essa complexidade poderia
+esquematicamente ser visto na \autoref{fig:diagrama-freqtrade2}.
+
+Ao se utilizar o software aberto, toda essa complexidade da
+\autoref{fig:diagrama-freqtrade2} se torna mais próxima à
+\autoref{fig:diagrama-freqtrade}, pois toda a abstração-estrutural já
+se encontra escrita. Basta, para quem decidir utilizar o programa ler,
+entender e modificar o conteúdo disponível na documentação do projeto.
+
+
+% <<No que consiste o software; os métodos utilizados para seu funcionamento>>
+
+\subsection{OR-Tools}
+\label{sec:ortools}
+
+A ferramenta OR-Tools traduz-se em bibliotecas largamente desenvolvida
+pela comunidade aberta, e a empresa Google \cite{}; utilizável em C++,
+Python, Java, (Clojure), C\#, .Net.
+
+OR-Tools possui a utilidade de resolver problemas como agendamento de
+horários, o qual, estruturalmente, assemelha-se aos algorítimos de
+solução de problemas como Sudoku \cite{}.
+
+De forma geral, esses problemas caem dentro de um ramo da matemática e
+computação chamado Problemas de Optimazação Constrita
+(\textit{Constraint Optimization})
+
+\section{Aplicações Acadêmicas}
+
+% \clearpage
+\subsection{DifferentialEquations.jl}
+
+A biblioteca numérica DifferentialEquations possui uma das melhores performances de softwares numéricos que existem \cite{rackauckas2017differentialequations}. Sua performace é comparativa à implementações em FORTRAN e C. Existem \textit{ports} da biblioteca para Python e R, porém, desenvolveu-se em Julia.
+
+Dentre a categoria de problemas possíveis de se resolver, utilizando-se ferramentas próprias do pacote, lista-se  as seguintes categorias de equações diferenciais \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit},
+
+\begin{itemize}
+\item Equações discretas (Estocásticos discretos (Gillepie/Markov), e mapas funcionais)
+\item Equações diferenciais ordinárias (ODEs)
+\item Equações estocásticas ordinárias (Integrações simpléticas, Método IMEX)
+\item Equações estocásticas diferenciais algébrigcas (SODEs or SDEs)
+\item Equações diferenciais aleatórias (RODEs ou RDE)
+\item Equações diferenciais algébricas (DAEs)
+\item Equações diferenciais com retardo (DDEs)
+\item Equações diferenciais neutras, retardadas e algebricamente retardadas (NDDES, RDDEs e DDAEs)
+\item Equações diferenciais estocásticas retardadas (SDDEs)
+\item Suporte parcial de soluções em equações diferenciais estocásticas neutras, retardads e retardadas algebraicas (SNDDEs, SRDDEs, SDDAEs)
+\item Equações mistas discretas e contínuas (\textit{Jump Diffusions})
+\item Equações diferenciais parciais (estocásticas) ((S)PDEs) - ambas com portabilidade de métodos finitos e/ou diferenças finitas)
+\end{itemize}
+
+
+% Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
+% Ordinary differential equations (ODEs)
+% Split and Partitioned ODEs (Symplectic integrators, IMEX Methods)
+% Stochastic ordinary differential equations (SODEs or SDEs)
+% Stochastic differential-algebraic equations (SDAEs)
+% Random differential equations (RODEs or RDEs)
+% Differential algebraic equations (DAEs)
+% Delay differential equations (DDEs)
+% Neutral, retarded, and algebraic delay differential equations (NDDEs, RDDEs, and DDAEs)
+% Stochastic delay differential equations (SDDEs)
+% Experimental support for stochastic neutral, retarded, and algebraic delay differential equations (SNDDEs, SRDDEs, and SDDAEs)
+% Mixed discrete and continuous equations (Hybrid Equations, Jump Diffusions)
+% (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
+
+\subsubsection{Portabilidade em Julia}
+
+Para se utilizar do pacote, basta utilizar os seguintes comandos
+
+\begin{verbatim}
+# Carrega o gerenciador de pacotes, Pkg e instala, se preciso, o pacote.
+using Pkg
+Pkg.add("DifferentialEquations")
+# Porta as utilidades do pacote, sem necessitar de referí-lo no meio do código
+using DifferentialEquations
+\end{verbatim}
+
+\subsubsection{Portabilidade em Python}
+
+Num terminal, utilizando-se do gerenciador de pacotes pip,
+\begin{verbatim}
+pip install diffeqpy
+\end{verbatim}
+
+Num terminal, rodando-se o interpretador de Python,
+\begin{verbatim}
+>>> import diffeqpy
+>>> diffeqpy.install()
+\end{verbatim}
+
+Por fim, opcionalmente, utilize numba para aumentar a performance do código,
+\begin{verbatim}
+pip install numba
+\end{verbatim}
+
+Ademais, apenas repita o comando, dentro de um aquivo python,
+
+\begin{verbatim}
+import diffeqpy
+\end{verbatim}
+
+\subsubsection{Portabilidade em R}
+
+Para instalação,
+\begin{verbatim}
+install.packages("diffeqr")
+\end{verbatim}
+
+Na primeira chamada de,
+\begin{verbatim}
+diffeqr::diffeq_setup()
+\end{verbatim}
+
+Será feito o download do DifferentialEquations.jl. Um subconjunto específico do pacote é ativamente mantido \href{https://cran.r-project.org/web/packages/diffeqr/index.html}{no CRAN}.
+
+\subsection{O \LaTeX}
 
 O \LaTeX{} possui separação entra as tarefas de produção de um
 documento. A linguagem permite-nos separar as tarefas de formatação do texto, da escrita de seu conteúdo. Desta forma, o usuário concentra-se
@@ -300,7 +500,7 @@ nível, mas também um conjunto de macros para facilitar a tipografia em
 si. Qualifica-se, assim, como um sistema de preparação de documentos;
 uma linguagem markup de domínio específico.
 
-\subsection{Classe Canônica ABNT de produção científica}
+\subsubsection{Classe Canônica ABNT de produção científica}
 
 Documentos sob os requisitos das normas ABNT (Associação Brasileira de Normas
 Técnicas) para elaboração de documentos técnicos e científicos
@@ -316,7 +516,7 @@ canônica ABNT.
   Brasileira de Normas Técnicas. \cite[Cap. 1]{araujoclasse}
 \end{citacao}
 
-\clearpage
+% \clearpage
 
 As normas as quais prescrevem o modelo canônico são:
 
@@ -345,134 +545,6 @@ As normas as quais prescrevem o modelo canônico são:
   Projeto de pesquisa - Apresentação.
 \end{itemize}
 
-% \clearpage
-\section{Freqtrade}
-
-% <<No que consiste o software; os métodos utilizados para seu funcionamento>>
-
-\section{DifferentialEquations}
-
-Software utilizável por Julia, Python e R. É possível resolver as seguintes categorias de equações diferenciais,
-
-% Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
-% Ordinary differential equations (ODEs)
-% Split and Partitioned ODEs (Symplectic integrators, IMEX Methods)
-% Stochastic ordinary differential equations (SODEs or SDEs)
-% Stochastic differential-algebraic equations (SDAEs)
-% Random differential equations (RODEs or RDEs)
-% Differential algebraic equations (DAEs)
-% Delay differential equations (DDEs)
-% Neutral, retarded, and algebraic delay differential equations (NDDEs, RDDEs, and DDAEs)
-% Stochastic delay differential equations (SDDEs)
-% Experimental support for stochastic neutral, retarded, and algebraic delay differential equations (SNDDEs, SRDDEs, and SDDAEs)
-% Mixed discrete and continuous equations (Hybrid Equations, Jump Diffusions)
-% (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
-
-\section{OR-Tools}
-\label{sec:ortools}
-
-Explicar a utilidade do ortools; utilizável em C++, Python, Java, (Clojure), C\#, .Net.
-
-% \section{Beamer}
-
-% Desenvolvido pela comunidade, Beamer não é a primeira, porém, o mais
-% utilizado pacote para produção de slides e apresentações. Seus
-% desenvolvedores, iniciais, foram Louis Stuart, Till Tantau, Joseph
-% Wright, e Vedran Miletc \cite{tantau2010}. Por mais que estes sejam os principais
-% desenvolvedores, Beamer é um pacote livre e aberto, como o \LaTeX, em
-% si. Isto é, toda a comunidade usuária é também desenvolvedora do
-% pacote.
-
-
-% Desta forma, é um pacote extensivamente trabalhado para
-% produção de apresentações, disponível em diversas formatações
-% canônicas. A \autoref{im:10} apresenta dois exemplos de slides feitos
-% com Beamer, encontrados na internet.
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:10} Exemplos de Slides Produzidos com Beamer}
-%   \begin{center}
-%     \includegraphics[width=0.45\linewidth]{./Imagens/beamer.png}
-%     \includegraphics[width=0.45\linewidth]{./Imagens/beamer2.jpg}
-%   \end{center}
-%   \legend{Fonte: \href{https://martin-thoma.com/author/martin-thoma/}{\cite{martin2013}}}
-% \end{figure}
-
-
-
-% \section{Tikz}
-
-% Tikz é um pacote essencial para manusear e crear imagens com
-% Postscript, por meio da linguagem \TeX. Com essa ferramenta, pode-se
-% fazer diagramas, gráficos, desenhos. Ele é um dos pacotes fundamentais
-% do \LaTeX{} \cite{lamport1994}. As imagens - \autoref{im:1}, \autoref{im:2},
-% \autoref{im:3}, \autoref{im:4}, \autoref{im:5}, \autoref{im:6}  - apresentam explanações de
-% código/resultado encontrados na documentação oficial do pacote \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Tikz}.
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:1} Imagens escritas com Tikz, geometria}
-%   \begin{center}
-%     \includegraphics[width=\linewidth]{./Imagens/3.png}
-%   \end{center}
-%   \legend{Fonte:
-%     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-%       Tikz, CTAN}}
-% \end{figure}
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:2} Imagens escritas com Tikz, grafos}
-%   \begin{center}
-%     \includegraphics[width=\linewidth]{./Imagens/1.png}
-%   \end{center}
-%   \legend{Fonte:
-%     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-%       Tikz, CTAN}}
-% \end{figure}
-% %% \begin{figure}[!htb]
-% %%   \caption{\label{im:3} Imagens escritas com Tikz, gráficos}
-% %%   \begin{center}
-% %%     \includegraphics[width=0.47\linewidth, \height=0.4\paperheight]{./Imagens/2.png}
-% %%     \includegraphics[width=0.47\linewidth, \height=0.4\paperheight]{./Imagens/6.png}
-% %%   \end{center}
-% %%   \legend{Fonte:
-% %%   \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-% %%   Tikz, CTAN}}
-% %% \end{figure}
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:3} Imagens escritas com Tikz, gráficos}
-%   \begin{center}
-
-%     \includegraphics[width=\linewidth, \height=0.4\paperheight]{./Imagens/6.png}
-%   \end{center}
-%   \legend{Fonte:
-%     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-%       Tikz, CTAN}}
-% \end{figure}
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:4} Imagens escritas com Tikz, gráficos}
-%   \begin{center}
-%     \includegraphics[width=\linewidth, \height=0.4\paperheight]{./Imagens/2.png}
-%   \end{center}
-%   \legend{Fonte:
-%     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-%       Tikz, CTAN}}
-% \end{figure}
-
-
-
-% \begin{figure}[!htb]
-%   \caption{\label{im:5} Imagens escritas com Tikz, representação da Luz}
-%   \begin{center}
-%     \includegraphics[width=\linewidth]{./Imagens/4.png}
-%   \end{center}
-%   \legend{Fonte:
-%     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
-%       Tikz, CTAN}}
-% \end{figure}
-
-
 % \begin{figure}[t]
 %   \caption{\label{im:6} Imagens escritas com Tikz, representação de um
 %     arbusto}
@@ -483,6 +555,23 @@ Explicar a utilidade do ortools; utilizável em C++, Python, Java, (Clojure), C\
 %     \href{http://linorg.usp.br/CTAN/graphics/pgf/base/doc/pgfmanual.pdf}{Manual
 %       Tikz, CTAN}}
 % \end{figure}
+
+
+\section{Trabalhos Canônicos na Área de Computação}
+
+\subsection{Structure and Interpretation of Classical Mechanics (SCIM)}
+\label{sec:scim}
+A bilioteca científica de simulações de mecânica clássica, em Scheme (um dialeto de Lisp), foi escrito com intento de ser utilizado em cursos de mestrado no MIT. Acompanhado à biblioteca, existe o livro, o qual serve de material didáctico ao curso \cite{sussman2015structure}.
+
+\subsection{Structure and interpretation of computer programs (SICP)}
+O curso de Scheme (SICP), o qual é ensinado como materia básica de computação no MIT, possui como acompanhantes um dos mais influentes livros já escritos na história da computação \cite{abelson1996structure}. O curso é pioneiro em aprofundar-se epistemologia da programação. Onde, o uso de Scheme, o qual possui notação uniforme para todas as funcionalidades da língua foi revolucionário. Conquanto, em contraste aos outros cursos de fundamentos da computação focavam em ensinar a linguagem mais amplamente utilizada no momento.
+
+O curso SCIM (\autoref{sec:scim}) foi um precursor de SICP. O curso continua ativo e o livro continua a ser utilizado amplamente no MIT, e em inúmeras outras faculdades. Uma lista não exaustiva pode ser encontrada em \url{https://mitpress.mit.edu/sites/default/files/sicp/adopt-list.html}, em que pelo menos, vinte universidades o adotam, em mais de oito países.
+
+\subsection{SICMUtils - Portabilidade de (SCIM) em Clojure}
+Existe uma biblioteca reescrita em clojure, a qual porta as funcionalidades descritas na biblioteca científica SCIM \cite{sicmutils2016github}. Essa biblioteca é escrita numa das mais modernas linguages de computação com adoção amplamente da Industria, Clojure. Recentemente, a maior empresa utilizado de Clojure até então, a Cognitect, a qual inventou a língua foi comparada pelo Nubank \cite{clojure2020}.
+
+A língua é tão poderosa que as implementações não são apenas numéricas, nem são somente simbólicas. É possível utilizar-se da mesma função (\textit{procedure}) para se fazerem cálculos numéricos ou simbólicos, tendo apenas de se mudar os argumentos de entrada (\textit{inputs}).
 
 \clearpage
 
