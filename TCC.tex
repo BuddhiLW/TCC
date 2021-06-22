@@ -255,6 +255,7 @@ Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade g
 
 % É notório o fato de que optimizações 
 
+
 \section{Objetivo}
 
 % Demonstrar a importância dessa categoria de softwares, e da comuniadade aberta, no desenvolvimento tecnológico.
@@ -263,6 +264,157 @@ Demonstramos a defassagem que um profissional de engenharia apresentaria, sem fo
 Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
 
 
+
+
+\section{As interconexões das aplicações e o OS}
+
+\subsection{Por quê o GNU/Linux nos importa?}
+Discutiremos introdutoriamente na monografia, o que é o sistema operacional
+GNU/Linux, e o por quê de ser a porta de entrada à comunidade Open
+Source. Primeiramente, o GNU/Linux é o primeiro e maior sucesso da lógica
+de negócio Open Source \cite{tu2000evolution,west2001open} - dessa forma,
+utilizá-lo é uma maneira de entender como a lógica de negócio
+dependente de comunidades abertas funcionam \cite{fink2003business}.
+
+Além do mais, o novo usuário-desenvolvedor de GNU/Linux,
+inerentemente, tem de aprender sobre outros softwares os quais vêm
+conjunto à sua distribuição - o que aumenta sua adoção
+\cite{west2001open}. Desta forma, sente-se compelido a participar e
+estender os comportamentos do programa \cite{hertel2003motivation}.
+
+Para aquém da sua inicial expressão filosófica de liberdade, o
+GNU/Linux hoje é o \textit{standard} em empresas te alta
+tecnologia. E, sua lógica de negócio, por mais que desafie os moldes
+empresariais econômicos do \textit{status quo}, sem sombra de dúvidas
+funciona, traz resultados às empresas, a economia e à
+comunidade. Usar-se do GNU/Linux, então, é uma maneira de se inserir
+nesse novo contexto lógico econômico
+\cite{moody2009rebel,hippel2003open,peters2009open}.
+
+\subsection{Como as aplicações de alto nível se beneficiam de um \textit{OS}}
+
+Na hierarquia de softwares e aplicações, os sistemas operacionais
+podem ser vistos como um meta-aplicação.
+
+``The evaluator, which determines the meaning of expressions in a
+programming language, is just another program.'' \cite{abelson1996structure}
+
+Existem níveis, ou camadas, de abstração em virtualmente qualquer
+aplicação. Ou seja, o conceito de meta-programação e torres de
+interpretadores é um problema um tanto quanto comum, e possui
+implicações diretas no uso dos softwares.
+
+Os sistemas operacionais, como o GNU/Linux, uma camada essencial
+nessa torre de interpretadores. Em especial, eles se comunicam com
+\textit{firmwares} - softwares de baixa expressividade e alta performance, os
+quais controlam \textit{hardwares}. Também, comunicam-se com softwares de alta
+expressividade, os quais comprazem as aplicações escritas, ou
+estendidas, pelo usuário-desenvolvedor do sistema. Por conseguinte, o
+Sistema Operacional possui um papel de mediador entre softwares de
+alto e baixo nível - como são chamados pela literatura - o que
+configura-os como uma espécie de \textit{middleware}.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:tower} Esquemática de uma torre de interpretadores}
+  \includegraphics[width=\linewidth]{torres.png}
+  \legend{Code Mesh, apresentação Towers of Interpreters, por Nada Amin}
+\end{figure}
+
+O problema característico de concatenar sistemas de softwares um sob o
+outro introduz complexidades em termos de manter compatibilidade entre
+versões de programas e sua performance. O estudo desses comportamentos
+e suas soluções teóricas possuem um ramo próprio, desvinculado, por
+exemplo, de quais linguagens compõe a torre, ou qual aplicação estamos
+lidando \cite{amin2017towers}. O que se interessa é com o
+comportamento final do sistema, e se é possível colapsar o sistema.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:tower2} Categorização do estudo de torres de interpretadores}
+  \includegraphics[width=0.5\linewidth]{torres2.png}
+  \legend{Fonte: \cite{amin2017towers}}
+\end{figure}
+
+
+Finalmente, os O.S. consistem em grandes colapsadores de torres de
+interpretação. Encontram-se encarregados de colapsar firmware,
+middlewares e softwares de alto nível. Por fim, o quão bem um sistema
+operacional conduz essa tarefa, tanto mais a experiência do usuário
+final é facilitada.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:os} Torre de interpretadores e os Sistemas Operacionais.}
+  \includegraphics[width=0.5\linewidth]{tower-os.png}
+  \legend{Fonte: \cite{tanenbaum2015modern}}
+\end{figure}
+
+\begin{citacao}
+If every application programmer had to understand how all these things work in detail, no code would ever
+get written. Furthermore, managing all these components and using them optimally
+is an exceedingly challenging job. For this reason, computers are equipped with a
+layer of software called the operating system, whose job is to provide
+user programs with a better, simpler, cleaner, model of the computer
+and to handle managing all the resources just mentioned. \cite{tanenbaum2015modern}
+\end{citacao}
+
+
+\section{Da influência da educação na adoção}
+
+É claro, na literatura, de que a adoção dos softwares open source no
+setor industrial
+dependem da competência, e do quão profundo seus conhecimentos
+precisam ser para resolução de seus problemas
+\cite{li2013all,gallego2015open,spinellis2012organizational}. 
+
+Ao mesmo tempo, a adoção depende diretamente das inclinações
+intrínsecas da equipe de TI \cite{racero2021can}.
+
+Por fim, por mais que cursos profissionalizantes no tópico aumente a
+intensidade e rapidez de sua adesão, por alunos
+\cite{racero2020predicting} e profissionais inclinados à autonomia
+\cite{gallego2015open}, a adoção final está mais ligada a fatores
+intrínsecos de motivação. No entanto, é importante notar a existência de um
+efeito-rede em adoções \cite{spinellis2012organizational} e.g., quanto mais semelhantes adotam
+OSS, maior a chance de adoção.
+
+
+
+
+\section{Performance e futuro do open source como motivos de adoção}
+
+Delineia-se que existe um ganho em performance ao se utilizar a
+plataforma GNU/Linux em comparação ao Windows \cite{sulaiman2021comparison}. Porém, mais importante
+ainda, é o fato de que os principais benefícios não estão no sistema
+operacional em si, mas no treino que se obtém quando se utiliza um
+sistema totalmente dependente de ferramentas e comunidades
+abertas.
+
+Pois, é nesse momento que se dá a transformação profissional
+indivíduo, ao mesmo tempo que se aumenta a chance das empresas que
+esse profissional irá trabalhar de adotarem OSS. Mesmo que, as
+empresas em geral, e as de software em particular, beneficiam-se
+grandemente da comunidade aberta e livre ao mesmo tempo que não
+precisam e não incentivam nenhum direto incentivo ao trabalho da
+comunidade \cite{hauge2008adoption}.
+
+\section{O perfil do engenheiro e dos usuários de FOSS}
+
+É notável que dado a profundidade que se procura a dar a formação,
+ainda em nível de graduação, do engenheiro físico, espera-se que ele
+seja um ideal candidato ao uso de FOSS. Pois, necessita de ambos de
+inclínio a autonomia \cite{schrape2019open,racero2020predicting}, quanto profundidade em seu trabalho técnico,
+para fomentar a necessidade e adoção de FOSS, em nível individual
+\cite{li2013all,gallego2015open}.
+
+\section{Como podemos alavancar o potencial de OSS na Indústria e Academia}
+
+No presente trabalho, utilizou-se de diversas demonstrações de
+conceitos, onde o autor desenvolveu e estendeu aplicações
+desenvolvidas num contexto livre e aberto. Também, discute-se como se
+integrar e acrescentar à comunidade aberta. Nota-se o quão fundamental
+e significante são as conexões profissionais que se faz nesse nicho.
 
 \chapter{Revisão Bibliográfica}
 \section{Open Source}
@@ -338,7 +490,91 @@ Por mais que seja um editor de texto, por natureza, dada a larga possibilidade d
 
 A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
 
-\section{Aplicações na Indústria}
+\section{Comparações entre a performance e adoção de sistemas
+  operacionais}
+
+\subsection{Performance}
+Quando testado em termos de eficiência, o Windows 10 performa-se bem
+abaixo do Linux, em tarefas em nível de usuário \cite{sulaiman2021comparison}.
+
+Em um mesmo hardware, os programas que são
+executados no pano de fundo, continuamente, pelo Windows consumem um
+valor próximo de 5\%  de CPU e 41\% de RAM. Enquanto, no Linux Mint - uma
+versão popular de Linux - o consumo é de 1.8\% de CPU e 24\% de
+RAM. Uma diferença de performance de mais de mais de 200\% em CPU e
+aproximatamente 200\% em RAM \cite{sulaiman2021comparison}.
+
+A execução de um programa escrito em VBS - relacionado aos programas
+do pacote Office -, se dá com uma diferença de 0.501 segundos para o Linux
+Mint e 4.75 segundos no Windows. E.g., existe uma diferença absoluta de
+$\frac{4.75-0.501}{0.501}=423\%$ em performance \cite{sulaiman2021comparison}.
+
+Por fim, também existem pesquisas feitas com rigor técnico em todas as
+outras área de manuseação de \textit{firmwares/harwares}, como
+\textit{wireless} \cite{SDevan2013WINDOWS8V}; paralelismo e
+manuseação de aplicações em servidores \cite{aveleda2010performance};
+programas científicos (Fast Fourier Transform) et al
+\cite{d2011performance}; performance em arquiteturas de Realidade Virtuais (VR)
+\cite{thubaasini2010efficient} etc. Todas elas demonstram uma
+performance superior na renderização e/ou no tempo de renderização em
+plataformas GNU/Linux
+\cite{aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}.
+
+\subsection{Demografia da adoção de FOSS}
+
+Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
+source estava numa fase ``OSS 2.0'', o qual transcendera a
+generalização de que isso era algo inutilizável pela pessoa média e
+uma ferramenta exclusiva de ``\textit{hackers}''
+\cite{fitzgerald2006transformation}. E, que ainda haveriam
+conseguintes transformações até um patamar \textit{mainstream}. Isto
+é, se tornaria um lugar comum na sociedade e industria, e que grande
+parte do desenvolvimento seria de autoria de grandes empresas.
+
+Em 2008, foi feita uma pesquisa sobre a adoção da indústria de
+softwares, na Finlândia. Em contraste à caracterização de
+Fritzgerald, 50\% das empresas utilizavam amplamente de Open Source
+Software, porém, a participação era quase nula na comunidade
+aberta. Por fim, mais de 30\% dessas empresas participantes relatavam que 40\%
+do ganho era fruto de produtos e serviços desenvolvidos pela
+comunidade aberta\cite{hauge2008adoption}. É importante se notar que
+eram empresas de pequeno e médio porte, em sua maioria.
+
+Em 2012, um estudo em grande empresas - mil companias listadas na revista US
+Fortune - derivou algumas conclusões \cite{spinellis2012organizational}:
+
+\begin{itemize}
+\item A adoção está diretamente associada à equipes de TI com
+  trabalhos os quais demandam expertise e conhecimentos extensivos
+  especializados, bem como busca por eficiência \cite{gallego2015open,
+ li2013all}.
+\item Aumento exponencial, à partir de um ponto de acumulação;
+\item Existe um efeito-rede responsável pela adoção nas grandes.
+empresas;  
+\end{itemize}
+
+Assim, a adoção em empresas de pequeno, médio e grande porte variam
+grandemente, e não possuem efeitos notáveis na expansão do
+movimento. No entanto, ainda são positivamente influenciadas por ele
+\cite{spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}. A
+maior influência positiva no movimento, indica-se, é dado por pequenas
+empresas \cite{kshetri2004economics}. 
+
+Observa-se no entando, de 2012 ao presente, uma intensificação de
+adoção e ubiquidade da adoção dessas tecnologias abertas \cite{schmidt2016agile}. São
+consideradas, atualmente, o berço inovatório da indústria de softwares
+\cite{schrape2019open,schmidt2016agile}.
+
+Pesquisas mais recentes determinam que, independente do tamanho da
+empresa, a adoção da empresa depende diretamente do treinamento dos
+agentes de TI e sua inclinação por autonomia
+\cite{racero2020predicting}. Finalmente, a adoção e crença na
+efetividade desses softwares depende de fatores principalmente
+intrínsecos e independem de treinamento, por mais que os treinamentos
+em OSS potencializa a adoção de usuários inclinados ao uso
+\cite{racero2021can}.
+
+\section{Demonstração de Aplicações na Indústria}
 \subsection{Freqtrade}
 O software \emph{Freqtrade} contém as peças essenciais para se rodar
 um aplicação de trocas-automatizadas entre crypto-moedas. Por meio de
@@ -401,7 +637,7 @@ De forma geral, esses problemas caem dentro de um ramo da matemática e
 computação chamado Problemas de Optimazação Constrita
 (\textit{Constraint Optimization})
 
-\section{Aplicações Acadêmicas}
+\section{Demonstração de Aplicações Acadêmicas}
 
 % \clearpage
 \subsection{DifferentialEquations.jl}

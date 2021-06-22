@@ -1,0 +1,20 @@
+#+title: Softwares Livres na Industria e Academia.
+#+AUTHOR: Pedro Gomes Branquinho
+
+* Dos Intuitos do trabalho
+  - Panorâmica do estado da arte de como os Softwares se desenvolvem.
+  - Implicações de ordem Social e dinâmica Econômica.
+  - De onde viemos?
+  - Pra onde estamos indo?
+  - Quem somos?
+  - Demonstrações.
+
+* As três perguntas básicas?
+** Quem somos?
+   As árvores somos nozes; Deus é o jardineiro.
+** De onde viemos?
+** Para onde vamos?
+* Comunidade aberta
+* Panorama do estado da arte, na computação
+* Dinâmica de desenvolvimento de Softwares
+* Implicações na ordem social-econômica 
