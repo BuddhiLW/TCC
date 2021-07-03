@@ -1,0 +1,6 @@
++-----+-----+      Computador Local
+| cRED      |      +----+      +----+
++ Operator  +<---->+cBLU| . . .|cBLU|
+| Server    |      |    |      |    |
+|   c707    |      +----+      +----+
++-------+---+
