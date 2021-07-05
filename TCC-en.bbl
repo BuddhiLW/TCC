@@ -5,6 +5,36 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Abelson e Sussman 1996]{abelson1996structure}
+\abntrefinfo{Abelson e Sussman}{ABELSON; SUSSMAN}{1996}
+{ABELSON, H.; SUSSMAN, G.~J. \emph{Structure and interpretation of computer
+  programs}. [S.l.]: The MIT Press, 1996.}
+
+\bibitem[Amin e Rompf 2017]{amin2017towers}
+\abntrefinfo{Amin e Rompf}{AMIN; ROMPF}{2017}
+{AMIN, N.; ROMPF, T. Collapsing towers of interpreters.
+\emph{Proc. ACM Program. Lang.}, Association for Computing Machinery, New York,
+  NY, USA, v.~2, n.~POPL, dez. 2017.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
+
+\bibitem[Fink 2003]{fink2003business}
+\abntrefinfo{Fink}{FINK}{2003}
+{FINK, M. \emph{The business and economics of Linux and open source}. [S.l.]:
+  Prentice Hall Professional, 2003.}
+
+\bibitem[Hertel, Niedner e Herrmann 2003]{hertel2003motivation}
+\abntrefinfo{Hertel, Niedner e Herrmann}{HERTEL; NIEDNER; HERRMANN}{2003}
+{HERTEL, G.; NIEDNER, S.; HERRMANN, S. Motivation of software developers in
+  open source projects: an internet-based survey of contributors to the linux
+  kernel.
+\emph{Research policy}, Elsevier, v.~32, n.~7, p. 1159--1177, 2003.}
+
+\bibitem[Hippel e Krogh 2003]{hippel2003open}
+\abntrefinfo{Hippel e Krogh}{HIPPEL; KROGH}{2003}
+{HIPPEL, E.~v.; KROGH, G.~v. Open source software and the
+  “private-collective” innovation model: Issues for organization science.
+\emph{Organization science}, Informs, v.~14, n.~2, p. 209--223, 2003.}
+
 \bibitem[Knuth 1968]{knuth1968art}
 \abntrefinfo{Knuth}{KNUTH}{1968}
 {KNUTH, D.~E. The art of computer programming, vol 1: Fundamental.
@@ -24,5 +54,40 @@
 \abntrefinfo{Microsoft\ldots}{MICROSOFT\ldots}{2021}
 {MICROSOFT, list of operating systems. [S.l.]: Wikimedia Foundation, 2021.
   \url{https://en.wikipedia.org/wiki/List_of_Microsoft_operating_systems}.}
+
+\bibitem[Mirowski 2018]{mirowski2018future}
+\abntrefinfo{Mirowski}{MIROWSKI}{2018}
+{MIROWSKI, P. The future (s) of open science.
+\emph{Social studies of science}, SAGE Publications Sage UK: London, England,
+  v.~48, n.~2, p. 171--203, 2018.}
+
+\bibitem[Moody 2009]{moody2009rebel}
+\abntrefinfo{Moody}{MOODY}{2009}
+{MOODY, G. \emph{Rebel code: Linux and the open source revolution}. [S.l.]:
+  Hachette UK, 2009.}
+
+\bibitem[Peters 2009]{peters2009open}
+\abntrefinfo{Peters}{PETERS}{2009}
+{PETERS, M.~A. Open education and the open science economy.
+\emph{Yearbook of the National Society for the Study of Education}, v.~108,
+  n.~2, p. 203--225, 2009.}
+
+\bibitem[Tanenbaum e Bos 2015]{tanenbaum2015modern}
+\abntrefinfo{Tanenbaum e Bos}{TANENBAUM; BOS}{2015}
+{TANENBAUM, A.~S.; BOS, H. \emph{Modern operating systems}. [S.l.]: Pearson,
+  2015.}
+
+\bibitem[Tu et al. 2000]{tu2000evolution}
+\abntrefinfo{Tu et al.}{TU et al.}{2000}
+{TU, Q. et al. Evolution in open source software: A case study. In:  IEEE.
+  \emph{Proceedings 2000 International Conference on Software Maintenance}.
+  [S.l.], 2000. p. 131--142.}
+
+\bibitem[West e Dedrick 2001]{west2001open}
+\abntrefinfo{West e Dedrick}{WEST; DEDRICK}{2001}
+{WEST, J.; DEDRICK, J. Open source standardization: the rise of linux in the
+  network era.
+\emph{Knowledge, Technology \& Policy}, Springer, v.~14, n.~2, p. 88--112,
+  2001.}
 
 \end{thebibliography}
