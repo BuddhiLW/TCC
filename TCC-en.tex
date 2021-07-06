@@ -65,7 +65,7 @@ english,			% idioma adicional para hifenização
 % \setsansfont[Mapping=tex-text]{DroidSansMono Nerd Font}
 % \setmonofont{Quivira}
 \newfontfamily\uni[Mapping=tex-text]{Hack Nerd Font}
-\newenvironment{uni}{\uni}{\par}
+% \newenvironment{uni}{\uni}{\par}
 \DeclareTextFontCommand{\unifont}{\uni}
 % Some unicode characters
 % 
@@ -374,6 +374,7 @@ english,			% idioma adicional para hifenização
 % ---
 \begin{siglas}
   \item[FOSS] Free and Open Source Software  
+  \item[IDE]:Integrated Development System 
   \item[abnTeX] ABsurdas Normas para TeX
 \end{siglas}
 % ---
@@ -452,8 +453,9 @@ understand can, in turn, shape the carer path and formation of the
 working engineer.
 % Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
 
-\section{The interconnection between Applications\footnote{An Application comprises the end product of software development.} and the OS}
+\section{The interconnection between Applications and the OS}
 
+The author used an \textbf{Application} as to comprise any end product of software development.
 % \section{As interconexões das aplicações e o OS}
 
 %\subsection{Por quê o GNU/Linux nos importa?}
@@ -598,22 +600,21 @@ user programs with a better, simpler, cleaner, model of the computer
 and to handle managing all the resources just mentioned. \cite{tanenbaum2015modern}
 \end{citacao}
 
-
-
-
 \section{On the influence of education in adoption}
 % \section{Da influência da educação na adoção}
 
-%%%%%% Key-point!
+In the bibliographical literature, it's clear that the rate of OSS adoption in the Industrial sector - commonly refereed as``Production'' - depends heavily on both: competency and the level of expertise a project require \cite{li2013all,gallego2015open,spinellis2012organizational}.
 % É claro, na literatura, de que a adoção dos softwares open source no
 % setor industrial
 % dependem da competência, e do quão profundo seus conhecimentos
 % precisam ser para resolução de seus problemas
 % \cite{li2013all,gallego2015open,spinellis2012organizational}. 
 
+At the same time, the adoption depends directly on the intrinsic inclination of the Informational Technology (IT) team \cite{racero2021can}. 
 % Ao mesmo tempo, a adoção depende diretamente das inclinações
 % intrínsecas da equipe de TI \cite{racero2021can}.
 
+Therefore, regardless of how much a professionalizing course may increase the \texit{intencity} and \texit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \texit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
 % Por fim, por mais que cursos profissionalizantes no tópico aumente a
 % intensidade e rapidez de sua adesão, por alunos
 % \cite{racero2020predicting} e profissionais inclinados à autonomia
@@ -621,6 +622,56 @@ and to handle managing all the resources just mentioned. \cite{tanenbaum2015mode
 % intrínsecos de motivação. No entanto, é importante notar a existência de um
 % efeito-rede em adoções \cite{spinellis2012organizational} e.g., quanto mais semelhantes adotam
 % OSS, maior a chance de adoção.
+
+\section{Performance and the current trend as reasons for adoption}
+% \section{Performance e futuro do open source como motivos de adoção}
+
+Research with different areas of benchmarks state a performance gain, when utilizing GNU/Linux, compared to Windows \cite{sulaiman2021comparison}. Although, even more important, the key benefits are not in the differential performance \texit{per se}, but in the training one naturally goes through upon utilizing a totally community-dependent Operational System. 
+% Delineia-se que existe um ganho em performance ao se utilizar a
+% plataforma GNU/Linux em comparação ao Windows \cite{sulaiman2021comparison}. Porém, mais importante
+% ainda, é o fato de que os principais benefícios não estão no sistema
+% operacional em si, mas no treino que se obtém quando se utiliza um
+% sistema totalmente dependente de ferramentas e comunidades
+% abertas.
+
+Thereof, using GNU/Linux is a door for an individual professional shift. At the same time, this personal use increases the probability of adoption in whichever Industry carrer one may lead \cite{hauge2008adoption}. Combined with that fact, the Industry per se has no observable effect on Open Source development of projects - as so far as measured in 2008 \cite{hauge2008adoption}.
+
+ % e.i., companies have a great return of it's use for nothing in exchange, but the little cost of giving professionals the space and flexibility to implement this workflow.
+
+ % Pois, é nesse momento que se dá a transformação profissional
+% indivíduo, ao mesmo tempo que se aumenta a chance das empresas que
+% esse profissional irá trabalhar de adotarem OSS. Mesmo que, as
+% empresas em geral, e as de software em particular, beneficiam-se
+% grandemente da comunidade aberta e livre ao mesmo tempo que não
+% precisam e não incentivam nenhum direto incentivo ao trabalho da
+% comunidade \cite{hauge2008adoption}.
+
+\section{The set-conjunction between physics engineer and FOSS's users}
+% \section{O perfil do engenheiro e dos usuários de FOSS}
+
+We note that the deepness of training proposed, in graduation level, for a physics engineer makes them perfect candidates for the use of FOSS. Because, both trainings imply a \textit{a priori} necessity for autonomy and purposeness \cite{schrape2019open,racero2020predicting}; imply a profound and will for generalistic technical knowledge \cite{li2013all,gallego2015open}.
+% É notável que dado a profundidade que se procura a dar a formação,
+% ainda em nível de graduação, do engenheiro físico, espera-se que ele
+% seja um ideal candidato ao uso de FOSS. Pois, necessita de ambos de
+% inclínio a autonomia \cite{schrape2019open,racero2020predicting}, quanto profundidade em seu trabalho técnico,
+% para fomentar a necessidade e adoção de FOSS, em nível individual
+% \cite{li2013all,gallego2015open}.
+
+\section{How to leverage the potencial of OSS in Industry and Academia}
+% \section{Como podemos alavancar o potencial de OSS na Indústria e Academia}
+
+In the present work, I utilized of many concept demonstrations, in
+which the autor has developed or/and extended applications, in a
+context of free and open source. Also, I present how can one
+collaborate in the community and how does that collaboration can imply
+significant professional connections. This way, both the so called
+``soft skills'' and ``hard skills'' benefits have been elucidated, in practice.  
+% demonstrations served as a way to elucidade quatitatively how significant the 
+% No presente trabalho, utilizou-se de diversas demonstrações de
+% conceitos, onde o autor desenvolveu e estendeu aplicações
+% desenvolvidas num contexto livre e aberto. Também, discute-se como se
+% integrar e acrescentar à comunidade aberta. Nota-se o quão fundamental
+% e significante são as conexões profissionais que se faz nesse nicho.
 
 
 \chapter{Bibliography review}
@@ -722,5 +773,162 @@ Independent Distributions (\unifont{}/\faIcon{linux}).
   % \legend{Histórico de evolução das distribuições Linux \cite{wikipedia_2021Linux}}
 \end{figure}
 
+
+\subsection{\label{sec:linux-origin}Historical Origin}
+% \subsection{\label{sec:origem-linux} Origem Histórica}
+
+The GNU/Linux began as two separeted and different directions. GNU
+stands for ``GNU's Not Unix'', a recursive name. And GNU initialy has
+been developed as a collaboration of revolted academics by the
+restrictive secure system of the MIT Lab (Laboratory of Compuer
+Science - LCS) \cite{stallman2002my,emacswiki2021history}. Amongst
+them, there was the still active Richard Stallman, which heavily
+worked on the text editor of the time - already ten years into
+development. This editor became Emacs \cite{emacswiki2021history}.   
+% O projeto do GNU/Linux iniciou-se separadamente, por duas frentes. O
+% GNU - abreviação de, GNU's Not Unix - por usuários revoltados com o
+% sistema de seguraça dos computadores do MIT (Laboratory of Computer
+% Science - LCS) \cite{stallman2002my,emacswiki2021history}. Dentre
+% eles, o ainda ativo Richard Stallman, após já dez anos de evolução do
+% editor de texto \cite{emacswiki2021history}.
+
+Parallel to these events, Linus Torvalds had been developing an open portatible
+operational system, as his master's thesis
+\cite{torvalds1997linux}.
+
+Finally, both projects united in a symbiotic system, of which the OS
+was Linux (the formentined portible kernel) and the GNU's interface
+program whit all utilities one may have had in their computers at the
+time \cite{stallman1997}  
+% Paralelamente, Linus Torvalds desenvolveu um sistema operacional
+% portável aberto, como sua tese de mestrado
+% \cite{torvalds1997linux}. Por fim, houve uma junção dos projetos, os
+% quais colaboravam o Linux, como sistema operacional, e GNU com todas
+% as aplicações utilitarias do sistema \cite{stallman1997}.
+
+\subsection{Emacs}
+% \subsection{O Emacs}
+
+As has been seen in \href{sec:linux-origin}, the GNU project already
+had developed a variety of applications, all of which, incorporated
+into Linux. This way, the OS gained a ``body''. The Emacs,
+particularly, characterize one of the first software extensively
+extended, as a project, in a open community.
+
+Although, the label given to Emacs as an ``editor'' covers it's main
+function. Actually, the fundamental role of Emacs equates to
+evaluating Elisp expressions. Elisp as in a dialect of
+Lisp. Therefore, as an interpreter of a language, it has Turing
+complete capabilities. So it has a complete-system capability
+\footnote{The GNU/Guix implementation of Linux, has been implemented
+  in Scheme - a cousin with better performance than Elisp}.      
+% Como foi visto na \href{sec:origem-linux}, o projeto GNU possuia muitas utilidades as quais foram incorporadas ao kernel Linux, para dar corpo a um sistema operacional. O Emacs, particularmente, caracteriza um dos primeiros softwares extensivamente estendidos dentro do projeto. Sendo classificado como um editor de texto, escrito em Elisp, o qual é um dialeto da família de linguagens Lisp.
+
+Even though Emacs usual use has been of an Integrated Development
+System (IDE), by it's unlimited potentiality and expressiveness, there
+exists packages and applications written in Elisp to become a fully
+featured Window Manager (WM). That is, Emacs, through Emacs's X Window
+Manager (EXWM), can serve as a graphical and manager interface to
+other applications. 
+% Por mais que seja um editor de texto, por natureza, dada a larga possibilidade de expansão de suas utilidades, existem pacotes e maneiras de o configurar como um sistema completo de Window Manager. Ou seja, pode-se servir como interface gráfica e gerenciadora de outras aplicações.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:exwm1} EXWM - Emacs X Window Manager}
+  \includegraphics[width=\linewidth]{exwm2.png}
+  \legend{Source: author's WM ambient.}
+  % \legend{Fonte: foto do ambiente de WM do autor.}
+\end{figure}
+
+\autoref{fig:exwm1} exemplifies a desktop environment which can render
+images, PDFs, Browsers et el, through Emacs. 
+% A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
+
+
 \bibliography{bib}
+\section{Comparações entre a performance e adoção de sistemas
+  operacionais}
+\subsection{Performance}
+Quando testado em termos de eficiência, o Windows 10 performa-se bem
+abaixo do Linux, em tarefas em nível de usuário \cite{sulaiman2021comparison}.
+
+Em um mesmo hardware, os programas que são
+executados no pano de fundo, continuamente, pelo Windows consumem um
+valor próximo de 5\%  de CPU e 41\% de RAM. Enquanto, no Linux Mint - uma
+versão popular de Linux - o consumo é de 1.8\% de CPU e 24\% de
+RAM. Uma diferença de performance de mais de mais de 200\% em CPU e
+aproximatamente 200\% em RAM \cite{sulaiman2021comparison}.
+
+A execução de um programa escrito em VBS - relacionado aos programas
+do pacote Office -, se dá com uma diferença de 0.501 segundos para o Linux
+Mint e 4.75 segundos no Windows. E.g., existe uma diferença absoluta de
+$\frac{4.75-0.501}{0.501}=423\%$ em performance \cite{sulaiman2021comparison}.
+
+Por fim, também existem pesquisas feitas com rigor técnico em todas as
+outras área de manuseação de \textit{firmwares/harwares}, como
+\textit{wireless} \cite{SDevan2013WINDOWS8V}; paralelismo e
+manuseação de aplicações em servidores \cite{aveleda2010performance};
+programas científicos (Fast Fourier Transform) et al
+\cite{d2011performance}; performance em arquiteturas de Realidade Virtuais (VR)
+\cite{thubaasini2010efficient} etc. Todas elas demonstram uma
+performance superior na renderização e/ou no tempo de renderização em
+plataformas GNU/Linux
+\cite{aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}.
+
+\subsection{Demografia da adoção de FOSS}
+
+Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
+source estava numa fase ``OSS 2.0'', o qual transcendera a
+generalização de que isso era algo inutilizável pela pessoa média e
+uma ferramenta exclusiva de ``\textit{hackers}''
+\cite{fitzgerald2006transformation}. E, que ainda haveriam
+conseguintes transformações até um patamar \textit{mainstream}. Isto
+é, se tornaria um lugar comum na sociedade e industria, e que grande
+parte do desenvolvimento seria de autoria de grandes empresas.
+
+Em 2008, foi feita uma pesquisa sobre a adoção da indústria de
+softwares, na Finlândia. Em contraste à caracterização de
+Fritzgerald, 50\% das empresas utilizavam amplamente de Open Source
+Software, porém, a participação era quase nula na comunidade
+aberta. Por fim, mais de 30\% dessas empresas participantes relatavam que 40\%
+do ganho era fruto de produtos e serviços desenvolvidos pela
+comunidade aberta\cite{hauge2008adoption}. É importante se notar que
+eram empresas de pequeno e médio porte, em sua maioria.
+
+Em 2012, um estudo em grande empresas - mil companias listadas na revista US
+Fortune - derivou algumas conclusões \cite{spinellis2012organizational}:
+
+\begin{itemize}
+\item A adoção está diretamente associada à equipes de TI com
+  trabalhos os quais demandam expertise e conhecimentos extensivos
+  especializados, bem como busca por eficiência \cite{gallego2015open,
+ li2013all}.
+\item Aumento exponencial, à partir de um ponto de acumulação;
+\item Existe um efeito-rede responsável pela adoção nas grandes.
+empresas;  
+\end{itemize}
+
+Assim, a adoção em empresas de pequeno, médio e grande porte variam
+grandemente, e não possuem efeitos notáveis na expansão do
+movimento. No entanto, ainda são positivamente influenciadas por ele
+\cite{spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}. A
+maior influência positiva no movimento, indica-se, é dado por pequenas
+empresas \cite{kshetri2004economics}. 
+
+Observa-se no entando, de 2012 ao presente, uma intensificação de
+adoção e ubiquidade da adoção dessas tecnologias abertas \cite{schmidt2016agile}. São
+consideradas, atualmente, o berço inovatório da indústria de softwares
+\cite{schrape2019open,schmidt2016agile}.
+
+Pesquisas mais recentes determinam que, independente do tamanho da
+empresa, a adoção da empresa depende diretamente do treinamento dos
+agentes de TI e sua inclinação por autonomia
+\cite{racero2020predicting}. Finalmente, a adoção e crença na
+efetividade desses softwares depende de fatores principalmente
+intrínsecos e independem de treinamento, por mais que os treinamentos
+em OSS potencializa a adoção de usuários inclinados ao uso
+\cite{racero2021can}.
+
+
+
 \end{document}

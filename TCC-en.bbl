@@ -17,10 +17,26 @@
   NY, USA, v.~2, n.~POPL, dez. 2017.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 
+\bibitem[Emacs History 2021]{emacswiki2021history}
+\abntrefinfo{Emacs\ldots}{EMACS\ldots}{2021}
+{EMACS History. 2021. \url{https://www.emacswiki.org/emacs/EmacsHistory}.}
+
 \bibitem[Fink 2003]{fink2003business}
 \abntrefinfo{Fink}{FINK}{2003}
 {FINK, M. \emph{The business and economics of Linux and open source}. [S.l.]:
   Prentice Hall Professional, 2003.}
+
+\bibitem[Gallego et al. 2015]{gallego2015open}
+\abntrefinfo{Gallego et al.}{GALLEGO et al.}{2015}
+{GALLEGO, M.~D. et al. Open source software: The effects of training on
+  acceptance.
+\emph{Computers in Human Behavior}, Elsevier, v.~49, p. 390--399, 2015.}
+
+\bibitem[Hauge, S{\o}rensen e Conradi 2008]{hauge2008adoption}
+\abntrefinfo{Hauge, S{\o}rensen e Conradi}{HAUGE; S{\O}RENSEN; CONRADI}{2008}
+{HAUGE, {\O}.; S{\O}RENSEN, C.-F.; CONRADI, R. Adoption of open source in the
+  software industry. In:  SPRINGER. \emph{IFIP International Conference on Open
+  Source Systems}. [S.l.], 2008. p. 211--221.}
 
 \bibitem[Hertel, Niedner e Herrmann 2003]{hertel2003motivation}
 \abntrefinfo{Hertel, Niedner e Herrmann}{HERTEL; NIEDNER; HERRMANN}{2003}
@@ -39,6 +55,12 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 \abntrefinfo{Knuth}{KNUTH}{1968}
 {KNUTH, D.~E. The art of computer programming, vol 1: Fundamental.
 \emph{algorithms}, p.~187, 1968.}
+
+\bibitem[Li, Tan e Yang 2013]{li2013all}
+\abntrefinfo{Li, Tan e Yang}{LI; TAN; YANG}{2013}
+{LI, Y.; TAN, C.-H.; YANG, X. It is all about what we have: A discriminant
+  analysis of organizations' decision to adopt open source software.
+\emph{Decision support systems}, Elsevier, v.~56, p. 56--62, 2013.}
 
 \bibitem[Linux, list of distributions 2021]{wikipedia_2021Linux}
 \abntrefinfo{Linux\ldots}{LINUX\ldots}{2021}
@@ -72,10 +94,64 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 \emph{Yearbook of the National Society for the Study of Education}, v.~108,
   n.~2, p. 203--225, 2009.}
 
+\bibitem[Racero, Bueno e Gallego 2020]{racero2020predicting}
+\abntrefinfo{Racero, Bueno e Gallego}{RACERO; BUENO; GALLEGO}{2020}
+{RACERO, F.~J.; BUENO, S.; GALLEGO, M.~D. Predicting students’ behavioral
+  intention to use open source software: A combined view of the technology
+  acceptance model and self-determination theory.
+\emph{Applied Sciences}, Multidisciplinary Digital Publishing Institute, v.~10,
+  n.~8, p.~2711, 2020.}
+
+\bibitem[Racero, Bueno e Gallego 2021]{racero2021can}
+\abntrefinfo{Racero, Bueno e Gallego}{RACERO; BUENO; GALLEGO}{2021}
+{RACERO, F.~J.; BUENO, S.; GALLEGO, M.~D. Can the oss-focused education impact
+  on oss implementations in companies? a motivational answer through a
+  delphi-based consensus study.
+\emph{Electronics}, Multidisciplinary Digital Publishing Institute, v.~10,
+  n.~3, p.~277, 2021.}
+
+\bibitem[Schrape 2019]{schrape2019open}
+\abntrefinfo{Schrape}{SCHRAPE}{2019}
+{SCHRAPE, J.-F. Open-source projects as incubators of innovation: From niche
+  phenomenon to integral part of the industry.
+\emph{Convergence}, SAGE Publications Sage UK: London, England, v.~25, n.~3, p.
+  409--427, 2019.}
+
+\bibitem[Spinellis e Giannikas 2012]{spinellis2012organizational}
+\abntrefinfo{Spinellis e Giannikas}{SPINELLIS; GIANNIKAS}{2012}
+{SPINELLIS, D.; GIANNIKAS, V. Organizational adoption of open source software.
+\emph{Journal of Systems and Software}, Elsevier, v.~85, n.~3, p. 666--682,
+  2012.}
+
+\bibitem[Stallman 1997]{stallman1997}
+\abntrefinfo{Stallman}{STALLMAN}{1997}
+{STALLMAN, R. \emph{Linux and GNU - GNU Project - Free Software Foundation}.
+  1997. \url{https://www.gnu.org/gnu/linux-and-gnu.html}.}
+
+\bibitem[Stallman 2002]{stallman2002my}
+\abntrefinfo{Stallman}{STALLMAN}{2002}
+{STALLMAN, R. My lisp experiences and the development of gnu emacs (transcript
+  of richard stallman’s speech, 28 oct 2002, at the international lisp
+  conference).
+\emph{URL (consulted December 2003): http://www. gnu. org/gnu/rms-lisp. html},
+  2002.}
+
+\bibitem[Sulaiman e Raffi 2021]{sulaiman2021comparison}
+\abntrefinfo{Sulaiman e Raffi}{SULAIMAN; RAFFI}{2021}
+{SULAIMAN, N.~S.; RAFFI, A. S. H.~A. Comparison of operating system performance
+  between windows 10 and linux mint.
+\emph{International Journal of Synergy in Engineering and Technology}, v.~2,
+  n.~1, p. 92--102, 2021.}
+
 \bibitem[Tanenbaum e Bos 2015]{tanenbaum2015modern}
 \abntrefinfo{Tanenbaum e Bos}{TANENBAUM; BOS}{2015}
 {TANENBAUM, A.~S.; BOS, H. \emph{Modern operating systems}. [S.l.]: Pearson,
   2015.}
+
+\bibitem[Torvalds 1997]{torvalds1997linux}
+\abntrefinfo{Torvalds}{TORVALDS}{1997}
+{TORVALDS, L. Linux: a portable operating system.
+\emph{Master's thesis, University of Helsinki}, 1997.}
 
 \bibitem[Tu et al. 2000]{tu2000evolution}
 \abntrefinfo{Tu et al.}{TU et al.}{2000}
