@@ -17,14 +17,46 @@
   NY, USA, v.~2, n.~POPL, dez. 2017.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 
+\bibitem[Aveleda et al. 2010]{aveleda2010performance}
+\abntrefinfo{Aveleda et al.}{AVELEDA et al.}{2010}
+{AVELEDA, A.~A. et al. Performance comparison of scientific applications on
+  linux and windows hpc server clusters.
+\emph{Mec{\'a}nica Computacional}, v.~29, n.~30, p. 2985--2997, 2010.}
+
+\bibitem[Bertsekas 2014]{bertsekas2014constrained}
+\abntrefinfo{Bertsekas}{BERTSEKAS}{2014}
+{BERTSEKAS, D.~P. \emph{Constrained optimization and Lagrange multiplier
+  methods}. [S.l.]: Academic press, 2014.}
+
+\bibitem[Cook 2006]{cook2006p}
+\abntrefinfo{Cook}{COOK}{2006}
+{COOK, S. The p versus np problem.
+\emph{The millennium prize problems}, p. 87--104, 2006.}
+
+\bibitem[D'Elia e Paciello 2011]{d2011performance}
+\abntrefinfo{D'Elia e Paciello}{D'ELIA; PACIELLO}{2011}
+{D'ELIA, M.; PACIELLO, V. Performance evaluation of labview on linux ubuntu and
+  window xp operating systems. In:  IEEE. \emph{2011 19thTelecommunications
+  Forum (TELFOR) Proceedings of Papers}. [S.l.], 2011. p. 1494--1498.}
+
 \bibitem[Emacs History 2021]{emacswiki2021history}
 \abntrefinfo{Emacs\ldots}{EMACS\ldots}{2021}
 {EMACS History. 2021. \url{https://www.emacswiki.org/emacs/EmacsHistory}.}
+
+\bibitem[Fang et al. 2020]{fang2020cryptocurrency}
+\abntrefinfo{Fang et al.}{FANG et al.}{2020}
+{FANG, F. et al. Cryptocurrency trading: a comprehensive survey.
+\emph{arXiv preprint arXiv:2003.11352}, 2020.}
 
 \bibitem[Fink 2003]{fink2003business}
 \abntrefinfo{Fink}{FINK}{2003}
 {FINK, M. \emph{The business and economics of Linux and open source}. [S.l.]:
   Prentice Hall Professional, 2003.}
+
+\bibitem[Fitzgerald 2006]{fitzgerald2006transformation}
+\abntrefinfo{Fitzgerald}{FITZGERALD}{2006}
+{FITZGERALD, B. The transformation of open source software.
+\emph{MIS quarterly}, JSTOR, p. 587--598, 2006.}
 
 \bibitem[Gallego et al. 2015]{gallego2015open}
 \abntrefinfo{Gallego et al.}{GALLEGO et al.}{2015}
@@ -55,6 +87,11 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 \abntrefinfo{Knuth}{KNUTH}{1968}
 {KNUTH, D.~E. The art of computer programming, vol 1: Fundamental.
 \emph{algorithms}, p.~187, 1968.}
+
+\bibitem[Kshetri 2004]{kshetri2004economics}
+\abntrefinfo{Kshetri}{KSHETRI}{2004}
+{KSHETRI, N. Economics of linux adoption in developing countries.
+\emph{IEEE software}, IEEE, v.~21, n.~1, p. 74--81, 2004.}
 
 \bibitem[Li, Tan e Yang 2013]{li2013all}
 \abntrefinfo{Li, Tan e Yang}{LI; TAN; YANG}{2013}
@@ -110,12 +147,36 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 \emph{Electronics}, Multidisciplinary Digital Publishing Institute, v.~10,
   n.~3, p.~277, 2021.}
 
+\bibitem[Ristov e Gusev 2013]{ristov2013}
+\abntrefinfo{Ristov e Gusev}{RISTOV; GUSEV}{2013}
+{RISTOV, S.; GUSEV, M. Performance vs cost for windows and linux platforms in
+  windows azure cloud. In:  \emph{2013 IEEE 2nd International Conference on
+  Cloud Networking (CloudNet)}. [S.l.: s.n.], 2013. p. 214--218.}
+
+\bibitem[Schmidt 2016]{schmidt2016agile}
+\abntrefinfo{Schmidt}{SCHMIDT}{2016}
+{SCHMIDT, C. Agile software development. In:  \emph{Agile Software Development
+  Teams}. [S.l.]: Springer, 2016. p. 7--35.}
+
 \bibitem[Schrape 2019]{schrape2019open}
 \abntrefinfo{Schrape}{SCHRAPE}{2019}
 {SCHRAPE, J.-F. Open-source projects as incubators of innovation: From niche
   phenomenon to integral part of the industry.
 \emph{Convergence}, SAGE Publications Sage UK: London, England, v.~25, n.~3, p.
   409--427, 2019.}
+
+\bibitem[S.Devan 2013]{SDevan2013WINDOWS8V}
+\abntrefinfo{S.Devan}{S.DEVAN}{2013}
+{S.DEVAN, S. Windows 8 v/s linux ubuntu 12.10 - comparison of the network
+  performance.
+\emph{International Journal of Research in Engineering and Technology}, v.~02,
+  p. 577--580, 2013.}
+
+\bibitem[Simonis 2005]{simonis2005sudoku}
+\abntrefinfo{Simonis}{SIMONIS}{2005}
+{SIMONIS, H. Sudoku as a constraint problem. In:  CITESEER. \emph{CP Workshop
+  on modeling and reformulating Constraint Satisfaction Problems}. [S.l.],
+  2005. v.~12, p. 13--27.}
 
 \bibitem[Spinellis e Giannikas 2012]{spinellis2012organizational}
 \abntrefinfo{Spinellis e Giannikas}{SPINELLIS; GIANNIKAS}{2012}
@@ -148,6 +209,13 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 {TANENBAUM, A.~S.; BOS, H. \emph{Modern operating systems}. [S.l.]: Pearson,
   2015.}
 
+\bibitem[Thubaasini, Rusnida e Rohani 2010]{thubaasini2010efficient}
+\abntrefinfo{Thubaasini, Rusnida e Rohani}{THUBAASINI; RUSNIDA; ROHANI}{2010}
+{THUBAASINI, P.; RUSNIDA, R.; ROHANI, S. Efficient comparison between windows
+  and linux platform applicable in a virtual architectural walkthrough
+  application. In:  \emph{Innovations in Computing Sciences and Software
+  Engineering}. [S.l.]: Springer, 2010. p. 337--342.}
+
 \bibitem[Torvalds 1997]{torvalds1997linux}
 \abntrefinfo{Torvalds}{TORVALDS}{1997}
 {TORVALDS, L. Linux: a portable operating system.
@@ -165,5 +233,12 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
   network era.
 \emph{Knowledge, Technology \& Policy}, Springer, v.~14, n.~2, p. 88--112,
   2001.}
+
+\bibitem[Zhang et al. 2019]{zhang2019review}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2019}
+{ZHANG, J. et al. Review of job shop scheduling research and its new
+  perspectives under industry 4.0.
+\emph{Journal of Intelligent Manufacturing}, Springer, v.~30, n.~4, p.
+  1809--1830, 2019.}
 
 \end{thebibliography}

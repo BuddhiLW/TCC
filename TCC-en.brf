@@ -38,29 +38,51 @@
 \backcite {emacswiki2021history}{{16}{2.2.1}{subsection.2.2.1}}
 \backcite {torvalds1997linux}{{16}{2.2.1}{subsection.2.2.1}}
 \backcite {stallman1997}{{16}{2.2.1}{subsection.2.2.1}}
-\backcite {sulaiman2021comparison}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {sulaiman2021comparison}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {sulaiman2021comparison}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {SDevan2013WINDOWS8V}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {thubaasini2010efficient}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}{{20}{2.3.1}{subsection.2.3.1}}
-\backcite {fitzgerald2006transformation}{{20}{2.3.2}{subsection.2.3.2}}
-\backcite {hauge2008adoption}{{20}{2.3.2}{subsection.2.3.2}}
-\backcite {spinellis2012organizational}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {gallego2015open, li2013all}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {gallego2015open, li2013all}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {kshetri2004economics}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {schmidt2016agile}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {schrape2019open,schmidt2016agile}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {schrape2019open,schmidt2016agile}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {racero2020predicting}{{21}{2.3.2}{subsection.2.3.2}}
-\backcite {racero2021can}{{21}{2.3.2}{subsection.2.3.2}}
+\backcite {sulaiman2021comparison}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {sulaiman2021comparison}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {sulaiman2021comparison}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {SDevan2013WINDOWS8V}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {aveleda2010performance}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {d2011performance}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {thubaasini2010efficient}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {ristov2013}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {aveleda2010performance}{{18}{2.3.1}{subsection.2.3.1}}
+\backcite {fitzgerald2006transformation}{{18}{2.3.2}{subsection.2.3.2}}
+\backcite {hauge2008adoption}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {spinellis2012organizational}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {gallego2015open, li2013all}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {gallego2015open, li2013all}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {spinellis2012organizational,hauge2008adoption, fitzgerald2006transformation}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {spinellis2012organizational,hauge2008adoption, fitzgerald2006transformation}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {spinellis2012organizational,hauge2008adoption, fitzgerald2006transformation}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {kshetri2004economics}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {schimidt2016agile}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {schrape2019open,schmidt2016agile}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {schrape2019open,schmidt2016agile}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {racero2020predicting}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {racero2021can}{{19}{2.3.2}{subsection.2.3.2}}
+\backcite {fang2020cryptocurrency}{{19}{2.4.1}{subsection.2.4.1}}
+\backcite {simonis2005sudoku}{{21}{2.4.2}{subsection.2.4.2}}
+\backcite {bertsekas2014constrained}{{21}{2.4.2}{subsection.2.4.2}}
+\backcite {zhang2019review}{{21}{2.4.2}{subsection.2.4.2}}
+\backcite {zhang2019review}{{21}{2.4.2}{subsection.2.4.2}}
+\backcite {cook2006p}{{21}{2.4.2}{subsection.2.4.2}}
+\backcite {rackauckas2017differentialequations}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit}{{21}{2.5.1}{subsection.2.5.1}}
+\backcite {haralambous2007}{{23}{2.5.2}{subsection.2.5.2}}
+\backcite {knuth1986}{{23}{2.5.2}{subsection.2.5.2}}
+\backcite {lamport1994}{{23}{2.5.2}{subsection.2.5.2}}
+\backcite {abntex2012}{{24}{2.5.2.1}{subsubsection.2.5.2.1}}
+\backcite {araujoclasse}{{24}{2.5.2.1}{subsubsection.2.5.2.1}}
+\backcite {sussman2015structure}{{24}{2.6}{section.2.6}}
+\backcite {abelson1996structure}{{25}{2.6.1}{subsection.2.6.1}}
+\backcite {sicmutils2016github}{{25}{2.6.2}{subsection.2.6.2}}
+\backcite {clojure2020}{{25}{2.6.2}{subsection.2.6.2}}

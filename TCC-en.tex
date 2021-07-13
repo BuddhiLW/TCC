@@ -845,90 +845,1159 @@ images, PDFs, Browsers et el, through Emacs.
 % A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
 
 
-\bibliography{bib}
-\section{Comparações entre a performance e adoção de sistemas
+
+
+\section{Performance comparison among OS adoption}
+% \section{Comparações entre a performance e adoção de sistemas
   operacionais}
+
 \subsection{Performance}
-Quando testado em termos de eficiência, o Windows 10 performa-se bem
-abaixo do Linux, em tarefas em nível de usuário \cite{sulaiman2021comparison}.
+In user-level applications, the efficiency and processing benchmarks
+favor Linux over Windows \cite{sulaiman2021comparison}.
+% Quando testado em termos de eficiência, o Windows 10 performa-se bem
+% abaixo do Linux, em tarefas em nível de usuário \cite{sulaiman2021comparison}.
 
-Em um mesmo hardware, os programas que são
-executados no pano de fundo, continuamente, pelo Windows consumem um
-valor próximo de 5\%  de CPU e 41\% de RAM. Enquanto, no Linux Mint - uma
-versão popular de Linux - o consumo é de 1.8\% de CPU e 24\% de
-RAM. Uma diferença de performance de mais de mais de 200\% em CPU e
-aproximatamente 200\% em RAM \cite{sulaiman2021comparison}.
+In the same hardware, the underground/underlying programs maintaining
+a stationary Windows consume around 5\% of CPU and 41\% of RAM. In the
+mean time, Linux Mint - a popular distribution of Linux - consumed
+1.8\% of CPU and 24\% of RAM. A pronounced difference of more than
+200\% in CPU use efficiency and approximately 200\% in RAM efficienty \cite{sulaiman2021comparison}. 
+% Em um mesmo hardware, os programas que são
+% executados no pano de fundo, continuamente, pelo Windows consumem um
+% valor próximo de 5\%  de CPU e 41\% de RAM. Enquanto, no Linux Mint - uma
+% versão popular de Linux - o consumo é de 1.8\% de CPU e 24\% de
+% RAM. Uma diferença de performance de mais de mais de 200\% em CPU e
+% approximated 200\% em RAM \cite{sulaiman2021comparison}.
 
-A execução de um programa escrito em VBS - relacionado aos programas
-do pacote Office -, se dá com uma diferença de 0.501 segundos para o Linux
-Mint e 4.75 segundos no Windows. E.g., existe uma diferença absoluta de
-$\frac{4.75-0.501}{0.501}=423\%$ em performance \cite{sulaiman2021comparison}.
+A VBS-program script execution \footnote{An application concerning the
+  labeled ``Office'' bundle.} amounts to a difference in
+time-execution of 4.249 seconds. In which, Linux
+Mint took 0.501 seconds, against a 4.75 seconds for Windows. E.g.,
+there exist a roughly $\frac{4,75-0,501}{0,501}= 423\%$ in
+time-execution performance \cite{sulaiman2021comparison}.
+% A execução de um programa escrito em VBS - relacionado aos programas
+% do pacote Office -, se dá com uma diferença de 0.501 segundos para o Linux
+% Mint e 4.75 segundos no Windows. E.g., existe uma diferença absoluta de
+% $\frac{4.75-0.501}{0.501}=423\%$ em performance \cite{sulaiman2021comparison}.
 
-Por fim, também existem pesquisas feitas com rigor técnico em todas as
-outras área de manuseação de \textit{firmwares/harwares}, como
-\textit{wireless} \cite{SDevan2013WINDOWS8V}; paralelismo e
-manuseação de aplicações em servidores \cite{aveleda2010performance};
-programas científicos (Fast Fourier Transform) et al
-\cite{d2011performance}; performance em arquiteturas de Realidade Virtuais (VR)
-\cite{thubaasini2010efficient} etc. Todas elas demonstram uma
-performance superior na renderização e/ou no tempo de renderização em
-plataformas GNU/Linux
-\cite{aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}.
+Lastly, there also exists other researches done with technical rigor in a
+broad spectrum of other applications and hardware. To name a few, in
+wireless \cite{SDevan2013WINDOWS8V}; parallelism and management of
+server applications \cite{aveleda2010performance}; scientific programming (Fast Fourier Transform) et al
+\cite{d2011performance}; performance on Virtual Reality (VR)
+application \cite{thubaasini2010efficient} etc. All of which present
+different kinds of advantages for Linux-use compared to
+Windows. Although, against what is expected in view of Industry sector
+adoption, Linux has almost no difference, and sometimes can be worst
+depending of memory usage of the application \cite{ristov2013}, than Windows performance on
+multi-threaded and parallel systems, typically founded in cloud/cluster
+server use-case \cite{aveleda2010performance}.
 
-\subsection{Demografia da adoção de FOSS}
+% Por fim, também existem pesquisas feitas com rigor técnico em todas as
+% outras área de manuseação de \textit{firmwares/harwares}, como
+% \textit{wireless} \cite{SDevan2013WINDOWS8V}; paralelismo e
+% manuseação de aplicações em servidores \cite{aveleda2010performance};
+% programas científicos (Fast Fourier Transform) et al
+% \cite{d2011performance}; performance em arquiteturas de Realidade Virtuais (VR)
+% \cite{thubaasini2010efficient} etc. Todas elas demonstram uma
+% performance superior na renderização e/ou no tempo de renderização em
+% plataformas GNU/Linux
+% \cite{aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}.
 
-Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
-source estava numa fase ``OSS 2.0'', o qual transcendera a
-generalização de que isso era algo inutilizável pela pessoa média e
-uma ferramenta exclusiva de ``\textit{hackers}''
-\cite{fitzgerald2006transformation}. E, que ainda haveriam
-conseguintes transformações até um patamar \textit{mainstream}. Isto
-é, se tornaria um lugar comum na sociedade e industria, e que grande
-parte do desenvolvimento seria de autoria de grandes empresas.
+\subsection{FOSS adoption demography}
+% \subsection{Demografia da adoção de FOSS}
 
-Em 2008, foi feita uma pesquisa sobre a adoção da indústria de
-softwares, na Finlândia. Em contraste à caracterização de
-Fritzgerald, 50\% das empresas utilizavam amplamente de Open Source
-Software, porém, a participação era quase nula na comunidade
-aberta. Por fim, mais de 30\% dessas empresas participantes relatavam que 40\%
-do ganho era fruto de produtos e serviços desenvolvidos pela
-comunidade aberta\cite{hauge2008adoption}. É importante se notar que
-eram empresas de pequeno e médio porte, em sua maioria.
+Fritzgerald enunciated, in 2006, that the adoption profile of users of
+Open Source Software (OSS) passed through a phase ``OSS 2.0''. This
+phase was characterized as a transcendence from the mentality that the
+only people who would be able to use the system would be ``hackers''
+\cite{fitzgerald2006transformation}. And, furthermore that such OS
+were even becoming ``\texit{mainstream}''. That is, it became a common
+place in society and industry. He also professed the hypothesis that
+OSS project's activities were significant influenced due to big companies. 
+% Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
+% source estava numa fase ``OSS 2.0'', o qual transcendera a
+% generalização de que isso era algo inutilizável pela pessoa média e
+% uma ferramenta exclusiva de ``\textit{hackers}''
+% \cite{fitzgerald2006transformation}. E, que ainda haveriam
+% conseguintes transformações até um patamar \textit{mainstream}. Isto
+% é, se tornaria um lugar comum na sociedade e industria, e que grande
+% parte do desenvolvimento seria de autoria de grandes empresas.
 
-Em 2012, um estudo em grande empresas - mil companias listadas na revista US
-Fortune - derivou algumas conclusões \cite{spinellis2012organizational}:
+In 2008, another research tried to quantitatively verify the
+hypothesis. The data was obtained by questioners and interviews of
+Finland software industries. In contrast to the Fritzgerald's
+characterization, 50\% of the companies utilized vastly FOSS,
+although, they had negligent impact of the development carried by the
+community. Lastly, more than 30\% of these companies told that at
+least 40\% of their companies value on software was due to services
+done by the community \cite{hauge2008adoption}. Also relevant, these
+were mostly small to medium size enterprises.    
+% Em 2008, foi feita uma pesquisa sobre a adoção da indústria de
+% softwares, na Finlândia. Em contraste à caracterização de
+% Fritzgerald, 50\% das empresas utilizavam amplamente de Open Source
+% Software, porém, a participação era quase nula na comunidade
+% aberta. Por fim, mais de 30\% dessas empresas participantes relatavam que 40\%
+% do ganho era fruto de produtos e serviços desenvolvidos pela
+% comunidade aberta\cite{hauge2008adoption}. É importante se notar que
+% eram empresas de pequeno e médio porte, em sua maioria.
 
+In 2012, a study on big companies use of OSS - a thousand companies listed on US
+Fortune magazine - have derived some conclusions \cite{spinellis2012organizational}: 
 \begin{itemize}
-\item A adoção está diretamente associada à equipes de TI com
-  trabalhos os quais demandam expertise e conhecimentos extensivos
-  especializados, bem como busca por eficiência \cite{gallego2015open,
+\item Adoption is directly related to IT's team need for expertise on
+  the work they would partaken, as well as efficient cautiousness \cite{gallego2015open,
  li2013all}.
-\item Aumento exponencial, à partir de um ponto de acumulação;
-\item Existe um efeito-rede responsável pela adoção nas grandes.
-empresas;  
+\item Exponential growth on adoption, once the existence of an
+  accumulation of users in the company. 
+\item There exist a network effect and the effect is notorious in big companies.  
 \end{itemize}
 
-Assim, a adoção em empresas de pequeno, médio e grande porte variam
-grandemente, e não possuem efeitos notáveis na expansão do
-movimento. No entanto, ainda são positivamente influenciadas por ele
-\cite{spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}. A
-maior influência positiva no movimento, indica-se, é dado por pequenas
-empresas \cite{kshetri2004economics}. 
+% Em 2012, um estudo em grande empresas - mil companias listadas na revista US
+% Fortune - derivou algumas conclusões \cite{spinellis2012organizational}:
+% \begin{itemize}
+% \item A adoção está diretamente associada à equipes de TI com
+%   trabalhos os quais demandam expertise e conhecimentos extensivos
+%   especializados, bem como busca por eficiência \cite{gallego2015open,
+%  li2013all}.
+% \item Aumento exponencial, à partir de um ponto de acumulação;
+% \item Existe um efeito-rede responsável pela adoção nas grandes.
+% empresas;  
+% \end{itemize}
 
-Observa-se no entando, de 2012 ao presente, uma intensificação de
-adoção e ubiquidade da adoção dessas tecnologias abertas \cite{schmidt2016agile}. São
-consideradas, atualmente, o berço inovatório da indústria de softwares
-\cite{schrape2019open,schmidt2016agile}.
+Therefore, adoption in small, medium and big companies process vary,
+and there are no salient effects caused by companies on the expansion
+of open source projects. Nonetheless, these companies still benefit
+from the later \cite{spinellis2012organizational,hauge2008adoption,
+  fitzgerald2006transformation}. Still, the most relevant positive-effect on
+the OSS and community is due to small enterprises \cite{kshetri2004economics}.  
+% Assim, a adoção em empresas de pequeno, médio e grande porte variam
+% grandemente, e não possuem efeitos notáveis na expansão do
+% movimento. No entanto, ainda são positivamente influenciadas por ele
+% \cite{spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}. A
+% maior influência positiva no movimento, indica-se, é dado por pequenas
+% empresas \cite{kshetri2004economics}. 
 
-Pesquisas mais recentes determinam que, independente do tamanho da
-empresa, a adoção da empresa depende diretamente do treinamento dos
-agentes de TI e sua inclinação por autonomia
-\cite{racero2020predicting}. Finalmente, a adoção e crença na
-efetividade desses softwares depende de fatores principalmente
-intrínsecos e independem de treinamento, por mais que os treinamentos
-em OSS potencializa a adoção de usuários inclinados ao uso
-\cite{racero2021can}.
+Regarding the expansion of the FOSS development paradigm and
+ecosystem, undoubtedly there is an grow and ubiquity of adoption
+\cite{schimidt2016agile}. Moreover, FOSS has been considered in
+economical papers as the innovatory cradle of software industry \cite{schrape2019open,schmidt2016agile}.
+
+% Observa-se no entando, de 2012 ao presente, uma intensificação de
+% adoção e ubiquidade da adoção dessas tecnologias abertas \cite{schmidt2016agile}. São
+% consideradas, atualmente, o berço inovatório da indústria de softwares
+% \cite{schrape2019open,schmidt2016agile}.
+
+More recent studies, dating to 2021 and 2020, determine that,
+independent of a company size, adoption depends directly on training
+of IT and autonomous inclination towards these tools
+\cite{racero2020predicting}. Finally, individual adoption and belief
+on the effectiveness of these software depend primarily on intrinsic
+factors, and is independent of previous training. Even though,
+training on OSS notoriously escalates those users inclined for it \cite{racero2021can}.       
+% Pesquisas mais recentes determinam que, independente do tamanho da
+% empresa, a adoção da empresa depende diretamente do treinamento dos
+% agentes de TI e sua inclinação por autonomia
+% \cite{racero2020predicting}. Finalmente, a adoção e crença na
+% efetividade desses softwares depende de fatores principalmente
+% intrínsecos e independem de treinamento, por mais que os treinamentos
+% em OSS potencializa a adoção de usuários inclinados ao uso
+% \cite{racero2021can}.
+
+\section{Industry Application Demonstration}
+% \section{Demonstração de Aplicações na Indústria}
+\subsection{Freqtrade}
+The \emph{Freqtrade} software contains the essential pieces for a
+working-application of automated trading of crypto-currencies. By
+means of APIs, it's possible to extend the application so to
+communicate with the Telegram app. The program has been written in
+Python and the code base is open, which rely on one hundred and
+forty seven contributors. It's existence dates back to may 2017 \cite{fang2020cryptocurrency}.
+% contém as peças essenciais para se rodar
+% um aplicação de trocas-automatizadas entre crypto-moedas. Por meio de
+% APIs, pode-se estender a aplicação para comunicar-se com o
+% telegram. O programa foi escrito em Python e seu código é aberto à
+% estensão, possuindo centro e quarenta e sete contruibuidores, com existência datando de Maio de 2017 \cite{fang2020cryptocurrency}.
+
+The functioning of automated trading goes through a two-way
+communication between the local computer and a platform-server of
+trading - which would be Angles to a broker.
+% O funcionamento das trocas-automatizadas se por meio de uma
+% comunicação de mão dupla entre o computador local e um
+% servidor-plataforma de trocas - a qual seria análoga a uma
+% plataforma-corretora.
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:diagrama-freqtrade} a simplified schema of
+      client-server communication}
+  % \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
+  %   comunicação cliente-servidor}
+  \includegraphics[width=0.6\linewidth]{Imagens/server-client-fq_4.png}
+  \legend{Resource: The author.}
+\end{figure}
+
+A great part of the work on writing an automated robot, for any
+application end, boils down to programming communication protocols
+with server. Because, the robot should be capable of telling the
+server which operations should happen, both as means of a response to
+the client - e.g., a ``store data on local machine'' request -, as
+well as internal operations that should take place on the server -
+e.g., execute buy and sell orders on crypto-current exchanges.  
+% Grande parte do trabalho de se escrever um robô autômato, para
+% qualquer fim, compraz em programar protocólogos de comunicação com
+% servidores. Pois, o robô deverá ser capaz de dizer o servidor quais
+% operações devem ocorrer, tanto gerando respostas ao cliente - dados a
+% serem armazenados no computador local -, quanto operações internas ao
+% servidor - como, executar uma compra e venda de criptomoeda.
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:diagrama-freqtrade2} Schematic representation
+      of client-server communication.}
+  % \caption{\label{fig:diagrama-freqtrade2} Diagrama esquemático -
+  %   comunicação cliente-servidor}
+  \includegraphics[width=1\linewidth]{ditaa_4.png}
+  \legend{Resource: the author.}
+\end{figure}
+
+Thus, a schematic representation of this complexity could be seen in \autoref{fig:diagrama-freqtrade2}.
+% Assim, um diagrama completo o qual captura essa complexidade poderia
+% esquematicamente ser visto na \autoref{fig:diagrama-freqtrade2}.
+
+By utilizing OSS, all this complexity
+(\autoref{fig:diagrama-freqtrade2}) becomes close to the first schema
+(\autoref{fig:diagrama-freqtrade}). Because, all the structural
+abstraction has already been dealt of, by this application. To make
+use of this advantage, one just need to read and comprehend the
+documentation and extend the application to it's use.
+% Ao se utilizar o software aberto, toda essa complexidade da
+% \autoref{fig:diagrama-freqtrade2} se torna mais próxima à
+% \autoref{fig:diagrama-freqtrade}, pois toda a abstração-estrutural já
+% se encontra escrita. Basta, para quem decidir utilizar o programa ler,
+% entender e modificar o conteúdo disponível na documentação do projeto.
 
 
+% <<No que consiste o software; os métodos utilizados para seu funcionamento>>
+
+\subsection{OR-Tools}
+\label{sec:ortools}
+
+The OR-Tools project translates into a series of code libraries
+developed in a open sourced manner, initially developed by
+Google. Possible ports exist to C++, Python, Java, C\# and .Net.  
+% A ferramenta OR-Tools traduz-se em bibliotecas largamente desenvolvida
+% pela comunidade aberta, e a empresa Google \cite{}; utilizável em C++,
+% Python, Java, (Clojure), C\#, .Net.
+
+The use of this tool can help solve the common problem of
+Scheduling. Structurally, this class of algorithms relate to solving
+puzzles as Sudoku - for which there are dynamical constraints upon
+interaction \cite{simonis2005sudoku}. 
+% OR-Tools possui a utilidade de resolver problemas como agendamento de
+% horários, o qual, estruturalmente, assemelha-se aos algorítimos de
+% solução de problemas como Sudoku \cite{}.
+
+In general, these problem fall under a mathematical and computational
+field called Constrained Optimization \cite{bertsekas2014constrained}. 
+% De forma geral, esses problemas caem dentro de um ramo da matemática e
+% computação chamado Problemas de Optimazação Constrita
+% (\textit{Constraint Optimization})
+
+Not rarely, the typical problem in Constrained Optimization can fall
+under a NP-hard problem (a problem for which the Combinatorics of the
+system have a exponential ratio, not describable by a polynomial). A
+classical example is the ``job shop problem'', for which a seemly
+simple and practically ubiquitous task, actually is a NP-hard problem \cite{zhang2019review}.   
+
+Just as in non-deterministic differential equations, or in
+differential equations which do not have an analytical solution, it's
+common to use numerical solutions. When there one find a NP-hard
+problem, analogously, it's used genetic-algorithms and other
+reinforced-learning algorithms \cite{zhang2019review}.  
+
+P vs NP problem is one of the open problems in mathematics which has
+deep implications to computing. Furthermore, it's listed among the ten
+Millennium Prize Problems, of which only one has been solved \cite{cook2006p}.
+
+The Millenium Prize Problems:
+
+\begin{itemize}
+  \item Birch and Swinnerton-Dyer conjecture
+  \item Hodge conjecture
+  \item Navier–Stokes existence and smoothness
+  \item P versus NP problem
+  \item Poincaré conjecture (solved)
+  \item Riemann hypothesis
+  \item Yang–Mills existence and mass gap
+\end{itemize}
+
+\section{Demonstration in Academic Applications}
+
+% \clearpage
+\subsection{DifferentialEquations.jl}
+
+The numerical library, DifferentialEquations, has one of the best
+performances among numerical software
+\cite{rackauckas2017differentialequations}. The performance is
+comparable to implementations in FORTRAN and C. Also, this library has
+many ports\footnote{Capability to interoperate besides the language it
+was written in.}, some of the languages in which you can use it are in Python, R and Julia itself.
+% A biblioteca numérica DifferentialEquations possui uma das melhores performances de softwares numéricos que existem \cite{rackauckas2017differentialequations}. Sua performace é comparativa à implementações em FORTRAN e C. Existem \textit{ports} da biblioteca para Python e R, porém, desenvolveu-se em Julia.
+
+Among the many different category of problems this library can deal
+with are \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit},
+% Dentre a categoria de problemas possíveis de se resolver, utilizando-se ferramentas próprias do pacote, lista-se  as seguintes categorias de equações diferenciais \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit},
+
+\begin{itemize}
+\item Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
+\item Ordinary differential equations (ODEs)
+\item Split and Partitioned ODEs (Symplectic integrators, IMEX Methods)
+\item Stochastic ordinary differential equations (SODEs or SDEs)
+\item Stochastic differential-algebraic equations (SDAEs)
+\item Random differential equations (RODEs or RDEs)
+\item Differential algebraic equations (DAEs)
+\item Delay differential equations (DDEs)
+\item Neutral, retarded, and algebraic delay differential equations (NDDEs, RDDEs, and DDAEs)
+\item Stochastic delay differential equations (SDDEs)
+\item Experimental support for stochastic neutral, retarded, and algebraic delay differential equations (SNDDEs, SRDDEs, and SDDAEs)
+\item Mixed discrete and continuous equations (Hybrid Equations, Jump Diffusions)
+\item (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
+\end{itemize}
+
+
+% % Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
+% % Ordinary differential equations (ODEs)
+% % Split and Partitioned ODEs (Symplectic integrators, IMEX Methods)
+% % Stochastic ordinary differential equations (SODEs or SDEs)
+% % Stochastic differential-algebraic equations (SDAEs)
+% % Random differential equations (RODEs or RDEs)
+% % Differential algebraic equations (DAEs)
+% % Delay differential equations (DDEs)
+% % Neutral, retarded, and algebraic delay differential equations (NDDEs, RDDEs, and DDAEs)
+% % Stochastic delay differential equations (SDDEs)
+% % Experimental support for stochastic neutral, retarded, and algebraic delay differential equations (SNDDEs, SRDDEs, and SDDAEs)
+% % Mixed discrete and continuous equations (Hybrid Equations, Jump Diffusions)
+% % (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
+
+\subsubsection{Julia portability}
+
+The steps to use the library in Julia are,
+% Para se utilizar do pacote, basta utilizar os seguintes comandos
+
+\begin{verbatim}
+# Using the package Pkg, so to manage packages. 
+using Pkg
+# Add and/or download the DifferentialEquations.jl package in the project 
+Pkg.add("DifferentialEquations")
+# Access all the functions defined in the package 
+using DifferentialEquations
+\end{verbatim}
+
+\subsubsection{Python portability}
+
+In a terminal using the package manager \texit{pip},
+% Num terminal, utilizando-se do gerenciador de pacotes pip,
+\begin{verbatim}
+pip install diffeqpy
+\end{verbatim}
+
+% Num terminal, rodando-se o interpretador de Python,
+In a terminal, running the Python interpreter,
+\begin{verbatim}
+>>> import diffeqpy
+>>> diffeqpy.install()
+\end{verbatim}
+
+% Por fim, opcionalmente, utilize numba para aumentar a performance do código,
+An optional step is to add numba, so to optimize the code performance,
+\begin{verbatim}
+pip install numba
+\end{verbatim}
+
+% Ademais, apenas repita o comando, dentro de um aquivo python,
+Finally, import the package in a file and use in a program.
+\begin{verbatim}
+import diffeqpy
+\end{verbatim}
+
+\subsubsection{R portability}
+
+% Para instalação,
+To install, use
+\begin{verbatim}
+install.packages("diffeqr")
+\end{verbatim}
+
+% Na primeira chamada de,
+In a first call,
+\begin{verbatim}
+diffeqr::diffeq_setup()
+\end{verbatim}
+
+This way, the package will be downloaded, directly from
+DifferentialEquations.jl. An alternative is to use
+\href{https://cran.r-project.org/web/packages/diffeqr/index.html}{the
+  CRAN maintained subset}.
+% Será feito o download do DifferentialEquations.jl. Um subconjunto específico do pacote é ativamente mantido \href{https://cran.r-project.org/web/packages/diffeqr/index.html}{no CRAN}.
+
+\subsection{\LaTeX}
+
+The \LaTeX{} has fundamentally differentiate the many tasks in the
+typography of a document. The language permits a separation of
+formatting-tasks, and the content-writing. This way, the user can
+focus exclusively on content, in a fundamental step in document
+writing. And in another moment, focus solemnly on format and
+aesthetics.
+% O \LaTeX{} possui separação entra as tarefas de produção de um
+% documento. A linguagem permite-nos separar as tarefas de formatação do texto, da escrita de seu conteúdo. Desta forma, o usuário concentra-se
+% exclusivamente em seu conteúdo, em um estágio da escrita do documento. E, na formatação de sua aparência, em outro momento.
+
+Therefore, there a quality gain in production. Just as one is rewarded
+with the total control of the document, because every graphical
+disposition and behavior is defined by open code. Furthermore, one can
+extend already written templates and packages which do usual
+formatting. The typographical system in \LaTeX{} has been considered,
+also, one of the most sophisticated software of it's category, mostly
+because of this bottom-up paradigm one naturally uses \cite{haralambous2007}.
+% Assim, ganha-se em qualidade de produção. Bem como, ganha total autonomia sob o documento, pois a programação da disposição gráfica dos elementos textuais pode ser programada - isto é, modificada indefinidamente, a partir dos comportamentos padrões dos pacotes utilizados. O sistema tipográfico de \LaTeX{} chegou a ser considerado o sistema digital de
+% tipografia mais sofisticado que existe, devido a essa paradigma de
+% programação funcional, \textit{bottom-up} \cite{haralambous2007}.
+
+The \LaTeX{}, technically, is the union between the typographical
+language \TeX{}, invented by Donald Knuth, for high quality documents
+\cite{knuth1986}. And, the powerful macro ecosystem, which extend the \TeX{}
+programming, for which we call \LaTeX{}.
+
+Initially \LaTeX was developed by Leslie Lamport, with his personal
+use-case formatting programs \cite{lamport1994}. Thus, \LaTeX{} is not
+just a language, but a conjunction of macros and standard
+environments, which is actively maintained, modified, and extended by
+the open community.
+% O \LaTeX, tecnicamente, é a junção do sistema de tipografia \TeX,
+% inventado por Donald Knuth, para tipografia de alto nível
+% \cite{knuth1986}; com os poderosos macros que facilitam a extensão do programa \TeX, a qual damos o nome de
+% \LaTeX. O \LaTeX{} foi inicialmente desenvolvido por Leslie Lamport, com
+% seus pacotes fundamentais de formatação \cite{lamport1994}. O \LaTeX,
+% por conseguinte, não é somente uma linguagem de tipografia de alto
+% nível, mas também um conjunto de macros para facilitar a tipografia em
+% si. Qualifica-se, assim, como um sistema de preparação de documentos;
+% uma linguagem markup de domínio específico.
+
+\subsubsection{The canonical ABNT class for scientific production}
+
+What is called as canonical are a set of documents following the more
+general and robust ABNT (Associação Brasileira de Normas Técnicas)
+norms. These canonical forms exist for scientific articles, technical
+reports, academic works as thesis, dissertations and research
+projects, books and presentations \cite{abntex2012}. 
+% Documentos sob os requisitos das normas ABNT (Associação Brasileira de Normas
+% Técnicas) para elaboração de documentos técnicos e científicos
+% brasileiros - como artigos científicos, relatórios técnicos, trabalhos
+% acadêmicos, como teses, dissertações, projetos de pesquisa e outros
+% documentos do gênero \cite{abntex2012} - é ao que se chama classe
+% canônica ABNT.
+
+\begin{citacao}
+  Os documentos indicados tratam-se de “Modelos Canônicos”, ou seja,
+  de modelos que não são específicos a nenhuma universidade ou instituição, mas
+  que implementam exclusivamente os requisitos das normas da ABNT, Associação
+  Brasileira de Normas Técnicas. \cite[Cap. 1]{araujoclasse}
+\end{citacao}
+
+% % \clearpage
+
+% As normas as quais prescrevem o modelo canônico são:
+The norms prescribed by the canonical model are:
+
+\begin{itemize}
+\item \textbf{ABNT NBR 6022:2018:} Informação e documentação -
+  Artigo em publicação periódica científica - Apresentação.
+\item \textbf{ABNT NBR 6023:2002:} Informação e documentação -
+  Referência - Elaboração.
+\item \textbf{ABNT NBR 6024:2012:} Informação e documentação -
+  Numeração progressiva das secções de um documento - Apresentação.
+\item \textbf{ABNT NBR 6027:2012:} Informação e documentação -
+  Sumário - Apresentação.
+\item \textbf{ABNT NBR 6028:2003:} Informação e documentação -
+  Resumo - Apresentação.
+\item \textbf{ABNT NBR 6029:2006:} Informação e documentação -
+  Livros e folhetos - Apresentação.
+\item \textbf{ABNT NBR 6034:2004:} Informação e documentação -
+  Índice - Apresentação.
+\item \textbf{ABNT NBR 10520:2002:} Informação e documentação -
+  Citações.
+\item \textbf{ABNT NBR 10719:2015:} Informação e documentação -
+  Relatórios técnicos e/ou científico - Apresentação.
+\item \textbf{ABNT NBR 14724:2011:} Informação e documentação -
+  Trabalhos acadêmicos - Apresentação.
+\item \textbf{ABNT NBR 15287:2011:} Informação e documentação -
+  Projeto de pesquisa - Apresentação.
+\end{itemize}
+
+\section{Canonical works on Computer Science}
+\label{sec:scim}
+% \section{Trabalhos Canônicos na Área de Computação}
+% \subsection{Structure and Interpretation of Classical Mechanics (SCIM)}
+% \label{sec:scim}
+The scientific library of classical mechanics, written in Scheme (a
+Lisp dialect), has been used to teach master's degree MIT
+students. Accompanied to the library there is the book, which servers
+as didactic material for the course \cite{sussman2015structure}.
+% A bilioteca científica de simulações de mecânica clássica, em Scheme
+% (um dialeto de Lisp), foi escrito com intento de ser utilizado em
+% cursos de mestrado no MIT. Acompanhado à biblioteca, existe o livro,
+% o qual serve de material didáctico ao curso
+% \cite{sussman2015structure}.
+
+The library and the book are open sourced.
+
+\subsection{Structure and interpretation of computer programs (SICP)}
+The scheme course (SICP), which is teach as the foundations of
+computer science course on MIT, has accompanied as textbook one of the
+most world wide recognized books in computer history
+\cite{abelson1996structure}.
+
+This course has been the pioneer on givin emphasis to the
+epistemological activity, when programming. The use of Scheme, which
+has a uniform notation (only one form), was revolutionary. This has
+shown to work well, instead of presenting the trending language
+in Industry, in a given moment - which is the standard approach.  
+% O curso de Scheme (SICP), o qual é ensinado como materia básica de computação no MIT, possui como acompanhantes um dos mais influentes livros já escritos na história da computação \cite{abelson1996structure}. O curso é pioneiro em aprofundar-se epistemologia da programação. Onde, o uso de Scheme, o qual possui notação uniforme para todas as funcionalidades da língua foi revolucionário. Conquanto, em contraste aos outros cursos de fundamentos da computação focavam em ensinar a linguagem mais amplamente utilizada no momento.
+
+The SCIM (\autoref{sec:scim}) course as a predecessor to SICP. The course and
+the text book still are in use in MIT and a number of other
+universities around the world. A non-exaustive list can be found at
+\url{https://mitpress.mit.edu/sites/default/files/sicp/adopt-list.html}. At
+least twenty universities adopts, distributed in more than eight countries.
+% O curso SCIM (\autoref{sec:scim}) foi um precursor de SICP. O curso
+% continua ativo e o livro continua a ser utilizado amplamente no MIT,
+% e em inúmeras outras faculdades. Uma lista não exaustiva pode ser
+% encontrada em
+% \url{https://mitpress.mit.edu/sites/default/files/sicp/adopt-list.html}, em que pelo menos, vinte universidades o adotam, em mais de oito países.
+
+These materials, textbook and the MIT classes, are both free and open sourced.
+
+\subsection{SICMUtils - (SCIM) Portability in Clojure}
+These are dedicated libraries for rewriting the SCIM programs in
+Clojure, which ports many functionalities mentioned in the scientific
+library SCIM\note{The library and the course's programs are not the
+  same thing} \cite{sicmutils2016github}. This library, therefore, has
+been ported to Clojure, which is the most industry-used Lisp
+modern-dialect. For example, Nubank bought Cognitect which was the
+first and most successful application written in Clojure \cite{clojure2020}. 
+% Existe uma biblioteca reescrita em clojure, a qual porta as funcionalidades descritas na biblioteca científica SCIM \cite{sicmutils2016github}. Essa biblioteca é escrita numa das mais modernas linguages de computação com adoção amplamente da Industria, Clojure. Recentemente, a maior empresa utilizado de Clojure até então, a Cognitect, a qual inventou a língua foi comparada pelo Nubank \cite{clojure2020}.
+
+The language has a double quality in it's program. Due to the language
+supporting multiple definitions of a function under a name
+(polymorphism), it's possible to very easily switch and integrate
+numerical and symbolical computations.
+
+Changing inputs one would have one or the other output, by inference
+of the Clojure compiler. This is particularly interesting when
+solving, for example, Lagrange equations of motion. One can have both
+the symbolical results outputted in \TeX{}, and by a change in inputs,
+in the same procedure, have numerical data which can be used to
+simulate the behavior of physical systems. 
+% A língua é tão poderosa que as implementações não são apenas numéricas, nem são somente simbólicas. É possível utilizar-se da mesma função (\textit{procedure}) para se fazerem cálculos numéricos ou simbólicos, tendo apenas de se mudar os argumentos de entrada (\textit{inputs}).
+
+% \clearpage
+% \chapter{Materiais e Métodos}
+% O planejamento da monografia seguiu as seguintes etapas:
+
+% \begin{enumerate}
+% \item Contato e estratégias com o orientador;
+% \item Determinação do tópico principal; 
+% \item Delineação específica dos subtópicos;
+% \item Organização da agenda à partir das datas finais objetivadas;
+% \item Início à escrita do TCC;
+% \item Junção de notas exploratórias sobre o tópico;
+% \item Pesquisa bibliografia;
+% \item Escrita de todos os tópicos da monografia;
+% \item Revisão contínua à cada etapa da monografia;
+% \item Organização de apresentação;
+% \end{enumerate}
+
+% \section{Convite ao orientador}
+% Procurou-se um docente tanto familiar ao autor, quanto versado e
+% interessado no tópico de pesquisa.
+
+% \section{Delineação do tema}
+% Dado que o tema softwares livres na indústria e academia é um tópico
+% indefinidamente abrangente, houve uma necessidade imprescindível de
+% delimitar graduamente o tópico.
+
+% Nas revisões contínuas, determinava-se o quão profundo tinha se
+% abordado os tópicos, e se era necessário dar procedência, ou seguir o
+% andamento de outras parte da agenda.
+
+% \section{Organização cronológica}
+% Decidiu-se por seguir o método de diagrama de Gantt, amplamente
+% utilizado em organização de projetos. As partições temporais foram
+% ponderadas pelas datas limites objetivadas.
+
+% \section{As fases da escrita da Monografia}
+% Como a monografia se caracteriza como uma Análise Exploratória, o
+% enfoque foi na literatura concernente ao Tema.
+
+% Na subtópico acadêmico, procurou-se dar enfoque ambos softwares auxiliares
+% de pesquisas, quanto úteis à sala de aula. Bem como, pretendia-se
+% explicar conceitos-chave na compreensão da dinâmica histórica e atual
+% do ecossistema em que se desenvolve e aplicam softwares.
+
+% Ademais, nas aplicações tecnológicas, o autor documentou softwares que
+% já utilizou em situações reais.
+
+% \section{Junção de notas}
+% Ao se utilizar os softwares os autores havia produzido anotações sobre
+% o desenvolvimento do software. Uma auto-documentação, enquanto se
+% desenvolvia, ou se estudava os mecanismos de uma aplicação. Assim,
+% utilizou-se dessas notas para construção da monografia.
+
+% \section{Pesquisa bibliográfica}
+% A revisão da bibliografia objetiva facilitar o entendimento da
+% indústria dos softwares, a qual é difere em seu aspecto
+% majoritariamente livre e aberto. Além do mais, procurou-se fazer um
+% recorte de história, usos e desenvolvimento em estado da arte de
+% diversos softwares icônicos.
+
+% A maior quantidade de informações históricas encontra-se armazenada
+% digitalmente, em sites de instituições internacionais, como o
+% GNU. Conquanto, nas aplicações procurou-se o embasamento em artigos
+% científicos.
+
+% Utilizou-se do Google Scholar e a plataforma da ACM (Association for
+% Computing Machinery), da qual o autor é
+% membro e na qual existe material especializado em computação e softwares.
+
+% \section{Revisão contínua}
+% Parte fundamental da organização da monografia foi a troca de
+% informações, auxílio, e integração constante das considerações do
+% orientador Dr. Wei-Liang.
+% \section{Organização da apresentação}
+% Na apresentação, procura-se utilizar ferramentas interativas e
+% demonstração de conceitos por meio de programação em tempo real
+% aplicações. Escolheu-se utilizar da ferramento Org-mode, integral ao
+% Emacs.
+
+% \chapter{Resultado e Discussões}
+
+% \section{Convite ao orientador}
+% O autor já havia interagido com o Dr. Wei-Liang, o qual no passado
+% havia pedido, a titulo de pesquisarem juntos, que se instalasse o
+% sistema operacional do Linux. Ademais, uma das aplicações era na
+% resolução e simulação de sistemas resolvidos por Lagrangeanas - tópico
+% lecionado pelo orientador, na disciplina de Mecânica Clássica.
+
+% Assim, fortunamente o orientador se sentiu inclinado a participar
+% desse trabalho. E, concorda que o ensino sobre a iniciativa Open
+% Source, bem como os softwares em si, são detrimentais na vida acadêmica.
+
+% \section{Delineação do tema}
+
+% A iniciativa GNU e o open source é indefinidamente abrangente. Existem
+% softwares abertos escritos para virtualmente qualquer outra área do
+% exercício cognitivo do ser humano.
+
+% Necessitou contentar-se em parcialmente mostrar aplicações mais em
+% mão, as quais seriam mais relevantes ao escopo da monografia. Bem
+% como, optou-se por aprofundar-se em tópicos já utilizados na vida do
+% autor para se resolver problemas na academia e na indústria.
+
+% Assim, a delimitação principal se deu entorno de ferramentas abertas
+% das quais, na indústria foram apresentados OR-Tools e
+% Freqtrade.
+
+% \subsection{Da Indústria}
+% As línguas utilizadas para o desenvolvimento desses softwares foram
+% Python e C++. Porém, no caso de OR-Tools existe portabilidade para
+% C++ (nativo), Python, Java, .NET. Todos os projetos e línguas possuem licença aberta.
+
+% OR-Tools destina-se a resolver um problema virtualmente
+% conspícuo a qualquer negócio ou estrutura social prestadora de
+% serviço. Pois, o problema de agendamento de horários, com condições de
+% restrições impostas, é extremamente comum. Por exemplo, para organizar
+% turnos de funcionários, em uma empresa; turnos de enfermeiros em um
+% hospital - exemplo dado na própria documentação do software etc.
+
+% Freq-trade destina-se a automação de investimentos em
+% crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
+% aberta, sem incentivo algum externo - até, pois, não existe um
+% responsável que chefia o projeto. E, num curto período de
+% desenvolvimento, cinco anos, desde 2017, a aplicação conta com
+% inúmeras otimizações computacionais, e APIs com interfaces como
+% Telegram. Não existe paralelo de software fechado o qual é
+% comercializado, com mesmo escopo.
+
+% \subsection{Da academia}
+% \label{subsec:res-academia}
+
+% Optou-se a estudar aplicações escritas em Python, Julia,
+% Clojure(script). Pois, o autor possui histórico de
+% utilização dessas ferramentas. Com efeito, a pesquisa constituiu, em
+% grande parte, na junção de todos os esparços projetos em que o autor
+% já havia colaborado ou desenvolvido. E, no aprofundamento da
+% compreensão de todas esses projetos, para que fosse possível fazer uma
+% apresentação coesa do ferramental utilizado.
+
+% Os programas em Julia possuiam cunho numérico. Pois, sua computação
+% optimizada compara-se a performance de FORTRAN e C++. Assim, o
+% principal pacote estudado foi DifferentialEquations.jl, a qual pode
+% ser utilizada para resolver uma gama de equações diferenciais,
+% incluindo a categoria Estocástica.
+
+% O programa em Python é de processamento de imagens. Escolheu-se essa
+% aplicação, pois demonstra o quão abrangente é a portibilidade de
+% programas escritos em outras línguas ao Python - principalmente,
+% devido a grande comunidade de cientistas e programadores que o
+% utilizam.
+
+% \subsection{A intersecção}
+
+% Com Clojure(Script), Bash e \LaTeX{}, foi possível criar tanto
+% simulações que estendem a compreensão de fenômenos físicos do campo
+% abstrato ao visual. Também, empregou-se de Closh e Babashka, duas
+% bibliotecas de Clojure dedicadas a interoperabilidade com Bash, a qual
+% se processava milhares de arquivos, por meio de pipelines de
+% arquitetura complexas. Assim, facilitando a escrita de uma quantidade
+% enorme de relatórios técnicos na área de segurança do trabalho. 
+
+% Quanto a Clojure(Script), foram pesquisadas simulações gráficas, as
+% quais inerentemente são simples de se programar em Clojure. Pois, seu
+% ecossistema pode interoperar entre JVM (Java Virtual Machine) e
+% JavaScript. Assim, dado que ambos Java e JavaScript foram as línguas
+% mais populares por décadas, existem uma enorme quantidade de ambientes
+% e bibliotecas a nossa disposição. Bem como, Clojure é uma Lisp - e,
+% caracteristicamente, essa família é utilizada para prototipagem, vide
+% AutoCAD escrito em AutoLisp.
+
+% Dado que existem bibliotecas dedicadas a Mecânica Clássica em nível de
+% mestrado, bem como exite capacidades de se renderizar conceitos
+% físicos abstratos. Então, decorreu-se a computação de programas que
+% demonstravam conceitos de Física, Cálculo, e Computação Generativa.
+
+
+% \section{Organização cronológica}
+
+% A organização do projeto se deu utilizando os diagramas de Gantt, e as
+% agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
+% toda a comunicação sobre o projeto foi materializado por meio de
+% cronogramas e agendas.
+
+% \section{As fases da escrita da Monografia}
+% Iniciou-se a escrita da monografia pela pesquisa bibliográfica, dado
+% que a pesquisa se categoriza, epistemologicamente, como uma Análise
+% Exploratória. O \textit{template} utilizado para escrita do projeto
+% foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
+
+% \section{Junção de notas}
+% O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
+% para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
+% de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
+% essa ferramenta.
+
+% A documentação implícita ao desenvolvimento é uma
+% característica fundamental e pensada do Org-mode. Pois, segue o
+% paradigma de \textit{Literate Programming}. Assim, há uma mistura de
+% notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
+% código seja automaticamente documentável.
+
+% Por fim, é possível exportar qualquer anotação de extensão .org para
+% .tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
+% uma tarefa natural.
+
+% \subsection{Aplicações em Clojure}
+
+% \subsection{Aplicações em Julia}
+% \subsection{Aplicações em Python}
+
+% \section{Pesquisa bibliográfica}
+% A pesquisa bibliográfica foi em grande parte encontrada em sites sem
+% autores. Pois, a documentação foi criada ou pela comunidade, ou por
+% instituições, não unicamente publicada em formato de livro ou artigo.
+
+% Da parte acadêmica, como o pacote de resolução de equações
+% diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
+% língua foi criada para resolver problemas computacionais tocantes
+% principalmente a comunidade científica do MIT.
+
+% Por fim, algumas ferramentas apenas existem documentadas e contidas
+% inteiramente em repositórios, como o Github. Foram os casos do
+% OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
+
+% \section{Revisão contínua}
+
+% Dentro do cronograma concebido para desenvolvimento da monografia,
+% pôs-se metas e etapas de escrita do documento. E, estipulou-se os
+% conteúdos necessários para cada nova versão do documento, aliado a uma
+% data limite. Assim, o retorno do orientador ao orientado pode se dar
+% mais frequentemente.
+
+% \section{Organização da apresentação}
+
+% Como se está utilizando de diversas ferramentas e extensões dentro do
+% Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
+% funcionalidades dedicada a apresentações. 
+
+% \chapter{Conclusão}
+% Dentro das iniciativas Open Sourced, existem virtualmente aplicações
+% para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
+% computação gráfica, processamento de imagens, expressões artísticas,
+% ou ferramentas de organização, há um software escrito para esse fim.
+
+% É observável a falta de competição quanto a quantidade e qualidade de
+% softwares fechados e abertos. Ademais, a capacidade de
+% extensão dos softwares livres, por meio das quatro fundamentais
+% liberdades de suas licenças, permitem que exista uma variedade imensa
+% de uso de uma mesma ferramenta. Por fim, o enriquecimento dessa
+% participação colaborativa solidifica e generaliza as ferramentas
+% abertas - num grau e rapidez inimagináveis, comparados ao processo de
+% desenvolvimento por uma equipe fechada.
+
+% Demonstrou-se diversos usos desses software, sem paralelos, na
+% Indústria e na Academia. Ambos possuem algorítimos na fronteira da
+% ciência, a qual o uso apenas é limitado pela imaginação e capacidade
+% formativa do usuário-desenvolvedor. Assim, é imprescindível que no
+% curso de engenharia se tenha uma ampla formação com base nos softwares
+% livres, sob os quais a computação moderna subiste.
+
+% Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
+% os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
+% roupagem, e por fim os sistemas sociais onde se desenvolve os
+% softwares, como a plataforma de versionamento Git/Github. Ademais,
+% demonstrou-se, com efetividade, que é possível construir e rodas todas
+% essas aplicações num sistema totalmente aberto.
+
+\chapter{Materials and Methods}
+% \chapter{Materiais e Métodos}
+% O planejamento da monografia seguiu as seguintes etapas:
+The planning of the monograph has followed the steps:
+
+\begin{enumerate}
+  % \item Contato e estratégias com o orientador;
+  \item Contact and develop strategies with the supervisor;
+    % \item Determinação do tópico principal; 
+  \item Deliniating the main theme;
+    % \item Delineação específica dos subtópicos;
+  \item Given the date constrains, schedule an fitting agenda;
+    % \item Organização da agenda à partir das datas finais objetivadas;
+  \item Outline the structure of the TCC;
+    % \item Início à escrita do TCC;
+  \item Gather of exploratory notes about the topic;
+    % \item Junção de notas exploratórias sobre o tópico;
+  \item Biliographical reseach;
+    % \item Pesquisa bibliografia;
+  \item Writting each dedicated topic;
+    % \item Escrita de todos os tópicos da monografia;
+  \item Reuse past knowledge and use personal practical examples; 
+  \item Continuous revision, for each step of the monograph;
+    % \item Revisão contínua à cada etapa da monografia;
+  \item Organize the presentation;
+    % \item Organização de apresentação;
+\end{enumerate}
+
+\section{Initial Strategy}
+The first steps taken were to determine what would be the best match of student-advisor, based on mutual interest on the topic. Then, began the first general schema of the work, and the schedules.
+% Procurou-se um docente tanto familiar ao autor, quanto versado e
+% interessado no tópico de pesquisa.
+
+% \section{Delineação do tema}
+\section{Theme delineation}
+Given that the theme OSS on Industry and Academia has indefinetly many
+branches to discuss, we urged to narrow down the boudaries of the
+topic to those applications of most famility to the student.
+% Dado que o tema softwares livres na indústria e academia é um tópico
+% indefinidamente abrangente, houve uma necessidade imprescindível de
+% delimitar graduamente o tópico.
+
+In the continuous reviews, we further narrowed the topic by wheigthing
+if deepening the analyses wouldn't deviate from the main topics.
+% Nas revisões contínuas, determinava-se o quão profundo tinha se
+% abordado os tópicos, e se era necessário dar procedência, ou seguir o
+% andamento de outras parte da agenda.
+
+\section{Cronological Schedule}
+% \section{Organização cronológica}
+
+We followed the Gantt diagram method to orient ourselves, which is a
+visual aid to help on following deadlines. At the same time, the
+diagram helps to situate oneself in relation to what should the team
+be doing.
+% Decidiu-se por seguir o método de diagrama de Gantt, amplamente
+% utilizado em organização de projetos. As partições temporais foram
+% ponderadas pelas datas limites objetivadas.
+
+\section{The monograph theme}
+% \section{As fases da escrita da Monografia}
+
+As this monograph mainly falls under an Exploratory Analysis, the main
+focus was the theme's literature. We show programs developed by the
+open community. 
+% Como a monografia se caracteriza como uma Análise Exploratória, o
+% enfoque foi na literatura concernente ao Tema.
+
+% <come back> , from OS, WM, to particular applications
+
+On the Academic Application's branch, the emphasis was given to
+auxiliary software for research. Also, we shown some software that may
+as well be used for teaching physical concepts. 
+% Na subtópico acadêmico, procurou-se dar enfoque ambos softwares auxiliares
+% de pesquisas, quanto úteis à sala de aula. Bem como, pretendia-se
+% explicar conceitos-chave na compreensão da dinâmica histórica e atual
+% do ecossistema em que se desenvolve e aplicam softwares.
+
+In the short experience of the student on Industry, we found examples
+of software he already made use of.
+% Ademais, nas aplicações tecnológicas, o autor documentou softwares que
+% já utilizou em situações reais.
+
+\section{Gathering various notes}
+% \section{Junção de notas}
+
+One of the open sourced software of most use to the student is
+org-mode. In \textit{.org} files, one can take notes, just as in note
+applications found in any device. A lot of material was gathered from
+those notes to compose the results.
+% Ao se utilizar os softwares os autores havia produzido anotações sobre
+% o desenvolvimento do software. Uma auto-documentação, enquanto se
+% desenvolvia, ou se estudava os mecanismos de uma aplicação. Assim,
+% utilizou-se dessas notas para construção da monografia.
+
+\section{Bibliographical Research}
+The bibliographical review intended to facilitate the comprehension of
+Software Industry. We gathered some cuts of the history of
+FOSS. Furthermore, we brought information about some open software
+which are considered state of the art, or iconic, on their field of application.
+% A revisão da bibliografia objetiva facilitar o entendimento da
+% indústria dos softwares, a qual é difere em seu aspecto
+% majoritariamente livre e aberto. Além do mais, procurou-se fazer um
+% recorte de história, usos e desenvolvimento em estado da arte de
+% diversos softwares icônicos.
+
+Most of the historical content about the FOSS movement and software in
+general can be found in websites. Particularly, GNU was the main
+source of FOSS history. In contrast, most sources on software
+development and comparative functionality was found on scientific articles.
+% A maior quantidade de informações históricas encontra-se armazenada
+% digitalmente, em sites de instituições internacionais, como o
+% GNU. Conquanto, nas aplicações procurou-se o embasamento em artigos
+% científicos.
+
+We used Google Scholar and Association for Computing Machinery's (ACM)
+platform. The student had access due to being a member to the research
+engine and papers they have. The content of ACM is mainly about
+software and theoretical computation in general. 
+% Utilizou-se do Google Scholar e a plataforma da ACM (Association for
+% Computing Machinery), da qual o autor é
+% membro e na qual existe material especializado em computação e softwares.
+
+\section{Continuous Review}
+A fundamental part of the research's organization conciseness was due
+to the frequent interaction between the student and the advisor.
+% Parte fundamental da organização da monografia foi a troca de
+% informações, auxílio, e integração constante das considerações do
+% orientador Dr. Wei-Liang.
+
+\section{Presentation Organization}
+% \section{Organização da apresentação}
+The use of visual software coupled with org-mode\footnote{There are
+  dedicated packages in Emacs to make presentations with org-mode
+  files https://github.com/howardabrams/demo-it} makes an presentation
+interactive. So, much of the work done in the monograph was reused for presentation.
+% Na apresentação, procura-se utilizar ferramentas interativas e
+% demonstração de conceitos por meio de programação em tempo real
+% aplicações. Escolheu-se utilizar da ferramento Org-mode, integral ao
+% Emacs.
+
+\chapter{}
+% \chapter{Resultado e Discussões}
+
+\section{Convite ao orientador}
+O autor já havia interagido com o Dr. Wei-Liang, o qual no passado
+havia pedido, a titulo de pesquisarem juntos, que se instalasse o
+sistema operacional do Linux. Ademais, uma das aplicações era na
+resolução e simulação de sistemas resolvidos por Lagrangeanas - tópico
+lecionado pelo orientador, na disciplina de Mecânica Clássica.
+
+Assim, fortunamente o orientador se sentiu inclinado a participar
+desse trabalho. E, concorda que o ensino sobre a iniciativa Open
+Source, bem como os softwares em si, são detrimentais na vida acadêmica.
+
+\section{Delineação do tema}
+
+A iniciativa GNU e o open source é indefinidamente abrangente. Existem
+softwares abertos escritos para virtualmente qualquer outra área do
+exercício cognitivo do ser humano.
+
+Necessitou contentar-se em parcialmente mostrar aplicações mais em
+mão, as quais seriam mais relevantes ao escopo da monografia. Bem
+como, optou-se por aprofundar-se em tópicos já utilizados na vida do
+autor para se resolver problemas na academia e na indústria.
+
+Assim, a delimitação principal se deu entorno de ferramentas abertas
+das quais, na indústria foram apresentados OR-Tools e
+Freqtrade.
+
+\subsection{Da Indústria}
+As línguas utilizadas para o desenvolvimento desses softwares foram
+Python e C++. Porém, no caso de OR-Tools existe portabilidade para
+C++ (nativo), Python, Java, .NET. Todos os projetos e línguas possuem licença aberta.
+
+OR-Tools destina-se a resolver um problema virtualmente
+conspícuo a qualquer negócio ou estrutura social prestadora de
+serviço. Pois, o problema de agendamento de horários, com condições de
+restrições impostas, é extremamente comum. Por exemplo, para organizar
+turnos de funcionários, em uma empresa; turnos de enfermeiros em um
+hospital - exemplo dado na própria documentação do software etc.
+
+Freq-trade destina-se a automação de investimentos em
+crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
+aberta, sem incentivo algum externo - até, pois, não existe um
+responsável que chefia o projeto. E, num curto período de
+desenvolvimento, cinco anos, desde 2017, a aplicação conta com
+inúmeras otimizações computacionais, e APIs com interfaces como
+Telegram. Não existe paralelo de software fechado o qual é
+comercializado, com mesmo escopo.
+
+\subsection{Da academia}
+\label{subsec:res-academia}
+
+Optou-se a estudar aplicações escritas em Python, Julia,
+Clojure(script). Pois, o autor possui histórico de
+utilização dessas ferramentas. Com efeito, a pesquisa constituiu, em
+grande parte, na junção de todos os esparços projetos em que o autor
+já havia colaborado ou desenvolvido. E, no aprofundamento da
+compreensão de todas esses projetos, para que fosse possível fazer uma
+apresentação coesa do ferramental utilizado.
+
+Os programas em Julia possuiam cunho numérico. Pois, sua computação
+optimizada compara-se a performance de FORTRAN e C++. Assim, o
+principal pacote estudado foi DifferentialEquations.jl, a qual pode
+ser utilizada para resolver uma gama de equações diferenciais,
+incluindo a categoria Estocástica.
+
+O programa em Python é de processamento de imagens. Escolheu-se essa
+aplicação, pois demonstra o quão abrangente é a portibilidade de
+programas escritos em outras línguas ao Python - principalmente,
+devido a grande comunidade de cientistas e programadores que o
+utilizam.
+
+\subsection{A intersecção}
+
+Com Clojure(Script), Bash e \LaTeX{}, foi possível criar tanto
+simulações que estendem a compreensão de fenômenos físicos do campo
+abstrato ao visual. Também, empregou-se de Closh e Babashka, duas
+bibliotecas de Clojure dedicadas a interoperabilidade com Bash, a qual
+se processava milhares de arquivos, por meio de pipelines de
+arquitetura complexas. Assim, facilitando a escrita de uma quantidade
+enorme de relatórios técnicos na área de segurança do trabalho. 
+
+Quanto a Clojure(Script), foram pesquisadas simulações gráficas, as
+quais inerentemente são simples de se programar em Clojure. Pois, seu
+ecossistema pode interoperar entre JVM (Java Virtual Machine) e
+JavaScript. Assim, dado que ambos Java e JavaScript foram as línguas
+mais populares por décadas, existem uma enorme quantidade de ambientes
+e bibliotecas a nossa disposição. Bem como, Clojure é uma Lisp - e,
+caracteristicamente, essa família é utilizada para prototipagem, vide
+AutoCAD escrito em AutoLisp.
+
+Dado que existem bibliotecas dedicadas a Mecânica Clássica em nível de
+mestrado, bem como exite capacidades de se renderizar conceitos
+físicos abstratos. Então, decorreu-se a computação de programas que
+demonstravam conceitos de Física, Cálculo, e Computação Generativa.
+
+
+\section{Organização cronológica}
+
+A organização do projeto se deu utilizando os diagramas de Gantt, e as
+agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
+toda a comunicação sobre o projeto foi materializado por meio de
+cronogramas e agendas.
+
+\section{As fases da escrita da Monografia}
+Iniciou-se a escrita da monografia pela pesquisa bibliográfica, dado
+que a pesquisa se categoriza, epistemologicamente, como uma Análise
+Exploratória. O \textit{template} utilizado para escrita do projeto
+foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
+
+\section{Junção de notas}
+O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
+para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
+de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
+essa ferramenta.
+
+A documentação implícita ao desenvolvimento é uma
+característica fundamental e pensada do Org-mode. Pois, segue o
+paradigma de \textit{Literate Programming}. Assim, há uma mistura de
+notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
+código seja automaticamente documentável.
+
+Por fim, é possível exportar qualquer anotação de extensão .org para
+.tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
+uma tarefa natural.
+
+\subsection{Aplicações em Clojure}
+
+\subsection{Aplicações em Julia}
+\subsection{Aplicações em Python}
+
+\section{Pesquisa bibliográfica}
+A pesquisa bibliográfica foi em grande parte encontrada em sites sem
+autores. Pois, a documentação foi criada ou pela comunidade, ou por
+instituições, não unicamente publicada em formato de livro ou artigo.
+
+Da parte acadêmica, como o pacote de resolução de equações
+diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
+língua foi criada para resolver problemas computacionais tocantes
+principalmente a comunidade científica do MIT.
+
+Por fim, algumas ferramentas apenas existem documentadas e contidas
+inteiramente em repositórios, como o Github. Foram os casos do
+OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
+
+\section{Revisão contínua}
+
+Dentro do cronograma concebido para desenvolvimento da monografia,
+pôs-se metas e etapas de escrita do documento. E, estipulou-se os
+conteúdos necessários para cada nova versão do documento, aliado a uma
+data limite. Assim, o retorno do orientador ao orientado pode se dar
+mais frequentemente.
+
+\section{Organização da apresentação}
+
+Como se está utilizando de diversas ferramentas e extensões dentro do
+Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
+funcionalidades dedicada a apresentações. 
+
+\chapter{Conclusão}
+Dentro das iniciativas Open Sourced, existem virtualmente aplicações
+para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
+computação gráfica, processamento de imagens, expressões artísticas,
+ou ferramentas de organização, há um software escrito para esse fim.
+
+É observável a falta de competição quanto a quantidade e qualidade de
+softwares fechados e abertos. Ademais, a capacidade de
+extensão dos softwares livres, por meio das quatro fundamentais
+liberdades de suas licenças, permitem que exista uma variedade imensa
+de uso de uma mesma ferramenta. Por fim, o enriquecimento dessa
+participação colaborativa solidifica e generaliza as ferramentas
+abertas - num grau e rapidez inimagináveis, comparados ao processo de
+desenvolvimento por uma equipe fechada.
+
+Demonstrou-se diversos usos desses software, sem paralelos, na
+Indústria e na Academia. Ambos possuem algorítimos na fronteira da
+ciência, a qual o uso apenas é limitado pela imaginação e capacidade
+formativa do usuário-desenvolvedor. Assim, é imprescindível que no
+curso de engenharia se tenha uma ampla formação com base nos softwares
+livres, sob os quais a computação moderna subiste.
+
+Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
+os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
+roupagem, e por fim os sistemas sociais onde se desenvolve os
+softwares, como a plataforma de versionamento Git/Github. Ademais,
+demonstrou-se, com efetividade, que é possível construir e rodas todas
+essas aplicações num sistema totalmente aberto.
+
+\bibliography{bib}
 
 \end{document}
