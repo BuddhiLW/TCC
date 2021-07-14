@@ -1,0 +1,854 @@
+\message{ !name(TCC-en.tex)}%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[
+% -- opções da classe memoir --
+12pt,				% tamanho da fonte
+openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+oneside,			% para impressão em recto e verso. Oposto a oneside
+a4paper,			% tamanho do papel.
+% -- opções da classe abntex2 --
+% chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+% section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+% subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+% subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+% -- opções do pacote babel --
+% french,				% idioma adicional para hifenização
+% spanish,			% idioma adicional para hifenização
+brazil,				% o último idioma é o principal do documento
+english,			% idioma adicional para hifenização
+]{abntex2}
+\RequireXeTeX %Force XeTeX check
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de
+% justificação
+\usepackage{amsmath}
+\usepackage{xltxtra}
+% \setmainfont{Source Han Sans CN}
+% \usepackage{xeCJK}
+% ---
+% \usepackage[UTF8]{ctex}
+% \usepackage{xeCJK}
+% \setCJKmainfont{SimSun}
+% ---
+% Pacotes de citações
+%\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+% \usepackage{xltxtra}
+\usepackage{fontspec} %Font package
+\usepackage{xunicode}
+%Select fonts
+% \setmainfont[Mapping=tex-text]{Hack Nerd Font}
+% \setsansfont[Mapping=tex-text]{DroidSansMono Nerd Font}
+% \setmonofont{Quivira}
+\newfontfamily\uni[Mapping=tex-text]{Hack Nerd Font}
+% \newenvironment{uni}{\uni}{\par}
+\DeclareTextFontCommand{\unifont}{\uni}
+% Some unicode characters
+% 
+% \newcommand*{\uni}[1]{{\fontsize{12}{12}\fontfamily{}\selectfont \H{#1}}}
+
+% \setmainfont{Source Han Sans CN}
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{fontawesome5} % renderização de unicode
+\usepackage{ucs}
+% \usepackage{droid}
+% \renewcommand{}{}
+% \renewcommand{\ttfamily}{Symbols Nerd Font}
+% \setmonofont{}
+% ---
+% Pacotes adicionais, usados no anexo do modelo de folha de identificação
+% ---
+% \usepackage{multicol}
+% \usepackage{multirow}
+% ---
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+% \usepackage{lipsum}				% para geração de dummy text
+% ---
+
+
+% ---
+% CONFIGURAÇÕES DE PACOTES
+% ---
+
+% Enumeração extendível
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+% Caminho dos arquivos-imagem
+\graphicspath{
+  {./Imagens/}
+  {./Imagens/Linux}
+  {./Imagens/WM}
+  {./Imagens/BenchMarks}
+  {./Imagens/Running}
+}
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+  \ifcase #1 %
+  Nenhuma citação no texto.%
+  \or
+  Citado na página #2.%
+  \else
+  Citado #1 vezes nas páginas #2.%
+  \fi}%
+% ---
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO
+% ---
+\titulo{Free software in industry and academia}
+\autor{PEDRO GOMES BRANQUINHO}
+\orientador{Dr. Wei-Liang Qian}
+\local{Lorena}
+\data{2021}%
+\instituicao{%
+  University of São Paulo - USP \\
+  Engineer School of Lorena
+  \par
+  Monograph, Conclusion Thesis
+}%
+\tipotrabalho{Dissertation}
+% O preambulo deve conter o tipo do trabalho, o objetivo,
+% o nome da instituição e a área de concentração
+% Orientador: Prof. Dr. Ismael Maciel de
+% Mancilha 
+\preambulo{This monograph is presented to the Engineer School of Lorena, the University of São Paulo, so to be obtained the title of Barchelor by the Graduation Program on Engineering Physics with emphasis on the Science of Materials.}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+  % pagebackref=true,
+  pdftitle={\@title},
+  pdfauthor={\@author},
+  pdfsubject={\imprimirpreambulo},
+  pdfcreator={Pedro G. Branquinho},
+  pdfkeywords={tese}{software}{livre},
+  colorlinks=true,       		% false: boxed links; true: colored links
+  linkcolor=blue,          	% color of internal links
+  citecolor=blue,        		% color of links to bibliography
+  filecolor=magenta,      		% color of file links
+  urlcolor=blue,
+  bookmarksdepth=4
+}
+\makeatother
+% ---
+
+% ---
+% Espaçamentos entre linhas e parágrafos
+% ---
+
+
+% % O tamanho do parágrafo é dado por:
+\setlength{\parindent}{0.8cm}
+
+% % Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+\message{ !name(TCC-en.tex) !offset(-3) }
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+\selectlanguage{english}
+% \selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% ---
+% Capa
+% ---
+\imprimircapa
+% ---
+
+% ---
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+% ---
+\imprimirfolhaderosto*
+% ---
+
+% ---
+% Inserir a ficha bibliografica
+% ---
+
+% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
+% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
+% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
+% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
+% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
+% o conteúdo de implementação deste arquivo pelo comando abaixo:
+%
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+
+\begin{fichacatalografica}
+	\sffamily
+	\vspace*{\fill}					% Posição vertical
+	\begin{center}					% Minipage Centralizado
+	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
+	\small
+	\imprimirautor
+	%Sobrenome, Nome do autor
+	
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+	
+	% \hspace{0.5cm} \thelastpage p. \\ %: il. (algumas color.) ; 30 cm.
+	
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+	
+	\hspace{0.5cm}
+		1. Free Software.
+		2. Open Source.
+		2. Academy and Industry.
+		I. Wei-Liang Qian.
+		II. University EEL-USP.
+		III. Escola de Engenharia de Lorena.
+		IV. Free Software on Industry and Academia.
+	\end{minipage}}
+	\end{center}
+      \end{fichacatalografica}
+      \clearpage
+% ---
+
+% ---
+% Dedicatória
+% ---
+\begin{dedicatoria}
+   \vspace*{\fill}
+   \centering
+   \noindent
+   \textit{To those whom found me in their own path\\
+     and, by finding me, made part of my own.} \vspace*{\fill}
+\end{dedicatoria}
+% ---
+
+% ---
+% Agradecimentos
+% ---
+\begin{agradecimentos}
+
+  My acknowledgments wouldn't fit in a single page. But, for the purpose of conciseness, I will mention those who are closer to my work. I thank first my advisor, Wei-Liang Qian, who in his patience and kindness knew how to conduce me to produce the present work. I thank Juan Zapata for the support and enthusiasm on teaching Mathematics and showing me the way of how to study it myself. Last but not least, I thank Luiz Eleno who has been a role-model for me, and has teach me so much about computing through out the years.
+
+  And, in a big umbrella, I thank all those anonymous people who have contributed for my experience of communal sharing and understanding in the Open Source community. Specially, David Wilson, the founder of System's Crafter, from whom I derived the basis of my Emacs's system. 
+  
+\end{agradecimentos}
+% ---
+
+% % ---
+% % Epígrafe
+% % ---
+% \begin{epigrafe}
+%     \vspace*{\fill}
+% 	\begin{flushright}
+% 		\textit{``Não vos amoldeis às estruturas deste mundo, \\
+% 		mas transformai-vos pela renovação da mente, \\
+% 		a fim de distinguir qual é a vontade de Deus: \\
+% 		o que é bom, o que Lhe é agradável, o que é perfeito.\\
+% 		(Bíblia Sagrada, Romanos 12, 2)}
+% 	\end{flushright}
+% \end{epigrafe}
+% % ---
+
+% ---
+% RESUMOS
+% ---
+
+% Abstract in English
+\setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
+\begin{resumo}
+  In this work, It's shown how to build a series of application only upon a Free Software system - EXWM, Artix Linux OSS. I explain how the experience of participating in the Open Community can be significant for other Engineers; specially Physics Engineers. It's delineated what are the current trends on the adoption of Free and/or Open Source Software (FOSS). Furthermore, I put forward some of the tools I used in Academia, and in Industry, and some other not so well known software, which could be used in these two contexts - e.g., Freqtrade, OR-Tools, Git(hub) et cetera. I also argue why Linux is such a key software for someone shifting to the Open Source paradigm.
+  
+ \textbf{Key-words}: trends. foss. academia. industry. linux. freqtrade. or-tools. git. github.
+\end{resumo}
+
+% Abstract (resumo) in Portuguese
+\begin{resumo}[Resumo]
+ \begin{otherlanguage*}{brazil}
+
+  Demonstrou-se como é possível construir uma série de aplicações
+  baseada em softwares de licença livre, à partir de um sistema
+  aberto, o Linux com inteface EXWM - Emacs X Window Manager. Além
+  disso, foi propiciado casos reais de aplicações na Indústria e no
+  investimento privado, autônomo. Bem como, utilizações na Academia,
+  à nível de lecionar, e pequisa. Sustenta-se que a economia aberta
+  possui similaridade estrutural ao movimento \textit{Open Source} e
+  seu desenvolvimento, o que aponta que essa é e continuará a ser,
+  paulatinamente mais, o paradigma de desenvolvimento econômico
+  tecnológico. Assim, imprescindível à formação do engenheiro.
+  
+   \vspace{\onelineskip}
+  \noindent
+  \textbf{Palavras-chaves}: software livre. automação. freqtrade. idústria. academia.
+ \end{otherlanguage*}
+\end{resumo}
+
+% ---
+% inserir lista de ilustrações
+% ---
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+% ---
+
+% ---
+% inserir lista de quadros
+% ---
+% \pdfbookmark[0]{\listofquadrosname}{loq}
+% \listofquadros*
+% \cleardoublepage
+% ---
+
+% ---
+% inserir lista de tabelas
+% ---
+% \pdfbookmark[0]{\listtablename}{lot}
+% \listoftables*
+% \cleardoublepage
+% ---
+
+% ---
+% inserir lista de abreviaturas e siglas
+% ---
+\begin{siglas}
+  \item[FOSS] Free and Open Source Software  
+  \item[IDE]:Integrated Development System 
+  \item[abnTeX] ABsurdas Normas para TeX
+\end{siglas}
+% ---
+
+% % ---
+% % inserir lista de símbolos
+% % ---
+% \begin{simbolos}
+%   \item[$ \Gamma $] Letra grega Gama
+%   \item[$ \Lambda $] Lambda
+%   \item[$ \zeta $] Letra grega minúscula zeta
+%   \item[$ \in $] Pertence
+% \end{simbolos}
+% % ---
+
+% ---
+% inserir o sumario
+% ---
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% ----------------------------------------------------------
+% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% ----------------------------------------------------------
+
+\chapter[Introduction]{Introduction}
+% \addcontentsline{toc}{chapter}{Introdução}
+
+In training a Physics Engineer, of which, by definition, is a generalist professional. The use of Free and Open Sourced Softwares (FOSS), as well as the participation in the Open Source community (OS), are two detrimental experiences to have.
+% Na formação de um engenheiro físico, o qual, por definição, é um profissional generalista, os softwares abertos (FOSS - Free and Open Source Software) e a participação da comunidade Open Source (OS) são detrimentais para sua formação.
+
+The variability, which open source software (OSS) brings to existence of applications and it's extension, can change altogether user's experience. Thus, taking him closer to acting as a developer. This experience of interloping user and developer roles doesn't require that you are a computer scientist or a Information Technology (IT) professional by training. For, programming can be seen as both a Science and an Art \cite{knuth1968art} - e.g., an exercise of self-expression.
+% A diversidade os quais softwares extensíveis acarretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de cientistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte \cite{knuth1968art}.
+
+OSS guarantees four fundamental liberties \autoref{sec:opensource}, the right to study, copy, modify and redistribute it.
+% Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
+
+Just as the scientific enterprise benefits, with it's rapid development, by means of the global community's participation, which holds space for individuals with a variety of different training. Also, the computation enterprise benefits from the variety of people's training, which constitute the body of the open source community.
+% Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade global de participantes, com as mais distintas especializações profissionais. Também, beneficia-se a computação com a comunidade aberta, e especialização eclética, tanto de membros quanto de softwares.
+\section{Objective}
+
+We will demonstrate the vality of the hypothesis that a engineer
+professional, without strong training in computation, lags behind it's
+current potential. Furthermore, we present a range of different
+applications developed to the state of the art, which are distributed
+under open licenses (copy-left). Thus, reinforcing the uniqueness of
+open source phenomena and the need for it's use - the logic and
+dynamic FOSS brings has no parallel on the economy or scientific
+community \cite{hippel2003open,peters2009open}.
+% Demonstramos a defassagem que um profissional de engenharia apresentaria, sem forte formação dentro da computação. Ademais, ao partir da gama de aplicações, em estado da arte, as quais são partilhadas de forma aberta e livre, pretende-se reinterar o caso da necessidade de compreensão do fenômeno dos softwares abertos. Pois, essa lógica e dinâmica não possui paralelos nem na economia, nem na comunidade científica \cite{hippel2003open,peters2009open}.
+
+There exits debate around the meaning of \textit{Open Science}. This
+term recently became popular and which has a obvious reference to the
+\textit{Open Source}. Although, in the social literature, it's a phenomena
+poorly depicted and rarely debated through the point view that the Open
+Source Movement has anything to do with it. We cite the most cited
+article on Google Scholar research on the topic ``Open Science'' -
+called ``The future(s) of open science'' - and which only uses trice
+the term ``Open Source'' and in dismissive way
+\cite{mirowski2018future}.
+
+Therefore, I argue that a strong basic
+knowledge, for engineer training, is fundamental for understanding the
+movement and how it has been shaped, so to critically asses the
+validity of the current social-economic shift we live in. This
+understand can, in turn, shape the carer path and formation of the
+working engineer.
+% Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
+
+\section{The interconnection between Applications and the OS}
+
+The author used an \textbf{Application} as to comprise any end product of software development.
+% \section{As interconexões das aplicações e o OS}
+
+%\subsection{Por quê o GNU/Linux nos importa?}
+\subsection{Why does GNU/Linux matter?}
+
+We will discuss, as a brief introduction, what is the Operational System
+(OS) GNU/Linux, and why it's the \textit{de facto} opening door to the
+Open Source Community. Firstly, the GNU/Linux is the first and most
+successful project carried out in the Open Source paradigm
+\cite{tu2000evolution,west2001open}. Therefore, it's use is a way to
+acquaintance, in practical terms, with how a business dependent on mainly
+using the open sourced development products might operate \cite{fink2003business}.   
+% Discutiremos introdutoriamente na monografia, o que é o sistema operacional
+% GNU/Linux, e o por quê de ser a porta de entrada à comunidade Open
+% Source. Primeiramente, o GNU/Linux é o primeiro e maior sucesso da lógica
+% de negócio Open Source \cite{tu2000evolution,west2001open} - dessa forma,
+% utilizá-lo é uma maneira de entender como a lógica de negócio
+% dependente de comunidades abertas funcionam \cite{fink2003business}.
+
+Furthermore, the new user-developer of the GNU/Linux framework must
+inherently learn about the accompanying software which comes with it's
+distribution - which increases it's chance of adoption
+\cite{west2001open}. This way, the user gradually becomes accostumed to
+participate on development and extend programs \cite{hertel2003motivation}.
+% Além do mais, o novo usuário-desenvolvedor de GNU/Linux,
+% inerentemente, tem de aprender sobre outros softwares os quais vêm
+% conjunto à sua distribuição - o que aumenta sua adoção
+% \cite{west2001open}. Desta forma, sente-se compelido a participar e
+% estender os comportamentos do programa \cite{hertel2003motivation}.
+
+Beyond it's initial philosophical appeal to user liberty, GNU/Linux is
+today's standard in Technological Enterprises. And, although
+fundamentally opposed of many age-old \textit{modus operandus} of the
+\textit{status quo} of companies, there is no doubt left under
+analysis of the benefits it brings to the companies, general economy, and
+the society triad \cite{moody2009rebel}. To make use of GNU/Linux,
+thus, is a way to be inserted in this new economic paradigm \cite{hippel2003open,peters2009open}.
+% Para aquém da sua inicial expressão filosófica de liberdade, o
+% GNU/Linux hoje é o \textit{standard} em empresas te alta
+% tecnologia. E, sua lógica de negócio, por mais que desafie os moldes
+% empresariais econômicos do \textit{status quo}, sem sombra de dúvidas
+% funciona, traz resultados às empresas, a economia e à
+% comunidade. Usar-se do GNU/Linux, então, é uma maneira de se inserir
+% nesse novo contexto lógico econômico
+% \cite{moody2009rebel,hippel2003open,peters2009open}.
+
+\subsection{How high level applications benefit from an OS}
+% \subsection{Como as aplicações de alto nível se beneficiam de um \textit{OS}}
+
+In the hierarchy of software and applications, the Operational Systems (OSes) can be seen as a meta-application or meta-software. 
+% Na hierarquia de softwares e aplicações, os sistemas operacionais
+% podem ser vistos como um meta-aplicação.
+
+``The evaluator, which determines the meaning of expressions in a
+programming language, is just another program.'' \cite{abelson1996structure}
+
+There exists levels, or layers, of abstractions in virtually any
+application. That is, the concept of meta-programming and Towers of
+Interpreters comprise a common situation, for which a devoted field of
+study exists. Thus this area has direct implication for software
+development practice, as it's a ubiquitous problem faced in computing.
+ % Thus, this area of study focus on how to optimize and simplify the behavior commonly found on computational systems which behold a chain of interpreters.
+% Existem níveis, ou camadas, de abstração em virtualmente qualquer
+% aplicação. Ou seja, o conceito de meta-programação e torres de
+% interpretadores é um problema um tanto quanto comum, e possui
+% implicações diretas no uso dos softwares.
+
+Any OS, as the GNU/Linux, comprise an essential layer in this tower of
+interpreters. Particularly, an OS communicates with \textit{firmwares}
+- low-expressivity and highly-performing software, which control
+\textit{hardware}. Also, they communicate with high-expressivity
+software, among which contain the user-developer written or extended
+software. Therefore, the OS play a fundamental role, mediating between
+low and high level software. This function categorizes them as a
+\textit{middleware} software.     
+% Os sistemas operacionais, como o GNU/Linux, uma camada essencial
+% nessa torre de interpretadores. Em especial, eles se comunicam com
+% \textit{firmwares} - softwares de baixa expressividade e alta performance, os
+% quais controlam \textit{hardwares}. Também, comunicam-se com softwares de alta
+% expressividade, os quais comprazem as aplicações escritas, ou
+% estendidas, pelo usuário-desenvolvedor do sistema. Por conseguinte, o
+% Sistema Operacional possui um papel de mediador entre softwares de
+% alto e baixo nível - como são chamados pela literatura - o que
+% configura-os como uma espécie de \textit{middleware}.
+
+\begin{figure}[ht]
+  \centering
+  % \caption{\label{fig:tower} Esquemática de uma torre de interpretadores}
+  \caption{\label{fig:tower} Schema of a tower of interpreters}
+  \includegraphics[width=\linewidth]{torres.png}
+  \legend{Code Mesh, presentation ``Towers of Interpreters'', by Nada Amin}
+\end{figure}
+
+The characteristic problem of concatenate a system of software, one on
+top of the other, introduces complexity to maintaining compatibility
+among program's versions and it's performance. The study of these
+behavior and it's theoretical solutions posses a field of it's
+own. And, this field is autonomous, detached, for an example, from
+which languages compose the Tower of Interpreters; or which type of
+application we are dealing with \cite{amin2017towers}. The object of
+study is the final behavior of the system, and if it's a collapsible system. 
+% O problema característico de concatenar sistemas de softwares um sob o
+% outro introduz complexidades em termos de manter compatibilidade entre
+% versões de programas e sua performance. O estudo desses comportamentos
+% e suas soluções teóricas possuem um ramo próprio, desvinculado, por
+% exemplo, de quais linguagens compõe a torre, ou qual aplicação estamos
+% lidando \cite{amin2017towers}. O que se interessa é com o
+% comportamento final do sistema, e se é possível colapsar o sistema.
+
+\begin{figure}[ht]
+  \centering
+  %  \caption{\label{fig:tower2} Categorização do estudo de torres de interpretadores}
+ \caption{\label{fig:tower2} Categorization of the study of towers of interpreters}
+  \includegraphics[width=0.5\linewidth]{torres2.png}
+  \legend{Reference: \cite{amin2017towers}}
+\end{figure}
+
+Finally, the OSes consist in a big tower-collapser of
+interpreters. They are subordinate to collapsing firmware, middleware
+and high-level software. Therefore, as well as the OS conduct this task,
+as much the user-developer experience is facilitated.
+% Finalmente, os O.S. consistem em grandes colapsadores de torres de
+% interpretação. Encontram-se encarregados de colapsar firmware,
+% middlewares e softwares de alto nível. Por fim, o quão bem um sistema
+% operacional conduz essa tarefa, tanto mais a experiência do usuário
+% final é facilitada.
+
+\begin{figure}[ht]
+  \centering
+  %  \caption{\label{fig:os} Torre de interpretadores e os Sistemas Operacionais.}
+ \caption{\label{fig:os} Towers of interpreters and the Operational Systems.}
+  \includegraphics[width=0.5\linewidth]{tower-os.png}
+  \legend{Reference: \cite{tanenbaum2015modern}}
+\end{figure}
+
+\begin{citacao}
+If every application programmer had to understand how all these things work in detail, no code would ever
+get written. Furthermore, managing all these components and using them optimally
+is an exceedingly challenging job. For this reason, computers are equipped with a
+layer of software called the operating system, whose job is to provide
+user programs with a better, simpler, cleaner, model of the computer
+and to handle managing all the resources just mentioned. \cite{tanenbaum2015modern}
+\end{citacao}
+
+\section{On the influence of education in adoption}
+% \section{Da influência da educação na adoção}
+
+In the bibliographical literature, it's clear that the rate of OSS adoption in the Industrial sector - commonly refereed as``Production'' - depends heavily on both: competency and the level of expertise a project require \cite{li2013all,gallego2015open,spinellis2012organizational}.
+% É claro, na literatura, de que a adoção dos softwares open source no
+% setor industrial
+% dependem da competência, e do quão profundo seus conhecimentos
+% precisam ser para resolução de seus problemas
+% \cite{li2013all,gallego2015open,spinellis2012organizational}. 
+
+At the same time, the adoption depends directly on the intrinsic inclination of the Informational Technology (IT) team \cite{racero2021can}. 
+% Ao mesmo tempo, a adoção depende diretamente das inclinações
+% intrínsecas da equipe de TI \cite{racero2021can}.
+
+Therefore, regardless of how much a professionalizing course may increase the \texit{intencity} and \texit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \texit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
+% Por fim, por mais que cursos profissionalizantes no tópico aumente a
+% intensidade e rapidez de sua adesão, por alunos
+% \cite{racero2020predicting} e profissionais inclinados à autonomia
+% \cite{gallego2015open}, a adoção final está mais ligada a fatores
+% intrínsecos de motivação. No entanto, é importante notar a existência de um
+% efeito-rede em adoções \cite{spinellis2012organizational} e.g., quanto mais semelhantes adotam
+% OSS, maior a chance de adoção.
+
+\section{Performance and the current trend as reasons for adoption}
+% \section{Performance e futuro do open source como motivos de adoção}
+
+Research with different areas of benchmarks state a performance gain, when utilizing GNU/Linux, compared to Windows \cite{sulaiman2021comparison}. Although, even more important, the key benefits are not in the differential performance \texit{per se}, but in the training one naturally goes through upon utilizing a totally community-dependent Operational System. 
+% Delineia-se que existe um ganho em performance ao se utilizar a
+% plataforma GNU/Linux em comparação ao Windows \cite{sulaiman2021comparison}. Porém, mais importante
+% ainda, é o fato de que os principais benefícios não estão no sistema
+% operacional em si, mas no treino que se obtém quando se utiliza um
+% sistema totalmente dependente de ferramentas e comunidades
+% abertas.
+
+Thereof, using GNU/Linux is a door for an individual professional shift. At the same time, this personal use increases the probability of adoption in whichever Industry carrer one may lead \cite{hauge2008adoption}. Combined with that fact, the Industry per se has no observable effect on Open Source development of projects - as so far as measured in 2008 \cite{hauge2008adoption}.
+
+ % e.i., companies have a great return of it's use for nothing in exchange, but the little cost of giving professionals the space and flexibility to implement this workflow.
+
+ % Pois, é nesse momento que se dá a transformação profissional
+% indivíduo, ao mesmo tempo que se aumenta a chance das empresas que
+% esse profissional irá trabalhar de adotarem OSS. Mesmo que, as
+% empresas em geral, e as de software em particular, beneficiam-se
+% grandemente da comunidade aberta e livre ao mesmo tempo que não
+% precisam e não incentivam nenhum direto incentivo ao trabalho da
+% comunidade \cite{hauge2008adoption}.
+
+\section{The set-conjunction between physics engineer and FOSS's users}
+% \section{O perfil do engenheiro e dos usuários de FOSS}
+
+We note that the deepness of training proposed, in graduation level, for a physics engineer makes them perfect candidates for the use of FOSS. Because, both trainings imply a \textit{a priori} necessity for autonomy and purposeness \cite{schrape2019open,racero2020predicting}; imply a profound and will for generalistic technical knowledge \cite{li2013all,gallego2015open}.
+% É notável que dado a profundidade que se procura a dar a formação,
+% ainda em nível de graduação, do engenheiro físico, espera-se que ele
+% seja um ideal candidato ao uso de FOSS. Pois, necessita de ambos de
+% inclínio a autonomia \cite{schrape2019open,racero2020predicting}, quanto profundidade em seu trabalho técnico,
+% para fomentar a necessidade e adoção de FOSS, em nível individual
+% \cite{li2013all,gallego2015open}.
+
+\section{How to leverage the potencial of OSS in Industry and Academia}
+% \section{Como podemos alavancar o potencial de OSS na Indústria e Academia}
+
+In the present work, I utilized of many concept demonstrations, in
+which the autor has developed or/and extended applications, in a
+context of free and open source. Also, I present how can one
+collaborate in the community and how does that collaboration can imply
+significant professional connections. This way, both the so called
+``soft skills'' and ``hard skills'' benefits have been elucidated, in practice.  
+% demonstrations served as a way to elucidade quatitatively how significant the 
+% No presente trabalho, utilizou-se de diversas demonstrações de
+% conceitos, onde o autor desenvolveu e estendeu aplicações
+% desenvolvidas num contexto livre e aberto. Também, discute-se como se
+% integrar e acrescentar à comunidade aberta. Nota-se o quão fundamental
+% e significante são as conexões profissionais que se faz nesse nicho.
+
+
+\chapter{Bibliography review}
+\section{Open Source}
+\label{sec:opensource}
+
+Any program which permits the user-developer to have the following liberties:
+\begin{enumerate}
+\item The right to run the program, as seen fit, for any end.
+  % Direito de rodar o programa, como você desejar, para qualquer fim.
+\item The right to access the source code and study it.
+  % Direito ao acesso ao código-fonte, para estudá-lo.
+\item The right to copy and redistribute it.
+  % Direito de cópia e distribuição.
+\item The right to modify the software.
+\end{enumerate}
+
+% Qualquer programa que permita o usuário-programador ter as seguintes
+% liberdades:
+
+% \begin{enumerate}
+% \item Direito de rodar o programa, como você desejar, para qualquer fim.
+% \item Direito ao acesso ao código-fonte, para estudá-lo.
+% \item Direito de cópia e distribuição.
+% \item Direito à modificação do software.
+% \end{enumerate}
+
+Practically, the Open Source community fundamentally base itself upon
+the free distribution of it's tools and programs. One of the differential
+advantage of having innumerable other people extending the same
+software is that the advancement of the frontier of the program, in
+many directions, increases rapidly in relation to a program controlled
+by a limited number of programmers.
+
+% De maneira prática, a comunidade Open Source, fundamentalmente, se
+% baseia no compartilhamento de suas configurações. As vantagens de
+% existirem inúmeras outras pessoas utilizando o mesmo software é de
+% que a melhoria da fronteira do programa é expandida de forma
+% acrescida, em comparação a de um time restrito de usuários.
+
+\subsection{Diversity}
+\label{sec:diversity}
+
+Given that one fundamental right of OSS is the modification and
+propagation of new modified versions. This right implies in the
+observable wide range of maintained versions of these software, which
+doesn't have a parallel in any other technological enterprise. 
+% Dado que um direito fundamental dos softwares livres é a modificação e propagação das versões modificadas, existe uma diversidade de expressividade, sem paralelos em outras áreas da tecnologia.
+
+For an example, one key application in any user's computer is a general
+Graphical User Interface (GUI)'s manager, commonly known as Window
+Manager (WM). These can be both Floating or Tilling, or mixed WM,
+e.g., Floating WM are those that the user must hover windows and
+adjust them manually; Tilling WM are those that a pre-defined program
+have a set of rules to resize automatically the windows in a screen.
+
+% Por exemplo, uma parte de software fundamental na configuração de um computador é seu gerenciador de interfaces (Window Manager). Onde, um programa é devotado a gerenciar como outros programas gráficos devem se dispor na tela de computador.
+
+While private Operational Systems (OS), as Windows and MacOS, have
+frequent releases - a total of twenty five releases for
+Windows. Generally, they've few \textit{active} versions; Windows have
+currently four \cite{wikipedia_2021W}. MacOS also have four active
+versions \cite{wikipedia_2021Mac}.
+% Enquanto sistemas operacionais (Operational Systems) privados, como Windows e MacOS possuem versões lançadas frequentemente - vinte e cinco versões lançadas de Windows. O Windows possui apenas quatro versões, com suporte ativo \cite{wikipedia_2021W}.
+
+% São vinte lançamentos de MacOS, e quatro verões mantidas \cite{wikipedia_2021Mac}.
+
+The fact there are only narrowly supported versions is due to, among
+many contributing factors, users lack the right to alter and extend
+the software's behavior. Therefore, they fall victims of discontinued
+support and restrictive access to the company's official upgrades. 
+% Essa estreiteza de versões se dá, dentre os fatores, pois os usuários são cerciados do direito de extender ou alterar os comportamentos programados no sistema. Assim, vítimas do suporte descontinuado e de sua atualização de versões restritivas.
+
+On the other hand, there exists, in parallel, around two hundred
+seventy eight available distributions of Linux
+\cite{wikipedia_2021Linux}. Of which, there are main/root
+distributions, which each embody a set of different principles; theoretical and practical philosophies of how to extend software.  
+% Em contra partida, existem, paralelamente, por volta de 278 distribuições de Linux \cite{wikipedia_2021Linux}. Onde, existem as distribuições raízes, com princípios e filosofias de desenvolvimentos teóricos e práticos diferentes.
+
+Thus, just as with any other scope of software, the variability of
+FOSS always will be grater than monopolized ones.
+% Assim, bem como em qualquer outro escopo de software, a variação dos softwares abertos e livres (FOSS) sempre serão superiores aos monopolizados.
+
+\section{GNU/Linux}
+There are root distributions of Linux, from which many other
+distributions emanate. Generically, these partitions are called
+families. We cite some of the most influential and popular ones, Red
+Hat Linux (\faIcon{redhat}), Debian (\unifont{}), CentOS
+(\faIcon{centos}), Fedora(\faIcon{fedora}), Pacman-based
+(\unifont{}/\unifont{}), OpenSUSE (\faIcon{suse}),
+Gentoo-based (\unifont{}), Ubuntu-based(\faIcon{ubuntu}),
+Slackware (\unifont{}), Open Sourced-based and the
+Independent Distributions (\unifont{}/\faIcon{linux}).
+
+\begin{figure}[!htb]
+  \caption{\label{fig:linux-genealogy} Genealogy of Linux's Distributions}
+  \includegraphics[height=\textwidth, angle=-90]{diversidade}
+  \legend{Genealogical history of Linux Distributions \cite{wikipedia_2021Linux}}
+  % \legend{Histórico de evolução das distribuições Linux \cite{wikipedia_2021Linux}}
+\end{figure}
+
+
+\subsection{\label{sec:linux-origin}Historical Origin}
+% \subsection{\label{sec:origem-linux} Origem Histórica}
+
+The GNU/Linux began as two separeted and different directions. GNU
+stands for ``GNU's Not Unix'', a recursive name. And GNU initialy has
+been developed as a collaboration of revolted academics by the
+restrictive secure system of the MIT Lab (Laboratory of Compuer
+Science - LCS) \cite{stallman2002my,emacswiki2021history}. Amongst
+them, there was the still active Richard Stallman, which heavily
+worked on the text editor of the time - already ten years into
+development. This editor became Emacs \cite{emacswiki2021history}.   
+% O projeto do GNU/Linux iniciou-se separadamente, por duas frentes. O
+% GNU - abreviação de, GNU's Not Unix - por usuários revoltados com o
+% sistema de seguraça dos computadores do MIT (Laboratory of Computer
+% Science - LCS) \cite{stallman2002my,emacswiki2021history}. Dentre
+% eles, o ainda ativo Richard Stallman, após já dez anos de evolução do
+% editor de texto \cite{emacswiki2021history}.
+
+Parallel to these events, Linus Torvalds had been developing an open portatible
+operational system, as his master's thesis
+\cite{torvalds1997linux}.
+
+Finally, both projects united in a symbiotic system, of which the OS
+was Linux (the formentined portible kernel) and the GNU's interface
+program whit all utilities one may have had in their computers at the
+time \cite{stallman1997}  
+% Paralelamente, Linus Torvalds desenvolveu um sistema operacional
+% portável aberto, como sua tese de mestrado
+% \cite{torvalds1997linux}. Por fim, houve uma junção dos projetos, os
+% quais colaboravam o Linux, como sistema operacional, e GNU com todas
+% as aplicações utilitarias do sistema \cite{stallman1997}.
+
+\subsection{Emacs}
+% \subsection{O Emacs}
+
+As has been seen in \href{sec:linux-origin}, the GNU project already
+had developed a variety of applications, all of which, incorporated
+into Linux. This way, the OS gained a ``body''. The Emacs,
+particularly, characterize one of the first software extensively
+extended, as a project, in a open community.
+
+Although, the label given to Emacs as an ``editor'' covers it's main
+function. Actually, the fundamental role of Emacs equates to
+evaluating Elisp expressions. Elisp as in a dialect of
+Lisp. Therefore, as an interpreter of a language, it has Turing
+complete capabilities. So it has a complete-system capability
+\footnote{The GNU/Guix implementation of Linux, has been implemented
+  in Scheme - a cousin with better performance than Elisp}.      
+% Como foi visto na \href{sec:origem-linux}, o projeto GNU possuia muitas utilidades as quais foram incorporadas ao kernel Linux, para dar corpo a um sistema operacional. O Emacs, particularmente, caracteriza um dos primeiros softwares extensivamente estendidos dentro do projeto. Sendo classificado como um editor de texto, escrito em Elisp, o qual é um dialeto da família de linguagens Lisp.
+
+Even though Emacs usual use has been of an Integrated Development
+System (IDE), by it's unlimited potentiality and expressiveness, there
+exists packages and applications written in Elisp to become a fully
+featured Window Manager (WM). That is, Emacs, through Emacs's X Window
+Manager (EXWM), can serve as a graphical and manager interface to
+other applications. 
+% Por mais que seja um editor de texto, por natureza, dada a larga possibilidade de expansão de suas utilidades, existem pacotes e maneiras de o configurar como um sistema completo de Window Manager. Ou seja, pode-se servir como interface gráfica e gerenciadora de outras aplicações.
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:exwm1} EXWM - Emacs X Window Manager}
+  \includegraphics[width=\linewidth]{exwm2.png}
+  \legend{Source: author's WM ambient.}
+  % \legend{Fonte: foto do ambiente de WM do autor.}
+\end{figure}
+
+\autoref{fig:exwm1} exemplifies a desktop environment which can render
+images, PDFs, Browsers et el, through Emacs. 
+% A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
+
+
+\bibliography{bib}
+\end{document}
+
+\message{ !name(TCC-en.tex) !offset(-854) }

@@ -79,6 +79,9 @@ english,			% idioma adicional para hifenização
 
 \usepackage{fontawesome5} % renderização de unicode
 \usepackage{ucs}
+
+\usepackage{pythonhlt}
+
 % \usepackage{droid}
 % \renewcommand{}{}
 % \renewcommand{\ttfamily}{Symbols Nerd Font}
@@ -614,7 +617,7 @@ At the same time, the adoption depends directly on the intrinsic inclination of 
 % Ao mesmo tempo, a adoção depende diretamente das inclinações
 % intrínsecas da equipe de TI \cite{racero2021can}.
 
-Therefore, regardless of how much a professionalizing course may increase the \texit{intencity} and \texit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \texit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
+Therefore, regardless of how much a professionalizing course may increase the \textit{intensity} and \textit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \texit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
 % Por fim, por mais que cursos profissionalizantes no tópico aumente a
 % intensidade e rapidez de sua adesão, por alunos
 % \cite{racero2020predicting} e profissionais inclinados à autonomia
@@ -980,7 +983,7 @@ the OSS and community is due to small enterprises \cite{kshetri2004economics}.
 
 Regarding the expansion of the FOSS development paradigm and
 ecosystem, undoubtedly there is an grow and ubiquity of adoption
-\cite{schimidt2016agile}. Moreover, FOSS has been considered in
+\cite{schmidt2016agile}. Moreover, FOSS has been considered in
 economical papers as the innovatory cradle of software industry \cite{schrape2019open,schmidt2016agile}.
 
 % Observa-se no entando, de 2012 ao presente, uma intensificação de
@@ -1080,8 +1083,17 @@ documentation and extend the application to it's use.
 
 % <<No que consiste o software; os métodos utilizados para seu funcionamento>>
 
+\clearpage
 \subsection{OR-Tools}
 \label{sec:ortools}
+
+\begin{citacao}
+Linear Programming is viewed as a revolutionary development giving us
+the ability for the first time to state general objectives and to
+find, by means of the simplex method, optimal policy decisions for a
+broad class of practical decision problems of great complexity. \cite{dantzig1983reminiscences}
+\end{citacao}
+
 
 The OR-Tools project translates into a series of code libraries
 developed in a open sourced manner, initially developed by
@@ -1089,6 +1101,20 @@ Google. Possible ports exist to C++, Python, Java, C\# and .Net.
 % A ferramenta OR-Tools traduz-se em bibliotecas largamente desenvolvida
 % pela comunidade aberta, e a empresa Google \cite{}; utilizável em C++,
 % Python, Java, (Clojure), C\#, .Net.
+
+The name is given due to Operational Researches Tools acronym, ORT.
+
+We list all category of tools which are under OR-Tools \footnote{https://github.com/google/or-tools},
+
+\begin{enumerate}
+\item A constraint programming solver;
+\item A linear programming solver;
+\item  Wrappers around commercial and other open source solvers, including mixed integer solvers;
+\item  Bin packing and knapsack algorithms;
+\item  Algorithms for the Traveling Salesman Problem and Vehicle Routing Problem;
+\item  Graph algorithms (shortest paths, min cost flow, max flow, linear sum assignment).
+\end{enumerate}
+
 
 The use of this tool can help solve the common problem of
 Scheduling. Structurally, this class of algorithms relate to solving
@@ -1130,6 +1156,117 @@ The Millenium Prize Problems:
   \item Poincaré conjecture (solved)
   \item Riemann hypothesis
   \item Yang–Mills existence and mass gap
+\end{itemize}
+
+
+
+\subsubsection{Application on Economics}
+
+The job scheduling problem thus is central to many areas of
+science. For example, generalizing the problem of Operational
+Research in economics, we have
+
+\begin{citacao}
+The problem of allocating scarce resources among competing ends is
+central to economic analysis.
+
+(...) The problem of optimal allocation of scarce resources can thus
+be summarized as the optimization of some objective(s) subject to
+constraints. \cite{luptacik2010mathematical}
+\end{citacao}
+
+Which means that this field has great application for tools as OR-Tools.
+
+\begin{citacao}
+The emphasis is given to the exposition of mathematical optimization as an
+instrument for qualitative analysis and to a wide range of
+applications in economics, including efficiency analysis, industrial
+economics (with focus on regulatory economics), international
+economics, input–output economics, quantitative economic policy and
+environmental economics. \cite{luptacik2010mathematical}
+\end{citacao}
+
+\subsubsection{Application to environmental policies}
+Policies annually are pitched by Intergovernmental Panel on Climate
+Change (IPCC) on how business should constrain their business matrix
+of energy etc, so to meet environmental goals
+\cite{keysser20211}.
+
+There is an open field to transform these
+measures into actionable plans to enterprises. If sufficiently
+quantitative, such measures could be incorporated in programs is
+Operational Researches software \cite{luptacik2010mathematical}.
+
+There are some papers which gives Optimization Models for
+air pollution control \cite{abrams1975optimization}, countries comparative
+eco-efficiency \cite{dyckhoff2001measuring} etc. We cite a quotation
+from ``Eco-efficiency analysis of industrial system in China: A data
+envelopment analysis approach'' \cite{zhang2008eco}.
+
+\begin{citacao}
+ In this connection, strategies for optimizing the use of resources or
+environment as expressed in more efficient way play a
+particularly important role. Eco-efficiency, which is an instrument for sustainability analysis, indicating an empirical
+relation in economic activities between environmental cost
+or value and environmental impact, has been proposed as a
+route to promote such a transformation \cite{mickwitz2006regional}.
+\end{citacao}
+% The problem so serious and complex, as the ecological can be managed
+% could be manage through policies. As annually Intergovernmental Panel
+% on Climate Change (IPCC) tend to calculate measures business should
+% follow. Further, these and calculated accurately with tools of operational
+% research.
+
+And we can see that this is the case-use, at least in quantitative
+researches in ecology; we look into one result from US eco-efficiency research on a decade of data,
+
+\begin{citacao}
+ Although an increase in both the mean RR (0.3–0.4) and the mean E-RR
+ (0.38–0.52) scores was recorded from 1995 to 2014, this was concluded
+ to be unsatisfactory, since the majority of the industries’
+ eco-efficiency results were still below 0.5. \cite{ezici2020assessing}
+\end{citacao}
+
+And, the conclusion is that,
+
+\begin{citacao}
+The findings of this study suggest that substantial policy changes are
+required immediately to shift the negative trend in renewable energy
+use to comply with UN Sustainability Development Goals 7 and 13. \cite{ezici2020assessing}
+\end{citacao}
+
+
+
+We also emphasize, that this problem can seem unrelated to other
+things like grammar analysis on authorship, or ecological policies
+formulation. But, indeed they are related. 
+
+Research using eco-efficient measures upon constrains for making
+policies has matured. And plans utilizing it as an constrain can be
+pathways to saving the world from ecological decimation.
+
+\begin{citacao}
+Urban-industrial symbiosis (UIS) is an important system innovation via
+sectors integration, and has been widely recognized as a novel pathway
+for achieving regional eco-industrial development. Eco-efficiency, as
+a mature approach and indicator, offers an effective tool to uncover
+both the status and trends of such a transformation \cite{bian2020sectoral}.
+\end{citacao}
+
+\subsubsection{Application to other areas}
+
+The areas that such optimization constrains are applied are
+uncountable. We cite some not so intuitive areas:
+
+\begin{itemize}
+\item Natural Language analysis and evolution \cite{potts2010harmonic,
+  heinz2018computational}
+\item Plans to maintain production of rural areas in Brazil, with no
+  need for further deforestation \cite{costa2018socio}.
+\item Planning upon corporate social performance
+  \cite{chen2011measuring,jacobs2016operational}.
+\item Public transportation \cite{schiewe2020integrated} 
+\item Traffic Control \cite{delle2019feedback}
 \end{itemize}
 
 \section{Demonstration in Academic Applications}
@@ -1376,9 +1513,11 @@ least twenty universities adopts, distributed in more than eight countries.
 % encontrada em
 % \url{https://mitpress.mit.edu/sites/default/files/sicp/adopt-list.html}, em que pelo menos, vinte universidades o adotam, em mais de oito países.
 
-These materials, textbook and the MIT classes, are both free and open sourced.
+These materials, textbook and the MIT classes, are both free and open
+sourced.
+\subsection{SCIMUtils - (SCIM) Portability in Clojure}
+\label{sec:scimutils}
 
-\subsection{SICMUtils - (SCIM) Portability in Clojure}
 These are dedicated libraries for rewriting the SCIM programs in
 Clojure, which ports many functionalities mentioned in the scientific
 library SCIM\note{The library and the course's programs are not the
@@ -1809,194 +1948,463 @@ interactive. So, much of the work done in the monograph was reused for presentat
 % aplicações. Escolheu-se utilizar da ferramento Org-mode, integral ao
 % Emacs.
 
-\chapter{}
+\chapter{Results and Discussion}
 % \chapter{Resultado e Discussões}
 
-\section{Convite ao orientador}
-O autor já havia interagido com o Dr. Wei-Liang, o qual no passado
-havia pedido, a titulo de pesquisarem juntos, que se instalasse o
-sistema operacional do Linux. Ademais, uma das aplicações era na
-resolução e simulação de sistemas resolvidos por Lagrangeanas - tópico
-lecionado pelo orientador, na disciplina de Mecânica Clássica.
+\section{Advisor expertise and the theme}
+% \section{Convite ao orientador}
 
-Assim, fortunamente o orientador se sentiu inclinado a participar
-desse trabalho. E, concorda que o ensino sobre a iniciativa Open
-Source, bem como os softwares em si, são detrimentais na vida acadêmica.
+One of the applications the student supposed could be done with OSS
+was with Lagrangians. SCIMUtils (\autoref{sec:scimutils}) exist in
+Clojure - the port of the famous work SCIM. and the advisor had given
+lectures on the subject of Classical Mechanics on the university
+courses. At the same time, the advisor itself is an user-developer,
+using Linux. So, the themes and expertise matched.
+% % O autor já havia interagido com o Dr. Wei-Liang, o qual no passado
+% havia pedido, a titulo de pesquisarem juntos, que se instalasse o
+% sistema operacional do Linux. Ademais, uma das aplicações era na
+% resolução e simulação de sistemas resolvidos por Lagrangeanas - tópico
+% lecionado pelo orientador, na disciplina de Mecânica Clássica.
 
-\section{Delineação do tema}
+% Assim, fortunamente o orientador se sentiu inclinado a participar
+% desse trabalho. E, concorda que o ensino sobre a iniciativa Open
+% Source, bem como os softwares em si, são detrimentais na vida acadêmica.
 
-A iniciativa GNU e o open source é indefinidamente abrangente. Existem
-softwares abertos escritos para virtualmente qualquer outra área do
-exercício cognitivo do ser humano.
+\section{Theme delineation}
+% \section{Delineação do tema}
+The GNU and the OSS initiative have indefinitely many subjects that
+could be tackled. There are virtually FOSS written for application on
+any human enterprise.   
+% A iniciativa GNU e o open source é indefinidamente abrangente. Existem
+% softwares abertos escritos para virtualmente qualquer outra área do
+% exercício cognitivo do ser humano.
 
-Necessitou contentar-se em parcialmente mostrar aplicações mais em
-mão, as quais seriam mais relevantes ao escopo da monografia. Bem
-como, optou-se por aprofundar-se em tópicos já utilizados na vida do
-autor para se resolver problemas na academia e na indústria.
+We opted to work on applications most familiar to the student. Also,
+we the work focused on presenting the most significant aspects of
+FOSS, in geral, for Academia and Industry.
+% Necessitou contentar-se em parcialmente mostrar aplicações mais em
+% mão, as quais seriam mais relevantes ao escopo da monografia. Bem
+% como, optou-se por aprofundar-se em tópicos já utilizados na vida do
+% autor para se resolver problemas na academia e na indústria.
 
-Assim, a delimitação principal se deu entorno de ferramentas abertas
-das quais, na indústria foram apresentados OR-Tools e
-Freqtrade.
+Thus, the delimitation on showing the framework for an working FOSS
+OS. The delimitation to the OR-Tools and Freqtrade in
+Industry. Finally, the use of Clojure, Julia, Python and R as means to
+present graphical and numerical applications to abstract ideas in mathematics.
+% Assim, a delimitação principal se deu entorno de ferramentas abertas
+% das quais, na indústria foram apresentados OR-Tools e
+% Freqtrade.
 
-\subsection{Da Indústria}
-As línguas utilizadas para o desenvolvimento desses softwares foram
-Python e C++. Porém, no caso de OR-Tools existe portabilidade para
-C++ (nativo), Python, Java, .NET. Todos os projetos e línguas possuem licença aberta.
+% \subsection{Da Indústria}
+\subsection{Industry Applications}
 
-OR-Tools destina-se a resolver um problema virtualmente
-conspícuo a qualquer negócio ou estrutura social prestadora de
-serviço. Pois, o problema de agendamento de horários, com condições de
-restrições impostas, é extremamente comum. Por exemplo, para organizar
-turnos de funcionários, em uma empresa; turnos de enfermeiros em um
-hospital - exemplo dado na própria documentação do software etc.
+\subsubsection{OR-Tools}
+The language used to write this application is C++ \footnote{https://github.com/google/or-tools}. But,
+there are ports to Python, Java (thus, Clojure), .Net. All languages
+have this program licensed in \textit{copy-left} terms.
+% As línguas utilizadas para o desenvolvimento desses softwares foram
+% Python e C++. Porém, no caso de OR-Tools existe portabilidade para
+% C++ (nativo), Python, Java, .NET. Todos os projetos e línguas possuem licença aberta.
 
-Freq-trade destina-se a automação de investimentos em
-crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
-aberta, sem incentivo algum externo - até, pois, não existe um
-responsável que chefia o projeto. E, num curto período de
-desenvolvimento, cinco anos, desde 2017, a aplicação conta com
-inúmeras otimizações computacionais, e APIs com interfaces como
-Telegram. Não existe paralelo de software fechado o qual é
-comercializado, com mesmo escopo.
+OR-Tools has been designed to tackle conspicuous problems: one of them,
+scheduling. Virtually any social-economic enterprise use scheduling in
+some moment.
 
-\subsection{Da academia}
+We offer an example in the following setting. A hospital needs to create a schedule for four nurses over a three-day period, subject to the following conditions:
+
+\begin{enumerate}
+\item Each day is divided into three 8-hour shifts.
+\item Every day, each shift is assigned to a single nurse, and no
+  nurse works more than one shift.
+\item Each nurse is assigned to at least two shifts during the
+  three-day period.
+\item There are 10 nurses.
+\item There are 7 days of work.
+\end{enumerate}
+% OR-Tools destina-se a resolver um problema virtualmente
+% conspícuo a qualquer negócio ou estrutura social prestadora de
+% serviço. Pois, o problema de agendamento de horários, com condições de
+% restrições impostas, é extremamente comum. Por exemplo, para organizar
+% turnos de funcionários, em uma empresa; turnos de enfermeiros em um
+% hospital - exemplo dado na própria documentação do software etc.
+
+
+In this problem, the program would translate to\footnote{This problem
+is a variation from the one on the project's documentation, https://developers.google.com/optimization/scheduling/employee_scheduling},
+% <\lstset{language=python}
+Importing the OR-Tools utilities
+
+\begin{python}
+  from ortools.sat.python import cp_model
+\end{python}
+
+Stating the constants, and standard input/output functions.
+\begin{python}
+class NursesPartialSolutionPrinter(cp_model.CpSolverSolutionCallback):
+    """Print intermediate solutions."""
+
+    def __init__(self, shifts, num_nurses, num_days, num_shifts, sols):
+        cp_model.CpSolverSolutionCallback.__init__(self)
+        self._shifts = shifts
+        self._num_nurses = num_nurses
+        self._num_days = num_days
+        self._num_shifts = num_shifts
+        self._solutions = set(sols)
+        self._solution_count = 0
+
+    def on_solution_callback(self):
+        if self._solution_count in self._solutions:
+            print('Solution %i' % self._solution_count)
+            for d in range(self._num_days):
+                print('Day %i' % d)
+                for n in range(self._num_nurses):
+                    is_working = False
+                    for s in range(self._num_shifts):
+                        if self.Value(self._shifts[(n, d, s)]):
+                            is_working = True
+                            print('  Nurse %i works shift %i' % (n, s))
+                    if not is_working:
+                        print('  Nurse {} does not work'.format(n))
+            print()
+        self._solution_count += 1
+
+    def solution_count(self):
+        return self._solution_count
+\end{python}
+
+Giving fixed values to the program,
+
+\begin{python}
+def main():
+    # Data.
+    num_nurses = 10
+    num_shifts = 3
+    num_days = 7
+    all_nurses = range(num_nurses)
+    all_shifts = range(num_shifts)
+    all_days = range(num_days)
+\end{python}
+
+Creating the model constraints,
+
+\begin{python}
+    # Creates the model.
+    model = cp_model.CpModel()
+
+    # Creates shift variables.
+    # shifts[(n, d, s)]: nurse 'n' works shift 's' on day 'd'.
+    shifts = {}
+    for n in all_nurses:
+        for d in all_days:
+            for s in all_shifts:
+                shifts[(n, d,
+                        s)] = model.NewBoolVar('shift_n%id%is%i' % (n, d, s))
+
+    # Each shift is assigned to exactly one nurse in the schedule period.
+    for d in all_days:
+        for s in all_shifts:
+            model.Add(sum(shifts[(n, d, s)] for n in all_nurses) == 1)
+
+    # Each nurse works at most one shift per day.
+    for n in all_nurses:
+        for d in all_days:
+            model.Add(sum(shifts[(n, d, s)] for s in all_shifts) <= 1)
+
+    # Try to distribute the shifts evenly, so that each nurse works
+    # min_shifts_per_nurse shifts. If this is not possible, because the total
+    # number of shifts is not divisible by the number of nurses, some nurses will
+    # be assigned one more shift.
+    min_shifts_per_nurse = (num_shifts * num_days) // num_nurses
+    if num_shifts * num_days % num_nurses == 0:
+        max_shifts_per_nurse = min_shifts_per_nurse
+    else:
+        max_shifts_per_nurse = min_shifts_per_nurse + 1
+    for n in all_nurses:
+        num_shifts_worked = 0
+        for d in all_days:
+            for s in all_shifts:
+                num_shifts_worked += shifts[(n, d, s)]
+        model.Add(min_shifts_per_nurse <= num_shifts_worked)
+        model.Add(num_shifts_worked <= max_shifts_per_nurse)
+\end{python}
+
+Call the cp_model to transform the constrains in a solvable format,
+
+\begin{python}
+    # Creates the solver and solve.
+    solver = cp_model.CpSolver()
+    solver.parameters.linearization_level = 0
+\end{python}
+
+Finally, print a few of the solutions (5) and give some feedback on
+performance and analytics of the problem.
+
+\begin{python}
+    # Display the first five solutions.
+    a_few_solutions = range(5)
+    solution_printer = NursesPartialSolutionPrinter(shifts, num_nurses,
+                                                    num_days, num_shifts,
+                                                    a_few_solutions)
+    solver.SearchForAllSolutions(model, solution_printer)
+
+    # Statistics.
+    print()
+    print('Statistics')
+    print('  - conflicts       : %i' % solver.NumConflicts())
+    print('  - branches        : %i' % solver.NumBranches())
+    print('  - wall time       : %f s' % solver.WallTime())
+    print('  - solutions found : %i' % solution_printer.solution_count())
+
+if __name__ == '__main__':
+    main()
+\end{python}
+
+The result:
+% <\lstset{language=python}
+\begin{python}
+Solution 4
+Day 0
+  Nurse 0 does not work
+  Nurse 1 does not work
+  Nurse 2 does not work
+  Nurse 3 does not work
+  Nurse 4 does not work
+  Nurse 5 does not work
+  Nurse 6 does not work
+  Nurse 7 works shift 0
+  Nurse 8 works shift 1
+  Nurse 9 works shift 2
+Day 1
+  Nurse 0 does not work
+  Nurse 1 does not work
+  Nurse 2 does not work
+  Nurse 3 does not work
+  Nurse 4 does not work
+  Nurse 5 does not work
+  Nurse 6 does not work
+  Nurse 7 works shift 2
+  Nurse 8 works shift 1
+  Nurse 9 works shift 0
+(...)
+Day 6
+  Nurse 0 works shift 1
+  Nurse 1 works shift 0
+  Nurse 2 works shift 2
+  Nurse 3 does not work
+  Nurse 4 does not work
+  Nurse 5 does not work
+  Nurse 6 does not work
+  Nurse 7 does not work
+  Nurse 8 does not work
+  Nurse 9 does not work
+
+Statistics
+  - conflicts       : 3540
+  - branches        : 67968438
+  - wall time       : 102.701620 s
+  - solutions found : 561425
+\end{python}
+
+When there are too many solutions to a constrain problem, that means
+there are too much resources to the given constrain. That is, the
+hospital could operate with less workers \footnote{We stopped the
+  program before it found all solutions.}. Let's use 3 nurses, keeping
+the other constrains.
+
+This gives us, on termination,
+% <\lstset{language=python}
+\begin{python}
+Statistics
+  - conflicts       : 386
+  - branches        : 2683080
+  - wall time       : 15.481512 s
+  - solutions found : 279936
+\end{python}
+
+But, if we then change the constrains to number of shifts being 4 -
+that is, 6 hour-work.
+
+% <\lstset{language=python}
+\begin{python}
+Statistics
+  - conflicts       : 10
+  - branches        : 194
+  - wall time       : 0.002517 s
+  - solutions found : 0
+\end{python}
+Of course, because one of the nurses would need to work more than once
+a day. This would break one of our constrained-condition. We note, though, that there is no continuity in-between the possibility of no solution and the most optimized one. 
+
+\subsubsection{Freqtrade}
+
+Freq-trade automate crypto-trading. The software use is pretty straight
+forward, once one has developed an strategy, in Python.
+
+The strategy using Boiling Bands (BB) and Relative Strength Index
+(RSI) can be understood in words as the principle: buy when prices are
+oversold and sell when it's on an average price.
+
+
+% Freq-trade destina-se a automação de investimentos em
+% crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
+% aberta, sem incentivo algum externo - até, pois, não existe um
+% responsável que chefia o projeto. E, num curto período de
+% desenvolvimento, cinco anos, desde 2017, a aplicação conta com
+% inúmeras otimizações computacionais, e APIs com interfaces como
+% Telegram. Não existe paralelo de software fechado o qual é
+% comercializado, com mesmo escopo.
+
+
+
+
+\subsection{Academia Applications}
 \label{subsec:res-academia}
 
-Optou-se a estudar aplicações escritas em Python, Julia,
-Clojure(script). Pois, o autor possui histórico de
-utilização dessas ferramentas. Com efeito, a pesquisa constituiu, em
-grande parte, na junção de todos os esparços projetos em que o autor
-já havia colaborado ou desenvolvido. E, no aprofundamento da
-compreensão de todas esses projetos, para que fosse possível fazer uma
-apresentação coesa do ferramental utilizado.
+We opted to work with applications written in Python, Julia and
+Clojure(Script). Because, the student already is familiar to these
+languages. In fact, many of the applications brought in this work has
+been cuts of real problems the authors faced in Academia. These
+simulations are thus a deepening of how these solutions emerge.
+% Optou-se a estudar aplicações escritas em Python, Julia,
+% Clojure(script). Pois, o autor possui histórico de
+% utilização dessas ferramentas. Com efeito, a pesquisa constituiu, em
+% grande parte, na junção de todos os esparços projetos em que o autor
+% já havia colaborado ou desenvolvido. E, no aprofundamento da
+% compreensão de todas esses projetos, para que fosse possível fazer uma
+% apresentação coesa do ferramental utilizado.
 
-Os programas em Julia possuiam cunho numérico. Pois, sua computação
-optimizada compara-se a performance de FORTRAN e C++. Assim, o
-principal pacote estudado foi DifferentialEquations.jl, a qual pode
-ser utilizada para resolver uma gama de equações diferenciais,
-incluindo a categoria Estocástica.
+Julia has been invented to work with scientific computation. The
+optimized computation of Julia compares to FORTRAN and C++. Thus, we
+chose to use a totally julia-written package, called
+\textit{DifferentialEquations.jl}. This package can be used to solve a wide
+range of differential equations.
+% Os programas em Julia possuiam cunho numérico. Pois, sua computação
+% optimizada compara-se a performance de FORTRAN e C++. Assim, o
+% principal pacote estudado foi DifferentialEquations.jl, a qual pode
+% ser utilizada para resolver uma gama de equações diferenciais,
+% incluindo a categoria Estocástica.
 
-O programa em Python é de processamento de imagens. Escolheu-se essa
-aplicação, pois demonstra o quão abrangente é a portibilidade de
-programas escritos em outras línguas ao Python - principalmente,
-devido a grande comunidade de cientistas e programadores que o
-utilizam.
+% O programa em Python é de processamento de imagens. Escolheu-se essa
+% aplicação, pois demonstra o quão abrangente é a portibilidade de
+% programas escritos em outras línguas ao Python - principalmente,
+% devido a grande comunidade de cientistas e programadores que o
+% utilizam.
 
-\subsection{A intersecção}
+% \subsection{A intersecção}
 
-Com Clojure(Script), Bash e \LaTeX{}, foi possível criar tanto
-simulações que estendem a compreensão de fenômenos físicos do campo
-abstrato ao visual. Também, empregou-se de Closh e Babashka, duas
-bibliotecas de Clojure dedicadas a interoperabilidade com Bash, a qual
-se processava milhares de arquivos, por meio de pipelines de
-arquitetura complexas. Assim, facilitando a escrita de uma quantidade
-enorme de relatórios técnicos na área de segurança do trabalho. 
+% Com Clojure(Script), Bash e \LaTeX{}, foi possível criar tanto
+% simulações que estendem a compreensão de fenômenos físicos do campo
+% abstrato ao visual. Também, empregou-se de Closh e Babashka, duas
+% bibliotecas de Clojure dedicadas a interoperabilidade com Bash, a qual
+% se processava milhares de arquivos, por meio de pipelines de
+% arquitetura complexas. Assim, facilitando a escrita de uma quantidade
+% enorme de relatórios técnicos na área de segurança do trabalho. 
 
-Quanto a Clojure(Script), foram pesquisadas simulações gráficas, as
-quais inerentemente são simples de se programar em Clojure. Pois, seu
-ecossistema pode interoperar entre JVM (Java Virtual Machine) e
-JavaScript. Assim, dado que ambos Java e JavaScript foram as línguas
-mais populares por décadas, existem uma enorme quantidade de ambientes
-e bibliotecas a nossa disposição. Bem como, Clojure é uma Lisp - e,
-caracteristicamente, essa família é utilizada para prototipagem, vide
-AutoCAD escrito em AutoLisp.
+% Quanto a Clojure(Script), foram pesquisadas simulações gráficas, as
+% quais inerentemente são simples de se programar em Clojure. Pois, seu
+% ecossistema pode interoperar entre JVM (Java Virtual Machine) e
+% JavaScript. Assim, dado que ambos Java e JavaScript foram as línguas
+% mais populares por décadas, existem uma enorme quantidade de ambientes
+% e bibliotecas a nossa disposição. Bem como, Clojure é uma Lisp - e,
+% caracteristicamente, essa família é utilizada para prototipagem, vide
+% AutoCAD escrito em AutoLisp.
 
-Dado que existem bibliotecas dedicadas a Mecânica Clássica em nível de
-mestrado, bem como exite capacidades de se renderizar conceitos
-físicos abstratos. Então, decorreu-se a computação de programas que
-demonstravam conceitos de Física, Cálculo, e Computação Generativa.
+% Dado que existem bibliotecas dedicadas a Mecânica Clássica em nível de
+% mestrado, bem como exite capacidades de se renderizar conceitos
+% físicos abstratos. Então, decorreu-se a computação de programas que
+% demonstravam conceitos de Física, Cálculo, e Computação Generativa.
 
 
-\section{Organização cronológica}
+% \section{Organização cronológica}
 
-A organização do projeto se deu utilizando os diagramas de Gantt, e as
-agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
-toda a comunicação sobre o projeto foi materializado por meio de
-cronogramas e agendas.
+% A organização do projeto se deu utilizando os diagramas de Gantt, e as
+% agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
+% toda a comunicação sobre o projeto foi materializado por meio de
+% cronogramas e agendas.
 
-\section{As fases da escrita da Monografia}
-Iniciou-se a escrita da monografia pela pesquisa bibliográfica, dado
-que a pesquisa se categoriza, epistemologicamente, como uma Análise
-Exploratória. O \textit{template} utilizado para escrita do projeto
-foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
+% \section{As fases da escrita da Monografia}
+% Iniciou-se a escrita da monografia pela pesquisa bibliográfica, dado
+% que a pesquisa se categoriza, epistemologicamente, como uma Análise
+% Exploratória. O \textit{template} utilizado para escrita do projeto
+% foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
 
-\section{Junção de notas}
-O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
-para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
-de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
-essa ferramenta.
+% \section{Junção de notas}
+% O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
+% para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
+% de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
+% essa ferramenta.
 
-A documentação implícita ao desenvolvimento é uma
-característica fundamental e pensada do Org-mode. Pois, segue o
-paradigma de \textit{Literate Programming}. Assim, há uma mistura de
-notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
-código seja automaticamente documentável.
+% A documentação implícita ao desenvolvimento é uma
+% característica fundamental e pensada do Org-mode. Pois, segue o
+% paradigma de \textit{Literate Programming}. Assim, há uma mistura de
+% notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
+% código seja automaticamente documentável.
 
-Por fim, é possível exportar qualquer anotação de extensão .org para
-.tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
-uma tarefa natural.
+% Por fim, é possível exportar qualquer anotação de extensão .org para
+% .tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
+% uma tarefa natural.
 
-\subsection{Aplicações em Clojure}
+% \subsection{Aplicações em Clojure}
 
-\subsection{Aplicações em Julia}
-\subsection{Aplicações em Python}
+% \subsection{Aplicações em Julia}
+% \subsection{Aplicações em Python}
 
-\section{Pesquisa bibliográfica}
-A pesquisa bibliográfica foi em grande parte encontrada em sites sem
-autores. Pois, a documentação foi criada ou pela comunidade, ou por
-instituições, não unicamente publicada em formato de livro ou artigo.
+% \section{Pesquisa bibliográfica}
+% A pesquisa bibliográfica foi em grande parte encontrada em sites sem
+% autores. Pois, a documentação foi criada ou pela comunidade, ou por
+% instituições, não unicamente publicada em formato de livro ou artigo.
 
-Da parte acadêmica, como o pacote de resolução de equações
-diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
-língua foi criada para resolver problemas computacionais tocantes
-principalmente a comunidade científica do MIT.
+% Da parte acadêmica, como o pacote de resolução de equações
+% diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
+% língua foi criada para resolver problemas computacionais tocantes
+% principalmente a comunidade científica do MIT.
 
-Por fim, algumas ferramentas apenas existem documentadas e contidas
-inteiramente em repositórios, como o Github. Foram os casos do
-OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
+% Por fim, algumas ferramentas apenas existem documentadas e contidas
+% inteiramente em repositórios, como o Github. Foram os casos do
+% OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
 
-\section{Revisão contínua}
+% \section{Revisão contínua}
 
-Dentro do cronograma concebido para desenvolvimento da monografia,
-pôs-se metas e etapas de escrita do documento. E, estipulou-se os
-conteúdos necessários para cada nova versão do documento, aliado a uma
-data limite. Assim, o retorno do orientador ao orientado pode se dar
-mais frequentemente.
+% Dentro do cronograma concebido para desenvolvimento da monografia,
+% pôs-se metas e etapas de escrita do documento. E, estipulou-se os
+% conteúdos necessários para cada nova versão do documento, aliado a uma
+% data limite. Assim, o retorno do orientador ao orientado pode se dar
+% mais frequentemente.
 
-\section{Organização da apresentação}
+% \section{Organização da apresentação}
 
-Como se está utilizando de diversas ferramentas e extensões dentro do
-Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
-funcionalidades dedicada a apresentações. 
+% Como se está utilizando de diversas ferramentas e extensões dentro do
+% Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
+% funcionalidades dedicada a apresentações. 
 
-\chapter{Conclusão}
-Dentro das iniciativas Open Sourced, existem virtualmente aplicações
-para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
-computação gráfica, processamento de imagens, expressões artísticas,
-ou ferramentas de organização, há um software escrito para esse fim.
+% \chapter{Conclusão}
+% Dentro das iniciativas Open Sourced, existem virtualmente aplicações
+% para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
+% computação gráfica, processamento de imagens, expressões artísticas,
+% ou ferramentas de organização, há um software escrito para esse fim.
 
-É observável a falta de competição quanto a quantidade e qualidade de
-softwares fechados e abertos. Ademais, a capacidade de
-extensão dos softwares livres, por meio das quatro fundamentais
-liberdades de suas licenças, permitem que exista uma variedade imensa
-de uso de uma mesma ferramenta. Por fim, o enriquecimento dessa
-participação colaborativa solidifica e generaliza as ferramentas
-abertas - num grau e rapidez inimagináveis, comparados ao processo de
-desenvolvimento por uma equipe fechada.
+% É observável a falta de competição quanto a quantidade e qualidade de
+% softwares fechados e abertos. Ademais, a capacidade de
+% extensão dos softwares livres, por meio das quatro fundamentais
+% liberdades de suas licenças, permitem que exista uma variedade imensa
+% de uso de uma mesma ferramenta. Por fim, o enriquecimento dessa
+% participação colaborativa solidifica e generaliza as ferramentas
+% abertas - num grau e rapidez inimagináveis, comparados ao processo de
+% desenvolvimento por uma equipe fechada.
 
-Demonstrou-se diversos usos desses software, sem paralelos, na
-Indústria e na Academia. Ambos possuem algorítimos na fronteira da
-ciência, a qual o uso apenas é limitado pela imaginação e capacidade
-formativa do usuário-desenvolvedor. Assim, é imprescindível que no
-curso de engenharia se tenha uma ampla formação com base nos softwares
-livres, sob os quais a computação moderna subiste.
+% Demonstrou-se diversos usos desses software, sem paralelos, na
+% Indústria e na Academia. Ambos possuem algorítimos na fronteira da
+% ciência, a qual o uso apenas é limitado pela imaginação e capacidade
+% formativa do usuário-desenvolvedor. Assim, é imprescindível que no
+% curso de engenharia se tenha uma ampla formação com base nos softwares
+% livres, sob os quais a computação moderna subiste.
 
-Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
-os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
-roupagem, e por fim os sistemas sociais onde se desenvolve os
-softwares, como a plataforma de versionamento Git/Github. Ademais,
-demonstrou-se, com efetividade, que é possível construir e rodas todas
-essas aplicações num sistema totalmente aberto.
+% Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
+% os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
+% roupagem, e por fim os sistemas sociais onde se desenvolve os
+% softwares, como a plataforma de versionamento Git/Github. Ademais,
+% demonstrou-se, com efetividade, que é possível construir e rodas todas
+% essas aplicações num sistema totalmente aberto.
 
 \bibliography{bib}
 
