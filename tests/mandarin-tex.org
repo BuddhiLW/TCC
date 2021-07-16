@@ -1,0 +1,45 @@
+# #+TITLE: Aula 20;  弟二十课
+#+STARTUP: latexpreview
+#+OPTIONS: tex:t
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER: \usepackage{xltxtra}
+#+LATEX_HEADER: \setmainfont{Source Han Sans CN}
+#+LATEX_HEADER: \usepackage{verbatim, fancyvrb}
+#+LATEX_HEADER: \setmonofont{AR PL UMing CN}[Scale = MatchLowercase, UprightFont = * Bold, ItalicFont = * Bold Italic, BoldFont = * Black, BoldItalicFont = * Black Italic]
+
+# * 第二十课
+# #+AUTHOR:老市:张小. 学生: 小白色 佩德罗.
+* Preamble
+** Begin document with fontspec
+#+begin_src latex
+\documentclass{article}
+\usepackage{fontspec} %Font package
+#+end_src
+
+** Declare font (in your system)
+We are declaring the command \ch{}.
+#+begin_src latex
+\newfontfamily\ch[Mapping=tex-text]{HAN NOM A} 
+%AR PL UMing CN : light font
+%AR PL UKai TW MBE : drawn font (marked traces)
+\DeclareTextFontCommand{\unifont}{\ch}
+#+end_src
+
+* Call the function inside the document
+#+begin_src latex
+\begin{document}
+\ch{你好我说汉语}
+\end{document}
+#+end_src
+
+* Note
+To know the name of the fonts installed in the system which render Mandarin, we can instal =forfont=
+
+#+begin_src shell
+fontfor -t 语
+#+end_src
+
+It will open a webpage rendering and showing the fonts available in the system.
+
+#+ATTR_HTML: :width 400
+[[file:pic-selected-210714-1454-51.png][file:~/PP/LaTeX/TCC/tests/pic-selected-210714-1454-51.png]]

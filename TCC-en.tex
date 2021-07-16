@@ -36,7 +36,7 @@ english,			% idioma adicional para hifenização
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de
 % justificação
-\usepackage{amsmath}
+% \usepackage{amsmath}
 \usepackage{xltxtra}
 % \setmainfont{Source Han Sans CN}
 % \usepackage{xeCJK}
@@ -52,7 +52,7 @@ english,			% idioma adicional para hifenização
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
-\usepackage{amsmath}
+% \usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage{amssymb}
 \usepackage{capt-of}
@@ -70,6 +70,10 @@ english,			% idioma adicional para hifenização
 % Some unicode characters
 % 
 % \newcommand*{\uni}[1]{{\fontsize{12}{12}\fontfamily{}\selectfont \H{#1}}}
+\newfontfamily\ch[Mapping=tex-text]{HAN NOM A} 
+%AR PL UMing CN : light font
+%AR PL UKai TW MBE : drawn font (marked traces)
+\DeclareTextFontCommand{\unifont}{\ch}
 
 % \setmainfont{Source Han Sans CN}
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
@@ -80,7 +84,13 @@ english,			% idioma adicional para hifenização
 \usepackage{fontawesome5} % renderização de unicode
 \usepackage{ucs}
 
-\usepackage{pythonhlt}
+\usepackage{pythonhlt}%% python highlight
+\usepackage{bashhlt}  %% shell highlight
+
+% \usepackage{amshmath}
+\usepackage{amsmath}
+
+
 
 % \usepackage{droid}
 % \renewcommand{}{}
@@ -139,7 +149,7 @@ english,			% idioma adicional para hifenização
 % ---
 \titulo{Free software in industry and academia}
 \autor{PEDRO GOMES BRANQUINHO}
-\orientador{Dr. Wei-Liang Qian}
+\orientador{Dr. Wei-Liang Qian (\ch{钱卫良})}
 \local{Lorena}
 \data{2021}%
 \instituicao{%
@@ -170,7 +180,7 @@ english,			% idioma adicional para hifenização
   pdfauthor={\@author},
   pdfsubject={\imprimirpreambulo},
   pdfcreator={Pedro G. Branquinho},
-  pdfkeywords={tese}{software}{livre},
+  pdfkeywords={monograph}{FOSS}{OSS}{OS},
   colorlinks=true,       		% false: boxed links; true: colored links
   linkcolor=blue,          	% color of internal links
   citecolor=blue,        		% color of links to bibliography
@@ -1022,6 +1032,8 @@ forty seven contributors. It's existence dates back to may 2017 \cite{fang2020cr
 % telegram. O programa foi escrito em Python e seu código é aberto à
 % estensão, possuindo centro e quarenta e sete contruibuidores, com existência datando de Maio de 2017 \cite{fang2020cryptocurrency}.
 
+
+
 The functioning of automated trading goes through a two-way
 communication between the local computer and a platform-server of
 trading - which would be Angles to a broker.
@@ -1037,7 +1049,7 @@ trading - which would be Angles to a broker.
   % \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
   %   comunicação cliente-servidor}
   \includegraphics[width=0.6\linewidth]{Imagens/server-client-fq_4.png}
-  \legend{Resource: The author.}
+  \legend{Resource: The authors.}
 \end{figure}
 
 A great part of the work on writing an automated robot, for any
@@ -1083,6 +1095,7 @@ documentation and extend the application to it's use.
 
 % <<No que consiste o software; os métodos utilizados para seu funcionamento>>
 
+
 \clearpage
 \subsection{OR-Tools}
 \label{sec:ortools}
@@ -1091,7 +1104,7 @@ documentation and extend the application to it's use.
 Linear Programming is viewed as a revolutionary development giving us
 the ability for the first time to state general objectives and to
 find, by means of the simplex method, optimal policy decisions for a
-broad class of practical decision problems of great complexity. \cite{dantzig1983reminiscences}
+broad class of practical decision problems of great complexity. \cite{dantzig1983}
 \end{citacao}
 
 
@@ -1538,274 +1551,7 @@ solving, for example, Lagrange equations of motion. One can have both
 the symbolical results outputted in \TeX{}, and by a change in inputs,
 in the same procedure, have numerical data which can be used to
 simulate the behavior of physical systems. 
-% A língua é tão poderosa que as implementações não são apenas numéricas, nem são somente simbólicas. É possível utilizar-se da mesma função (\textit{procedure}) para se fazerem cálculos numéricos ou simbólicos, tendo apenas de se mudar os argumentos de entrada (\textit{inputs}).
 
-% \clearpage
-% \chapter{Materiais e Métodos}
-% O planejamento da monografia seguiu as seguintes etapas:
-
-% \begin{enumerate}
-% \item Contato e estratégias com o orientador;
-% \item Determinação do tópico principal; 
-% \item Delineação específica dos subtópicos;
-% \item Organização da agenda à partir das datas finais objetivadas;
-% \item Início à escrita do TCC;
-% \item Junção de notas exploratórias sobre o tópico;
-% \item Pesquisa bibliografia;
-% \item Escrita de todos os tópicos da monografia;
-% \item Revisão contínua à cada etapa da monografia;
-% \item Organização de apresentação;
-% \end{enumerate}
-
-% \section{Convite ao orientador}
-% Procurou-se um docente tanto familiar ao autor, quanto versado e
-% interessado no tópico de pesquisa.
-
-% \section{Delineação do tema}
-% Dado que o tema softwares livres na indústria e academia é um tópico
-% indefinidamente abrangente, houve uma necessidade imprescindível de
-% delimitar graduamente o tópico.
-
-% Nas revisões contínuas, determinava-se o quão profundo tinha se
-% abordado os tópicos, e se era necessário dar procedência, ou seguir o
-% andamento de outras parte da agenda.
-
-% \section{Organização cronológica}
-% Decidiu-se por seguir o método de diagrama de Gantt, amplamente
-% utilizado em organização de projetos. As partições temporais foram
-% ponderadas pelas datas limites objetivadas.
-
-% \section{As fases da escrita da Monografia}
-% Como a monografia se caracteriza como uma Análise Exploratória, o
-% enfoque foi na literatura concernente ao Tema.
-
-% Na subtópico acadêmico, procurou-se dar enfoque ambos softwares auxiliares
-% de pesquisas, quanto úteis à sala de aula. Bem como, pretendia-se
-% explicar conceitos-chave na compreensão da dinâmica histórica e atual
-% do ecossistema em que se desenvolve e aplicam softwares.
-
-% Ademais, nas aplicações tecnológicas, o autor documentou softwares que
-% já utilizou em situações reais.
-
-% \section{Junção de notas}
-% Ao se utilizar os softwares os autores havia produzido anotações sobre
-% o desenvolvimento do software. Uma auto-documentação, enquanto se
-% desenvolvia, ou se estudava os mecanismos de uma aplicação. Assim,
-% utilizou-se dessas notas para construção da monografia.
-
-% \section{Pesquisa bibliográfica}
-% A revisão da bibliografia objetiva facilitar o entendimento da
-% indústria dos softwares, a qual é difere em seu aspecto
-% majoritariamente livre e aberto. Além do mais, procurou-se fazer um
-% recorte de história, usos e desenvolvimento em estado da arte de
-% diversos softwares icônicos.
-
-% A maior quantidade de informações históricas encontra-se armazenada
-% digitalmente, em sites de instituições internacionais, como o
-% GNU. Conquanto, nas aplicações procurou-se o embasamento em artigos
-% científicos.
-
-% Utilizou-se do Google Scholar e a plataforma da ACM (Association for
-% Computing Machinery), da qual o autor é
-% membro e na qual existe material especializado em computação e softwares.
-
-% \section{Revisão contínua}
-% Parte fundamental da organização da monografia foi a troca de
-% informações, auxílio, e integração constante das considerações do
-% orientador Dr. Wei-Liang.
-% \section{Organização da apresentação}
-% Na apresentação, procura-se utilizar ferramentas interativas e
-% demonstração de conceitos por meio de programação em tempo real
-% aplicações. Escolheu-se utilizar da ferramento Org-mode, integral ao
-% Emacs.
-
-% \chapter{Resultado e Discussões}
-
-% \section{Convite ao orientador}
-% O autor já havia interagido com o Dr. Wei-Liang, o qual no passado
-% havia pedido, a titulo de pesquisarem juntos, que se instalasse o
-% sistema operacional do Linux. Ademais, uma das aplicações era na
-% resolução e simulação de sistemas resolvidos por Lagrangeanas - tópico
-% lecionado pelo orientador, na disciplina de Mecânica Clássica.
-
-% Assim, fortunamente o orientador se sentiu inclinado a participar
-% desse trabalho. E, concorda que o ensino sobre a iniciativa Open
-% Source, bem como os softwares em si, são detrimentais na vida acadêmica.
-
-% \section{Delineação do tema}
-
-% A iniciativa GNU e o open source é indefinidamente abrangente. Existem
-% softwares abertos escritos para virtualmente qualquer outra área do
-% exercício cognitivo do ser humano.
-
-% Necessitou contentar-se em parcialmente mostrar aplicações mais em
-% mão, as quais seriam mais relevantes ao escopo da monografia. Bem
-% como, optou-se por aprofundar-se em tópicos já utilizados na vida do
-% autor para se resolver problemas na academia e na indústria.
-
-% Assim, a delimitação principal se deu entorno de ferramentas abertas
-% das quais, na indústria foram apresentados OR-Tools e
-% Freqtrade.
-
-% \subsection{Da Indústria}
-% As línguas utilizadas para o desenvolvimento desses softwares foram
-% Python e C++. Porém, no caso de OR-Tools existe portabilidade para
-% C++ (nativo), Python, Java, .NET. Todos os projetos e línguas possuem licença aberta.
-
-% OR-Tools destina-se a resolver um problema virtualmente
-% conspícuo a qualquer negócio ou estrutura social prestadora de
-% serviço. Pois, o problema de agendamento de horários, com condições de
-% restrições impostas, é extremamente comum. Por exemplo, para organizar
-% turnos de funcionários, em uma empresa; turnos de enfermeiros em um
-% hospital - exemplo dado na própria documentação do software etc.
-
-% Freq-trade destina-se a automação de investimentos em
-% crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
-% aberta, sem incentivo algum externo - até, pois, não existe um
-% responsável que chefia o projeto. E, num curto período de
-% desenvolvimento, cinco anos, desde 2017, a aplicação conta com
-% inúmeras otimizações computacionais, e APIs com interfaces como
-% Telegram. Não existe paralelo de software fechado o qual é
-% comercializado, com mesmo escopo.
-
-% \subsection{Da academia}
-% \label{subsec:res-academia}
-
-% Optou-se a estudar aplicações escritas em Python, Julia,
-% Clojure(script). Pois, o autor possui histórico de
-% utilização dessas ferramentas. Com efeito, a pesquisa constituiu, em
-% grande parte, na junção de todos os esparços projetos em que o autor
-% já havia colaborado ou desenvolvido. E, no aprofundamento da
-% compreensão de todas esses projetos, para que fosse possível fazer uma
-% apresentação coesa do ferramental utilizado.
-
-% Os programas em Julia possuiam cunho numérico. Pois, sua computação
-% optimizada compara-se a performance de FORTRAN e C++. Assim, o
-% principal pacote estudado foi DifferentialEquations.jl, a qual pode
-% ser utilizada para resolver uma gama de equações diferenciais,
-% incluindo a categoria Estocástica.
-
-% O programa em Python é de processamento de imagens. Escolheu-se essa
-% aplicação, pois demonstra o quão abrangente é a portibilidade de
-% programas escritos em outras línguas ao Python - principalmente,
-% devido a grande comunidade de cientistas e programadores que o
-% utilizam.
-
-% \subsection{A intersecção}
-
-% Com Clojure(Script), Bash e \LaTeX{}, foi possível criar tanto
-% simulações que estendem a compreensão de fenômenos físicos do campo
-% abstrato ao visual. Também, empregou-se de Closh e Babashka, duas
-% bibliotecas de Clojure dedicadas a interoperabilidade com Bash, a qual
-% se processava milhares de arquivos, por meio de pipelines de
-% arquitetura complexas. Assim, facilitando a escrita de uma quantidade
-% enorme de relatórios técnicos na área de segurança do trabalho. 
-
-% Quanto a Clojure(Script), foram pesquisadas simulações gráficas, as
-% quais inerentemente são simples de se programar em Clojure. Pois, seu
-% ecossistema pode interoperar entre JVM (Java Virtual Machine) e
-% JavaScript. Assim, dado que ambos Java e JavaScript foram as línguas
-% mais populares por décadas, existem uma enorme quantidade de ambientes
-% e bibliotecas a nossa disposição. Bem como, Clojure é uma Lisp - e,
-% caracteristicamente, essa família é utilizada para prototipagem, vide
-% AutoCAD escrito em AutoLisp.
-
-% Dado que existem bibliotecas dedicadas a Mecânica Clássica em nível de
-% mestrado, bem como exite capacidades de se renderizar conceitos
-% físicos abstratos. Então, decorreu-se a computação de programas que
-% demonstravam conceitos de Física, Cálculo, e Computação Generativa.
-
-
-% \section{Organização cronológica}
-
-% A organização do projeto se deu utilizando os diagramas de Gantt, e as
-% agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
-% toda a comunicação sobre o projeto foi materializado por meio de
-% cronogramas e agendas.
-
-% \section{As fases da escrita da Monografia}
-% Iniciou-se a escrita da monografia pela pesquisa bibliográfica, dado
-% que a pesquisa se categoriza, epistemologicamente, como uma Análise
-% Exploratória. O \textit{template} utilizado para escrita do projeto
-% foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
-
-% \section{Junção de notas}
-% O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
-% para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
-% de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
-% essa ferramenta.
-
-% A documentação implícita ao desenvolvimento é uma
-% característica fundamental e pensada do Org-mode. Pois, segue o
-% paradigma de \textit{Literate Programming}. Assim, há uma mistura de
-% notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
-% código seja automaticamente documentável.
-
-% Por fim, é possível exportar qualquer anotação de extensão .org para
-% .tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
-% uma tarefa natural.
-
-% \subsection{Aplicações em Clojure}
-
-% \subsection{Aplicações em Julia}
-% \subsection{Aplicações em Python}
-
-% \section{Pesquisa bibliográfica}
-% A pesquisa bibliográfica foi em grande parte encontrada em sites sem
-% autores. Pois, a documentação foi criada ou pela comunidade, ou por
-% instituições, não unicamente publicada em formato de livro ou artigo.
-
-% Da parte acadêmica, como o pacote de resolução de equações
-% diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
-% língua foi criada para resolver problemas computacionais tocantes
-% principalmente a comunidade científica do MIT.
-
-% Por fim, algumas ferramentas apenas existem documentadas e contidas
-% inteiramente em repositórios, como o Github. Foram os casos do
-% OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
-
-% \section{Revisão contínua}
-
-% Dentro do cronograma concebido para desenvolvimento da monografia,
-% pôs-se metas e etapas de escrita do documento. E, estipulou-se os
-% conteúdos necessários para cada nova versão do documento, aliado a uma
-% data limite. Assim, o retorno do orientador ao orientado pode se dar
-% mais frequentemente.
-
-% \section{Organização da apresentação}
-
-% Como se está utilizando de diversas ferramentas e extensões dentro do
-% Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
-% funcionalidades dedicada a apresentações. 
-
-% \chapter{Conclusão}
-% Dentro das iniciativas Open Sourced, existem virtualmente aplicações
-% para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
-% computação gráfica, processamento de imagens, expressões artísticas,
-% ou ferramentas de organização, há um software escrito para esse fim.
-
-% É observável a falta de competição quanto a quantidade e qualidade de
-% softwares fechados e abertos. Ademais, a capacidade de
-% extensão dos softwares livres, por meio das quatro fundamentais
-% liberdades de suas licenças, permitem que exista uma variedade imensa
-% de uso de uma mesma ferramenta. Por fim, o enriquecimento dessa
-% participação colaborativa solidifica e generaliza as ferramentas
-% abertas - num grau e rapidez inimagináveis, comparados ao processo de
-% desenvolvimento por uma equipe fechada.
-
-% Demonstrou-se diversos usos desses software, sem paralelos, na
-% Indústria e na Academia. Ambos possuem algorítimos na fronteira da
-% ciência, a qual o uso apenas é limitado pela imaginação e capacidade
-% formativa do usuário-desenvolvedor. Assim, é imprescindível que no
-% curso de engenharia se tenha uma ampla formação com base nos softwares
-% livres, sob os quais a computação moderna subiste.
-
-% Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
-% os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
-% roupagem, e por fim os sistemas sociais onde se desenvolve os
-% softwares, como a plataforma de versionamento Git/Github. Ademais,
-% demonstrou-se, com efetividade, que é possível construir e rodas todas
-% essas aplicações num sistema totalmente aberto.
 
 \chapter{Materials and Methods}
 % \chapter{Materiais e Métodos}
@@ -2010,6 +1756,7 @@ OR-Tools has been designed to tackle conspicuous problems: one of them,
 scheduling. Virtually any social-economic enterprise use scheduling in
 some moment.
 
+\paragraph{Scheduling work shifts problem}
 We offer an example in the following setting. A hospital needs to create a schedule for four nurses over a three-day period, subject to the following conditions:
 
 \begin{enumerate}
@@ -2028,17 +1775,17 @@ We offer an example in the following setting. A hospital needs to create a sched
 % turnos de funcionários, em uma empresa; turnos de enfermeiros em um
 % hospital - exemplo dado na própria documentação do software etc.
 
-
 In this problem, the program would translate to\footnote{This problem
 is a variation from the one on the project's documentation, https://developers.google.com/optimization/scheduling/employee_scheduling},
 % <\lstset{language=python}
-Importing the OR-Tools utilities
+Importing the OR-Tools utilities,
 
 \begin{python}
   from ortools.sat.python import cp_model
 \end{python}
 
-Stating the constants, and standard input/output functions.
+Stating the constants, and standard input/output functions,
+
 \begin{python}
 class NursesPartialSolutionPrinter(cp_model.CpSolverSolutionCallback):
     """Print intermediate solutions."""
@@ -2235,27 +1982,182 @@ Statistics
 Of course, because one of the nurses would need to work more than once
 a day. This would break one of our constrained-condition. We note, though, that there is no continuity in-between the possibility of no solution and the most optimized one. 
 
+Furthermore, the solutions have exponential growth on the \textbf{event space}. Thus, not being a polynomial run-time model, we call this problem a Nondeterministic-Polynomial time (NP) on decision.
+
+% \paragraph{Hamiltonian cycle, or the Traveling Salesman Problem}
+% There are some problems which are NP-hard. For example, the popularly known ``Traveling Salesman Problem'', which consist in finding the minimum Hamiltonian Cycle. So, given ``n'' points, we wish to find a path that do not repeat any one of the edges but the first (closed). And, also that minimizes the total distance. This problem has no general solution known, and the method used is exhaustive research of solution, with some optimizations on guesses.
+
+% We imagine Paul Erdões visiting a series of mathematicians in an area. And he wants to decide which is the fastest path. So, he can maximize the number of mathematical proofs he can collaborate in, in his life.
+
+% We will solve this problem with the OR-Tools library, too.
+
+
 \subsubsection{Freqtrade}
 
-Freq-trade automate crypto-trading. The software use is pretty straight
+Freqtrade automate crypto-trading. The software use is pretty straight
 forward, once one has developed an strategy, in Python.
 
 The strategy using Boiling Bands (BB) and Relative Strength Index
 (RSI) can be understood in words as the principle: buy when prices are
-oversold and sell when it's on an average price.
+oversold and sell when it's on an average price\footnote{Using the repository with (already) optimized bb-rsi strategies}.
 
+Downloading our repository with FreqTrade configurations,
+\begin{shell}
+git clone https://github.com/BuddhiLW/studious-carnival.git
+\end{shell}
 
-% Freq-trade destina-se a automação de investimentos em
-% crypto-moedas. A ferramenta surgiu espontaneamente da comunidade
-% aberta, sem incentivo algum externo - até, pois, não existe um
-% responsável que chefia o projeto. E, num curto período de
-% desenvolvimento, cinco anos, desde 2017, a aplicação conta com
-% inúmeras otimizações computacionais, e APIs com interfaces como
-% Telegram. Não existe paralelo de software fechado o qual é
-% comercializado, com mesmo escopo.
+Navigate to strategies folder files,
+\begin{shell}
+cd studious-carnival/user_data/strategies
+\end{shell}
 
+% \clearpage
+Where the strategy-06-bb-rsi.py will have the strategy written in Python. One of the most important parts is the \textbf{definition of the indicators used (BB and RSI)}\footnote{Notes on terms: $\sigma$ means standard deviation.}.
 
+\begin{python}
+    def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
 
+        # RSI
+        dataframe['rsi'] = ta.RSI(dataframe)
+
+        # Bollinger Bands
+        bollinger1 = qtpylib.bollinger_bands(qtpylib.typical_price(dataframe), window=20, stds=1)
+        dataframe['bb_lowerband1'] = bollinger1['lower']
+        dataframe['bb_middleband1'] = bollinger1['mid']
+        dataframe['bb_upperband1'] = bollinger1['upper']
+
+        bollinger3 = qtpylib.bollinger_bands(qtpylib.typical_price(dataframe), w
+indow=30, stds=3)
+        dataframe['bb_lowerband3'] = bollinger3['lower']
+        dataframe['bb_middleband3'] = bollinger3['mid']
+        dataframe['bb_upperband3'] = bollinger3['upper']
+
+        return dataframe
+\end{python}
+
+Then, we use these to automate our buys and sells conditions. First, coding when to buy: ``if the current price is bellow three $\sigma$ of the mean.'' 
+
+\begin{python}
+    def populate_buy_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
+        dataframe.loc[
+            (
+                # (dataframe['rsi'] > 47) &
+                (dataframe["close"] < dataframe['bb_lowerband3'])
+            ),
+            'buy'] = 1
+
+        return dataframe
+\end{python}
+
+% \clearpage
+The sell strategy: ``sell when RSI is above 97 and above one $\sigma$ bellow mean.''
+
+\begin{python}
+    def populate_sell_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
+        dataframe.loc[
+            (
+                (dataframe['rsi'] > 97) &
+                (dataframe["close"] > dataframe['bb_middleband1'])
+            ),
+            'sell'] = 1
+
+        return dataframe
+\end{python}
+
+These seemly arbitrary values for the strategy came from the hyper-optimization algorithm, builtin the program. We can use this functionality by the following command:
+
+\begin{shell}
+sudo docker-compose run --rm freqtrade hyperopt -s bbrsi6 --hyperopt bbrsiopt --hyperopt-loss SortinoHyperOptLossDaily -i 1h -j 8 -e 2000 --timerange 20210101-
+\end{shell}
+
+This means command means the following: ``choose strategy bbrsi6 (-s), with bbrsiopt parameters of optimization (--hyperopt), the constrain on optimization being SortinoHyperOptLossDaily (--hyperopt-loss), use trade timeframe of 1h (-i), use computing power of 8 cores (-j 8), optimize through 2000 iterations (-e), and use the data since the beginning of 2021 until today (--timerange)''.
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:freqtrade-running} Epochs of strategy optimization}
+  % \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
+  %   comunicação cliente-servidor}
+  \includegraphics[width=\linewidth]{Imagens/freqtrade2.jpeg}
+  \legend{Optimization application running. Resource: The authors.}
+\end{figure}
+% \clearpage
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:freqtrade-running} Optimized Strategy Suggestion}
+  % \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
+  %   comunicação cliente-servidor}
+  \includegraphics[width=\linewidth]{Imagens/freqtrade3.jpeg}
+  \legend{Output to be placed under the strategy file. Resource: The authors.}
+\end{figure}
+
+By configuring the file,
+\begin{shell}
+cd studious-carnival/user_data/config.json
+\end{shell}
+
+We can hook the application to our Telegram account and our exchange. For example, one of the options of exchange is Binance\footnote{The markdown ``<<>>'' symbolizes that is a key you would need to provide}.
+
+\begin{python}
+"exchange": {
+        "name": "binance",
+        "key": "<<public-key>>",
+        "secret": "<<secret-key>>",
+        "ccxt_config": {"enableRateLimit": true},
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 200
+        },
+\end{python}
+
+And, the Telegram configuration can be configured as,
+
+\begin{python}
+"telegram": {
+        "enabled": true,
+        "token": "<<token>>",
+        "chat_id": "1272433706"
+      },
+\end{python}
+
+% \clearpage
+
+Also, it's possible to test our strategy on past data. We have to call the ``backtesting'' command to that end.
+
+\begin{shell}
+sudo docker-compose run --rm freqtrade backtesting --strategy bbrsi6 --timeframe 1h
+\end{shell}
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:freqtrade-running} Output backtesting history}
+  \includegraphics[width=\linewidth]{Imagens/freqtrade4.jpeg}
+  \legend{Performance per crypto-coin pair. Resource: The authors.}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:freqtrade-running} Summary about the backtesting performance}
+  \includegraphics[width=0.3\linewidth]{Imagens/freqtrade5.jpeg}
+  \legend{Major information. Resource: The authors.}
+\end{figure}
+
+Finally, our application can be run in dry-mode (real-time simulation)\footnote{also configured under config.json}, or with real money.
+
+\begin{python}
+"dry_run": false,
+\end{python}
+
+Launch the application in the shell, with the following command.
+\begin{shell}
+sudo docker-compose run --rm freqtrade trade -s bbrsi6 -c user_data/config.json
+\end{shell}
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:freqtrade-running} Telegram Interaction, application running}
+    \includegraphics[width=0.45\linewidth]{Imagens/freqtrade1.jpeg}
+  \legend{We can monitor and control the application through telegram. Resource: The authors.}
+\end{figure}
 
 \subsection{Academia Applications}
 \label{subsec:res-academia}
@@ -2273,11 +2175,25 @@ simulations are thus a deepening of how these solutions emerge.
 % compreensão de todas esses projetos, para que fosse possível fazer uma
 % apresentação coesa do ferramental utilizado.
 
+\subsubsection{DifferentialEquations.jl}
 Julia has been invented to work with scientific computation. The
 optimized computation of Julia compares to FORTRAN and C++. Thus, we
 chose to use a totally julia-written package, called
 \textit{DifferentialEquations.jl}. This package can be used to solve a wide
 range of differential equations.
+
+\paragraph{Rumor Propagation Model}
+
+Piqueira \cite{piqueira2010rumor} proposed a model for rumor propagation as,
+
+\begin{equation}
+  \begin{align*}
+    \dot{I} &= − \beta k SI \\
+    \dot{S} &= \beta kSI - \alpha kS (S+R)\\
+    \dot{R} &= \alpha k S(S+R)
+  \end{align*}
+\end{equation}
+
 % Os programas em Julia possuiam cunho numérico. Pois, sua computação
 % optimizada compara-se a performance de FORTRAN e C++. Assim, o
 % principal pacote estudado foi DifferentialEquations.jl, a qual pode

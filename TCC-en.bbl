@@ -72,7 +72,7 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
   on lca.
 \emph{Journal of Cleaner Production}, Elsevier, v.~171, p. 1460--1471, 2018.}
 
-\bibitem[Dantzig 1983]{dantzig1983reminiscences}
+\bibitem[Dantzig 1983]{dantzig1983}
 \abntrefinfo{Dantzig}{DANTZIG}{1983}
 {DANTZIG, G.~B. Reminiscences about the origins of linear programming. In:
   \emph{Mathematical Programming The State of the Art}. [S.l.]: Springer, 1983.
@@ -364,8 +364,8 @@ Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1804.04344}.}
 
 \bibitem[Smith e Ritchie 2016]{sicmutils2016github}
 \abntrefinfo{Smith e Ritchie}{SMITH; RITCHIE}{2016}
-{SMITH, C.; RITCHIE, S. \emph{{SICMU}tils: {F}unctional {C}omputer {A}lgebra in
-  {C}lojure}. 2016. \url{http://github.com/sicmutils/sicmutils}.}
+{SMITH, C.; RITCHIE, S. \emph{SICMUtils: Functional Computer Algebra in
+  Clojure}. 2016. \url{http://github.com/sicmutils/sicmutils}.}
 
 \bibitem[Spinellis e Giannikas 2012]{spinellis2012organizational}
 \abntrefinfo{Spinellis e Giannikas}{SPINELLIS; GIANNIKAS}{2012}

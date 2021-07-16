@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage{fontspec} %Font package
+\newfontfamily\ch[Mapping=tex-text]{HAN NOM A} 
+%AR PL UMing CN : light font
+%AR PL UKai TW MBE : drawn font (marked traces)
+\DeclareTextFontCommand{\unifont}{\ch}
+\setromanfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\begin{document}
+\ch{你好我说汉语}
+\end{document}
