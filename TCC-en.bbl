@@ -72,6 +72,11 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
   on lca.
 \emph{Journal of Cleaner Production}, Elsevier, v.~171, p. 1460--1471, 2018.}
 
+\bibitem[Daley e Kendall 1964]{daley1964epidemics}
+\abntrefinfo{Daley e Kendall}{DALEY; KENDALL}{1964}
+{DALEY, D.~J.; KENDALL, D.~G. Epidemics and rumours.
+\emph{Nature}, Nature Publishing Group, v.~204, n.~4963, p. 1118--1118, 1964.}
+
 \bibitem[Dantzig 1983]{dantzig1983}
 \abntrefinfo{Dantzig}{DANTZIG}{1983}
 {DANTZIG, G.~B. Reminiscences about the origins of linear programming. In:
@@ -259,6 +264,19 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
 \emph{Yearbook of the National Society for the Study of Education}, v.~108,
   n.~2, p. 203--225, 2009.}
 
+\bibitem[Piqueira, Zilbovicius e Batistela 2020]{piqueira2020daley}
+\abntrefinfo{Piqueira, Zilbovicius e Batistela}{PIQUEIRA; ZILBOVICIUS;
+  BATISTELA}{2020}
+{PIQUEIRA, J.~R.; ZILBOVICIUS, M.; BATISTELA, C.~M. Daley--kendal models in
+  fake-news scenario.
+\emph{Physica A: Statistical Mechanics and its Applications}, Elsevier, v.~548,
+  p. 123406, 2020.}
+
+\bibitem[Piqueira 2010]{piqueira2010rumor}
+\abntrefinfo{Piqueira}{PIQUEIRA}{2010}
+{PIQUEIRA, J. R.~C. Rumor propagation model: an equilibrium study.
+\emph{Mathematical Problems in Engineering}, Hindawi, v.~2010, 2010.}
+
 \bibitem[Potts et al. 2010]{potts2010harmonic}
 \abntrefinfo{Potts et al.}{POTTS et al.}{2010}
 {POTTS, C. et al. Harmonic grammar with linear programming: from linear systems
@@ -433,6 +451,11 @@ Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1804.04344}.}
   network era.
 \emph{Knowledge, Technology \& Policy}, Springer, v.~14, n.~2, p. 88--112,
   2001.}
+
+\bibitem[Wolfram 1983]{wolfram1983cellular}
+\abntrefinfo{Wolfram}{WOLFRAM}{1983}
+{WOLFRAM, S. Cellular automata.
+\emph{Los Alamos Science}, v.~9, n.~2-21, p.~42, 1983.}
 
 \bibitem[Zhang et al. 2008]{zhang2008eco}
 \abntrefinfo{Zhang et al.}{ZHANG et al.}{2008}

@@ -2184,7 +2184,7 @@ range of differential equations.
 
 \paragraph{Rumor Propagation Model}
 
-Piqueira \cite{piqueira2010rumor} proposed a model for rumor propagation as,
+Piqueira \cite{piqueira2010rumor} proposed a model based on Daley-Kendal \cite{daley1964epidemics} for rumor propagation\footnote{There are many other versions considering some kind of variation. In another modern paper, Piqueira consider fact-checkers \cite{piqueira2020daley}} as, 
 
 \begin{equation}
   \begin{align*}
@@ -2194,17 +2194,96 @@ Piqueira \cite{piqueira2010rumor} proposed a model for rumor propagation as,
   \end{align*}
 \end{equation}
 
-% Os programas em Julia possuiam cunho numérico. Pois, sua computação
-% optimizada compara-se a performance de FORTRAN e C++. Assim, o
-% principal pacote estudado foi DifferentialEquations.jl, a qual pode
-% ser utilizada para resolver uma gama de equações diferenciais,
-% incluindo a categoria Estocástica.
 
-% O programa em Python é de processamento de imagens. Escolheu-se essa
-% aplicação, pois demonstra o quão abrangente é a portibilidade de
-% programas escritos em outras línguas ao Python - principalmente,
-% devido a grande comunidade de cientistas e programadores que o
-% utilizam.
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:diffeq-case1} Rumor Propagation Model - Hard information}
+    \includegraphics[width=0.5\linewidth]{Imagens/fig09.png}
+  \legend{$\alpha = 0.8$ and $\beta=0.2$. Resource: The authors.}
+\end{figure}
+
+And, we could easily use Julia and it's package to investigate the behavior of these equations. By reading the paper, we understand $\alpha$ means how hard an information is hard to get, learn or remember etc. At the same time, $\beta$ has to do with how much an information is attractive, scarce (meaning unique), socially relevant etc. And, $k$ has to do with normalization of the $\alpha, \beta{} \, \textrm{and the total population}$. if $\alpha + \beta = 1$ then we can set $k=1$, simplifying the equations.%
+
+
+We then can then experiment and derive conclusions, for an example, that extremely important information which is also hard to get will have a limiting rate of Ignorants and people who contain that information, but do not propagate it (Stiflers). At the same time, spreaders will have an oscillating response, just as to maintain the limiting rate of ``knowers'' (\autored{fig:diffeq-case1}).
+
+\begin{figure}[!htb]
+  \centering
+    \caption{\label{fig:diffeq-case2} Rumor Propagation Model - Effects on Spreaders}
+    \includegraphics[width=0.5\linewidth]{Imagens/fig95.png}
+  \legend{$\alpha = 0.4$ and $\beta=0.6$. Resource: The authors.}
+\end{figure}
+
+At the same time, we can learn about the counter-intuitive effect of making a relevant information, with good spreading changes, too accessible. That can make part of the public unaware of it. Because the Spreaders may lose interest in talking about it, due to too many people talking about it. And, then, all of the sudden, these Spreaders become Stiflers who forgot or do not talk about the subject anymore for whatever reason (\autoref{fig:diffeq-case2}).
+\clearpage
+\subsubsection{Teaching abstract concepts}
+
+Some animations in Clojure can be done using a great deal of
+libraries. And, some of them can be used for understanding STEM
+related abstractions.
+
+\paragraph{Cellular Automata}
+
+Proposed by Wolfram \cite{wolfram1983cellular}, a useful way to
+understand and contemplate complexity can be by visualizing cellular
+automata. From these seemingly simple rules arise immense complexity (\autoref{fig:ca1}).
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:ca1} Cellular Automata with Clojure}
+  \includegraphics[width=0.7\linewidth]{Imagens/CA/ca1.png}
+  \legend{Simulating simple rules, arising complexity. Resource: The authors.}
+\end{figure}
+
+\paragraph{Electromagnetism}
+
+In Clojure2D library, we can write waves that imitate electromagnetic
+waves behavior (\autoref{fig:em}). 
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:em} Electromagnetism with Clojure}
+  \includegraphics[width=0.7\linewidth]{Imagens/CA/eletromag-is.png}
+  \legend{Resource: The authors.}
+\end{figure}
+
+\paragraph{Calculus}
+
+Pre-calculus knowledge of how $sin(\theta)$ behaves. Probably, explain
+rates of variation and other concepts with interactive
+simulations. The student would be able to actively engaged, manipulating the
+code, angular rate etc (\autoreg{fig:calc}).
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:calc} Calculus and rates of changes}
+  \includegraphics[width=0.7\linewidth]{Imagens/CA/calc1-is.png}
+  \legend{Resource: The authors.}
+\end{figure}
+
+\paragraph{Analytical Geometry}
+
+With Clojure2D there are implemented simulations of vector projection
+simulation. These could be used in teaching analytical geometry (\autoref{fig:ga}).
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:ga} Vector projection simulation}
+  \includegraphics[width=0.7\linewidth]{Imagens/CA/GA-is.png}
+  \legend{Resource: The authors.}
+\end{figure}
+
+\paragraph{Fluid Viscosity}
+Also, one could use implemented simulations of free fall bodies
+changing of medium. These models show how a body changes motion
+under such changes (\autoref{fig:vis}). 
+
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:vis} Body under gravity - Viscosity}
+  \includegraphics[width=0.7\linewidth]{Imagens/CA/fv-is.png}
+  \legend{Resource: The authors.}
+\end{figure}
 
 % \subsection{A intersecção}
 
@@ -2231,7 +2310,27 @@ Piqueira \cite{piqueira2010rumor} proposed a model for rumor propagation as,
 % demonstravam conceitos de Física, Cálculo, e Computação Generativa.
 
 
+% Os programas em Julia possuiam cunho numérico. Pois, sua computação
+% optimizada compara-se a performance de FORTRAN e C++. Assim, o
+% principal pacote estudado foi DifferentialEquations.jl, a qual pode
+% ser utilizada para resolver uma gama de equações diferenciais,
+% incluindo a categoria Estocástica.
+
+% O programa em Python é de processamento de imagens. Escolheu-se essa
+% aplicação, pois demonstra o quão abrangente é a portibilidade de
+% programas escritos em outras línguas ao Python - principalmente,
+% devido a grande comunidade de cientistas e programadores que o
+% utilizam.
+
+
+
 % \section{Organização cronológica}
+\section{Cronological Organization}
+
+The present work has been manager through Gantt diagrams. Also, we
+used dynamic agendas builtin in Emacs. Thus all visual framing of time
+has been done by either one these two.
+
 
 % A organização do projeto se deu utilizando os diagramas de Gantt, e as
 % agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
