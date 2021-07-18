@@ -1,4 +1,0 @@
-\contentsline {section}{\numberline {1}{\bfseries \sffamily DONE} Start using diary 2021-06-09 17:38}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Objective}{1}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}What has been done}{1}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}What needs to be done}{2}{subsubsection.1.1.2}%

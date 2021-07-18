@@ -156,7 +156,7 @@ english,			% idioma adicional para hifenização
   University of São Paulo - USP \\
   Engineer School of Lorena
   \par
-  Monograph, Conclusion Thesis
+  Monograph, Final Paper
 }%
 \tipotrabalho{Dissertation}
 % O preambulo deve conter o tipo do trabalho, o objetivo,
@@ -332,29 +332,67 @@ english,			% idioma adicional para hifenização
 % Abstract in English
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-  In this work, It's shown how to build a series of application only upon a Free Software system - EXWM, Artix Linux OSS. I explain how the experience of participating in the Open Community can be significant for other Engineers; specially Physics Engineers. It's delineated what are the current trends on the adoption of Free and/or Open Source Software (FOSS). Furthermore, I put forward some of the tools I used in Academia, and in Industry, and some other not so well known software, which could be used in these two contexts - e.g., Freqtrade, OR-Tools, Git(hub) et cetera. I also argue why Linux is such a key software for someone shifting to the Open Source paradigm.
-  
- \textbf{Key-words}: trends. foss. academia. industry. linux. freqtrade. or-tools. git. github.
+In this monograph, we discuss key theoretical concepts to keep in mind
+when working with modern applications. We chose applications
+concerning both Academic and/or Industrial contexts. These
+applications are built on a development-environment based on free and
+open-source software (FOSS). The environment primarily consists of EXWM, Artix Linux OSS.
+The basic notions and the ongoing trend for adopting FOSS in
+academic and in industrial practices are briefly reviewed. So to explain for
+what motives and how often FOSS are currently adopted.
+Some canonical works on Scientific Computing - SCIM and SICP - are
+considered and their relevance investigated, as motivation for
+emphasizing in simulations as means of physics learning tools. 
+Regarding application development, the discussions are carried out by
+focusing on some specific tools, which should be taken as formal
+examples. Their potentiality, as particular tools, for particular
+problems, can be generalized. Given that we chose any other field of
+inquiry and find or extend applications built for this field.
+In particular, we elaborate on these applied FOSS: Freqtrade, OR-Tools,
+DifferentialEquations.jl and Clojure2D. Showing, thus, that once one have a
+suitable environment to run these type applications, then the easiness to use
+and extend them follow.
+
+\textbf{Key-words}: modern application. academic context. industrial
+context. foss. physics leaning tools. scientific
+computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d.
 \end{resumo}
 
 % Abstract (resumo) in Portuguese
 \begin{resumo}[Resumo]
- \begin{otherlanguage*}{brazil}
-
-  Demonstrou-se como é possível construir uma série de aplicações
-  baseada em softwares de licença livre, à partir de um sistema
-  aberto, o Linux com inteface EXWM - Emacs X Window Manager. Além
-  disso, foi propiciado casos reais de aplicações na Indústria e no
-  investimento privado, autônomo. Bem como, utilizações na Academia,
-  à nível de lecionar, e pequisa. Sustenta-se que a economia aberta
-  possui similaridade estrutural ao movimento \textit{Open Source} e
-  seu desenvolvimento, o que aponta que essa é e continuará a ser,
-  paulatinamente mais, o paradigma de desenvolvimento econômico
-  tecnológico. Assim, imprescindível à formação do engenheiro.
-  
-   \vspace{\onelineskip}
+  \begin{otherlanguage*}{brazil}
+    Nessa monografia, discutimos conceitos teóricos chave, os quais devem ser
+    considerados quando se trabalha com aplicações modernas. As
+    aplicações discutidas no documento contextualizam-se tanto a Indústria,
+    quando a Academia. Essas aplicações foram rodadas sob um sistema
+    de desenvolvimento baseado em softwares livres e abertos (FOSS). O
+    ambiente consiste primariamente de EXWM, Aritx Linux OS.
+   As noções básicas e a presente tendência de adoção de FOSS em
+   contexto acadêmico e em práticas industriais são brevemente
+   revistas. De forma a explicar alguns dos motivos e quão
+   frequentemente FOSS são atualmente empregados. 
+   Alguns trabalhos canônicos de Computação Científica - SCIM e SICP -
+   são considerados, e suas relevâncias investifadas. Isto serve de
+   motivação para enfáse em utilização de simulações como meio de
+   aprendizado de física.
+   No tocante ao uso de aplicações, a discussão é feita de forma a
+   focar em apenas em algumas ferramentas específicas, as quais devem
+   ser tomadas como exemplos formais. As potencialidades como
+   ferramentas particulares podem ser generalizadas. Basta-se escolher
+   qualquer outro campo de pesquisa e utilizar-se de aplicações
+   escritas a ele.
+   Em particular, focamos em trabalhar com os seguintes FOSS:
+   Freqtrade, OR-Tools, DifferentialEquations.jl e
+   Clojure2D. Mostrando, assim, que uma vez que temos um sistema
+   ajustado a rodar esse tipo de aplicação, por conseguinte segue uma
+   facilitação em utilizar e estender essas aplicações. 
+    
   \noindent
-  \textbf{Palavras-chaves}: software livre. automação. freqtrade. idústria. academia.
+  \textbf{Palavras-chaves}: aplicações modernas. contexto
+  acadêmico. contexto industrial. foss. aprendizado de
+  física. computação
+  científica. simulações. freqtrade. or-tools. differentialequations.jl. clojure2d.
+  
  \end{otherlanguage*}
 \end{resumo}
 
@@ -386,9 +424,21 @@ english,			% idioma adicional para hifenização
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
-  \item[FOSS] Free and Open Source Software  
-  \item[IDE]:Integrated Development System 
-  \item[abnTeX] ABsurdas Normas para TeX
+\item[FOSS] Free and Open Source Software
+\item[OSS] Open Source Software
+\item[IDE] Integrated Development System 
+\item[abnTeX] ABsurdas Normas para TeX
+\item[OR-Tools] Operational Reseach Tools
+\item[IT] Information Technology
+\item[GUI] Graphical User Interface
+\item[LCS] Laboratory of Computer Science
+\item[GNU] GNU's Not Unix
+\item[WM] Window Manager
+\item[EXWM] Emacs's X Window Manager
+\item[SCIM] Structure and Interpretation of Classical Mechanics
+\item[SICP]Structure and interpretation of computer programs
+\item[OS] Operational System
+\item[PDF] Portable Document Format
 \end{siglas}
 % ---
 
@@ -425,46 +475,212 @@ english,			% idioma adicional para hifenização
 \chapter[Introduction]{Introduction}
 % \addcontentsline{toc}{chapter}{Introdução}
 
-In training a Physics Engineer, of which, by definition, is a generalist professional. The use of Free and Open Sourced Softwares (FOSS), as well as the participation in the Open Source community (OS), are two detrimental experiences to have.
+Physics Engineer, by definition, is a generalist professional.
+Among other valuable experiences that can be acquired through the
+training, the use of free and open-source software (FOSS) and
+participation in the open community constitute two essential pieces.
+
 % Na formação de um engenheiro físico, o qual, por definição, é um profissional generalista, os softwares abertos (FOSS - Free and Open Source Software) e a participação da comunidade Open Source (OS) são detrimentais para sua formação.
 
-The variability, which open source software (OSS) brings to existence of applications and it's extension, can change altogether user's experience. Thus, taking him closer to acting as a developer. This experience of interloping user and developer roles doesn't require that you are a computer scientist or a Information Technology (IT) professional by training. For, programming can be seen as both a Science and an Art \cite{knuth1968art} - e.g., an exercise of self-expression.
+The variability, which open source software (OSS) brings to existing
+applications and their extension, can change altogether user's experience. Thus, taking him closer to acting as a developer. This experience of interloping user and developer roles doesn't require that you are a computer scientist or a Information Technology (IT) professional by training. For, programming can be seen as both a Science and an Art \cite{knuth1968art} - e.g., an exercise of self-expression.
 % A diversidade os quais softwares extensíveis acarretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de cientistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte \cite{knuth1968art}.
 
 OSS guarantees four fundamental liberties \autoref{sec:opensource}, the right to study, copy, modify and redistribute it.
 % Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
 
 Just as the scientific enterprise benefits, with it's rapid development, by means of the global community's participation, which holds space for individuals with a variety of different training. Also, the computation enterprise benefits from the variety of people's training, which constitute the body of the open source community.
-% Bem como a ciência se beneficia com seus rápidos avanços, de uma comunidade global de participantes, com as mais distintas especializações profissionais. Também, beneficia-se a computação com a comunidade aberta, e especialização eclética, tanto de membros quanto de softwares.
-\section{Objective}
+% Bem como a ciência se beneficia com seus rápidos avanços, de uma
+% comunidade global de participantes, com as mais distintas
+% especializações profissionais. Também, beneficia-se a computação com
+% a comunidade aberta, e especialização eclética, tanto de membros
+% quanto de softwares.
 
-We will demonstrate the vality of the hypothesis that a engineer
-professional, without strong training in computation, lags behind it's
-current potential. Furthermore, we present a range of different
-applications developed to the state of the art, which are distributed
-under open licenses (copy-left). Thus, reinforcing the uniqueness of
-open source phenomena and the need for it's use - the logic and
-dynamic FOSS brings has no parallel on the economy or scientific
-community \cite{hippel2003open,peters2009open}.
+\subsection{Considerations on Mathematics and Physics historical developments}
+
+As has been pointed out by Bourbaki, when dealing with theories
+utilizing mathematical formalization,
+
+\begin{citacao}
+  (...) The only important point is the correct observance of the rules
+  of syntax. Thus, as everyone knows, the same algebraic calculation can
+  be used to solve problems about pounds  weight or pounds sterling,
+  about parabolas or motion under gravity. The same advantage attaches
+  to every text written according to the axiomatic method, and for the
+  same reasons: once the theorems of general topology have been
+  established, they may be applied at will to ordinary space, Hilbert
+  space, and many others \cite{bourbaki2004theory}.
+\end{citacao}
+
+Also, in the same text, Bourbaki emphasizes that intuition can greatly
+benefit from comprehending these symbolical results.  
+
+\begin{citacao}
+ This faculty of being able to give
+ different meanings to the words or prime concepts of a theory is indeed an
+ important source of enrichment of the mathematician's intuition, which is
+ not necessarily spatial or sensory, as is sometimes believed, but is far more
+ a certain feeling for the behaviour of mathematical objects, aided often
+ by images from very varied sources, but founded above all on everyday
+ experience \cite{bourbaki2004theory}.
+\end{citacao}
+
+Just as mathematicians would benefit from generalizing their daily
+experience, through formalization. Also, could be argued, the
+physicist and then the engineer physicist learning physics benefit
+from formalization. Because, modern physics is essentially tied to
+mathematical formalization.
+
+\begin{citacao}
+"In this book (\textit{Mécanique analytique}), he lays down the law of
+virtual work, and from that one fundamental principle, by the aid of
+the calculus of variations, deduces the whole of mechanics, both of solids and fluids.
+
+(...) Lagrange remarked that mechanics was really a branch of pure mathematics.
+
+(...) It is said that he prided himself that from the beginning to the
+end of the work there was not a single diagram." \cite{panza2003origins}
+\end{citacao}
+
+Concatenate the fact that the developer of Classical Mechanics saw it
+as an branch of mathematics. And, then that current notation of
+Quantum Mechanics is based on the work of Paul Dirac on Lagrangian\cite{dirac2005lagrangian}
+
+\begin{citacao}
+(...) the whole of the classical Hamiltonian theory, which is just a structure built up on this notion, could be taken over in all its details into quantum mechanics.
+  
+(...) We must therefore seek our quantum Lagrangian theory in an
+indirect way. We must try to take over the ideas of the classical
+Lagrangian theory, not the equations of the classical Lagrangian
+theory. \cite{dirac2005lagrangian}
+\end{citacao}
+
+That is, the \textit{logical structure} on which the classical
+Lagrangian theory was formulated upon. i.e., It's \textit{meta-mathematical} arguments.
+
+When Cantor was working on highly technical paper on trigonometrical
+series, he realized his operations on series could be formalized in
+term of sets. And, then started the revolution on mathematics \cite{pinter2014book}.
+
+\begin{citacao}
+In the course of the past seventy years or so, set theory has come to be
+widely recognized as the fundamental, “unifying” branch of mathematics. We
+have already seen how the natural numbers can be constructed, and
+their properties derived, within the framework of set theory; from
+there, it is easy to develop the rational numbers, the real and
+complex numbers, as well as remarkable systems such as Cantor’s
+“transfinite cardinals.” The notions of function, relation, operation,
+and so forth are easily defined in terms of sets, and, as a result,
+every known branch of mathematics can be formulated within set
+theory. \cite{pinter2014book}
+\end{citacao}
+
+So, just as mathematicians benefited from using axiomatic
+development to formalize mathematics. And, just as physicists
+benefited on using the mathematical formalization to develop their
+model of reality. All these development, although anchored in
+empirical necessities, one lesson can be learned, in general,
+
+\begin{citacao}
+  Thus one is often led to study with profit those parts of a
+  theory which traditionally have been neglected in this theory but studied
+  systematically in a general axiomatic context, of which the given theory
+  is a special case \cite{bourbaki2004theory}.
+\end{citacao}
+
+\section{Objectives}
+
+
+The authors propose a development from general theory to special case;
+from the modeling theory of computation to modern applications. Until the
+end of the work we wish to show the thesis that ``Modern applications
+can be used to elicit physics knowledge from simulation. Furthermore,
+these applications have a good fit under FOSS based systems.''
+
+Thus, the scheme of the current work is divided as follows,
+
+\begin{enumerate}
+\item  Exposition to key concepts of a FOSS environment [Bibliographical review].
+\begin{anumerate}
+\item GNU/Linux. 
+\item Compilers.
+\item Towers of interpreters.
+\end{enumerate}
+
+\item Why and how do someone inserts himself into a FOSS-based environment [Bibliographical review].
+\begin{enumerate}
+\item Bibliographical evidence of how FOSS adoption in Industry and Academia. 
+\item What benefits may follow from FOSS adoption.
+\end{enumerate}
+
+\item Show the functionality of applications concerning Academia and Industry.
+  [Literature review/Results and Discussion].
+  \begin{enumerate}
+  \item  Academic [Literature review/Results and Discussion]
+    \begin{enumerate}
+  \item Example of well established programs used in teaching graduate level physics (SCIM and SCIP) [literature review].
+  \item Extension of different graphical and numerical libraries available as FOSS to understand math and physics [Results and Discussion].
+  \end{enumerate}
+\item Industry [Results and Discussion]
+  \begin{enumerate}
+  \item  OR-Tools 
+  \item  Freqtrade
+  \end{enumerate}
+
+\item Both Industry and Academic - Organizational tools [Material and
+  Methods/Results and Discussion]
+  \begin{enumerate}
+    \item Org-mode 
+    \item Org-agenda 
+    \item LaTeX charts
+    \item Typography of the present work.
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+Last, we conclude synthesizing what has been understood from the
+current work.
+
+% We will demonstrate the validity of the hypothesis that an engineer
+% professional, without strong training in computation, lags behind it's
+% current potential. Furthermore, we present a range of different
+% applications developed to the state of the art, which are distributed
+% under open licenses (copy-left). Thus, reinforcing the uniqueness of
+% open source phenomena and the need for it's use - the logic and
+% dynamic FOSS brings has no parallel on the economy or scientific
+% community \cite{hippel2003open,peters2009open}.
+
+% Moreover, we will make the case for the adoption of FOSS by showing,
+
+% \begin{enumerate}
+% \item An entirely FOSS-based system performance;
+% \item Softwares entirely developed by the community driven by intrinsic purpose, will to master tools and common interest;
+% \item Effectiveness and comparative performance on the state of the art software found on FOSS applications;
+% \item Picking applications with hardly any parallel in closed development.
+% \item Covering a wide range of applications with different languages backing them up, but showing virtually no difference among easiness of use. Thus proving existence of standard development.
+% \item Making reference and straightly running applications by following and understanding their Documentation.
+% \end{enumerate}
+
+% At the end of the document, one should get a sense of how it feels to develop and extend open software. 
 % Demonstramos a defassagem que um profissional de engenharia apresentaria, sem forte formação dentro da computação. Ademais, ao partir da gama de aplicações, em estado da arte, as quais são partilhadas de forma aberta e livre, pretende-se reinterar o caso da necessidade de compreensão do fenômeno dos softwares abertos. Pois, essa lógica e dinâmica não possui paralelos nem na economia, nem na comunidade científica \cite{hippel2003open,peters2009open}.
 
-There exits debate around the meaning of \textit{Open Science}. This
-term recently became popular and which has a obvious reference to the
-\textit{Open Source}. Although, in the social literature, it's a phenomena
-poorly depicted and rarely debated through the point view that the Open
-Source Movement has anything to do with it. We cite the most cited
-article on Google Scholar research on the topic ``Open Science'' -
-called ``The future(s) of open science'' - and which only uses trice
-the term ``Open Source'' and in dismissive way
-\cite{mirowski2018future}.
+% There exits debate around the meaning of \textit{Open Science}. This
+% term recently became popular and which has a obvious reference to the
+% \textit{Open Source}. Although, in the social literature, it's a phenomena
+% poorly depicted and rarely debated through the point view that the Open
+% Source Movement has anything to do with it. We cite the most cited
+% article on Google Scholar research on the topic ``Open Science'' -
+% called ``The future(s) of open science'' - and which only uses trice
+% the term ``Open Source'' and in dismissive way
+% \cite{mirowski2018future}.
 
-Therefore, I argue that a strong basic
-knowledge, for engineer training, is fundamental for understanding the
-movement and how it has been shaped, so to critically asses the
-validity of the current social-economic shift we live in. This
-understand can, in turn, shape the carer path and formation of the
-working engineer.
-% Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
+% Therefore, I argue that a strong basic
+% knowledge, for engineer training, is fundamental for understanding the
+% movement and how it has been shaped, so to critically asses the
+% validity of the current social-economic shift we live in. This
+% understand can, in turn, shape the carer path and formation of the
+% working engineer.
+% % Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
 
 \section{The interconnection between Applications and the OS}
 
@@ -627,7 +843,7 @@ At the same time, the adoption depends directly on the intrinsic inclination of 
 % Ao mesmo tempo, a adoção depende diretamente das inclinações
 % intrínsecas da equipe de TI \cite{racero2021can}.
 
-Therefore, regardless of how much a professionalizing course may increase the \textit{intensity} and \textit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \texit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
+Therefore, regardless of how much a professionalizing course may increase the \textit{intensity} and \textit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \textit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
 % Por fim, por mais que cursos profissionalizantes no tópico aumente a
 % intensidade e rapidez de sua adesão, por alunos
 % \cite{racero2020predicting} e profissionais inclinados à autonomia
@@ -639,7 +855,7 @@ Therefore, regardless of how much a professionalizing course may increase the \t
 \section{Performance and the current trend as reasons for adoption}
 % \section{Performance e futuro do open source como motivos de adoção}
 
-Research with different areas of benchmarks state a performance gain, when utilizing GNU/Linux, compared to Windows \cite{sulaiman2021comparison}. Although, even more important, the key benefits are not in the differential performance \texit{per se}, but in the training one naturally goes through upon utilizing a totally community-dependent Operational System. 
+Research with different areas of benchmarks state a performance gain, when utilizing GNU/Linux, compared to Windows \cite{sulaiman2021comparison}. Although, even more important, the key benefits are not in the differential performance \textit{per se}, but in the training one naturally goes through upon utilizing a totally community-dependent Operational System. 
 % Delineia-se que existe um ganho em performance ao se utilizar a
 % plataforma GNU/Linux em comparação ao Windows \cite{sulaiman2021comparison}. Porém, mais importante
 % ainda, é o fato de que os principais benefícios não estão no sistema
@@ -673,9 +889,9 @@ We note that the deepness of training proposed, in graduation level, for a physi
 \section{How to leverage the potencial of OSS in Industry and Academia}
 % \section{Como podemos alavancar o potencial de OSS na Indústria e Academia}
 
-In the present work, I utilized of many concept demonstrations, in
+In the present work, we utilized of many concept demonstrations, in
 which the autor has developed or/and extended applications, in a
-context of free and open source. Also, I present how can one
+context of free and open source. Also, we present how can one
 collaborate in the community and how does that collaboration can imply
 significant professional connections. This way, both the so called
 ``soft skills'' and ``hard skills'' benefits have been elucidated, in practice.  
@@ -772,12 +988,12 @@ FOSS always will be grater than monopolized ones.
 There are root distributions of Linux, from which many other
 distributions emanate. Generically, these partitions are called
 families. We cite some of the most influential and popular ones, Red
-Hat Linux (\faIcon{redhat}), Debian (\unifont{}), CentOS
+Hat Linux (\faIcon{redhat}), Debian ({\uni{}}), CentOS
 (\faIcon{centos}), Fedora(\faIcon{fedora}), Pacman-based
-(\unifont{}/\unifont{}), OpenSUSE (\faIcon{suse}),
-Gentoo-based (\unifont{}), Ubuntu-based(\faIcon{ubuntu}),
-Slackware (\unifont{}), Open Sourced-based and the
-Independent Distributions (\unifont{}/\faIcon{linux}).
+({\uni{}} /{\uni{}} ), OpenSUSE (\faIcon{suse}),
+Gentoo-based ({\uni{}}{} ), Ubuntu-based(\faIcon{ubuntu}),
+Slackware ({\uni{}}{} ), Open Sourced-based and the
+Independent Distributions ({\uni{}{}}/\faIcon{linux}).
 
 \begin{figure}[!htb]
   \caption{\label{fig:linux-genealogy} Genealogy of Linux's Distributions}
@@ -793,7 +1009,7 @@ Independent Distributions (\unifont{}/\faIcon{linux}).
 The GNU/Linux began as two separeted and different directions. GNU
 stands for ``GNU's Not Unix'', a recursive name. And GNU initialy has
 been developed as a collaboration of revolted academics by the
-restrictive secure system of the MIT Lab (Laboratory of Compuer
+restrictive secure system of the MIT Lab (Laboratory of Computer
 Science - LCS) \cite{stallman2002my,emacswiki2021history}. Amongst
 them, there was the still active Richard Stallman, which heavily
 worked on the text editor of the time - already ten years into
@@ -862,7 +1078,7 @@ images, PDFs, Browsers et el, through Emacs.
 
 \section{Performance comparison among OS adoption}
 % \section{Comparações entre a performance e adoção de sistemas
-  operacionais}
+  % operacionais}
 
 \subsection{Performance}
 In user-level applications, the efficiency and processing benchmarks
@@ -925,7 +1141,7 @@ Open Source Software (OSS) passed through a phase ``OSS 2.0''. This
 phase was characterized as a transcendence from the mentality that the
 only people who would be able to use the system would be ``hackers''
 \cite{fitzgerald2006transformation}. And, furthermore that such OS
-were even becoming ``\texit{mainstream}''. That is, it became a common
+were even becoming ``\textit{mainstream}''. That is, it became a common
 place in society and industry. He also professed the hypothesis that
 OSS project's activities were significant influenced due to big companies. 
 % Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
@@ -1291,7 +1507,7 @@ The numerical library, DifferentialEquations, has one of the best
 performances among numerical software
 \cite{rackauckas2017differentialequations}. The performance is
 comparable to implementations in FORTRAN and C. Also, this library has
-many ports\footnote{Capability to interoperate besides the language it
+many ports \footnote{Capability to interoperate besides the language it
 was written in.}, some of the languages in which you can use it are in Python, R and Julia itself.
 % A biblioteca numérica DifferentialEquations possui uma das melhores performances de softwares numéricos que existem \cite{rackauckas2017differentialequations}. Sua performace é comparativa à implementações em FORTRAN e C. Existem \textit{ports} da biblioteca para Python e R, porém, desenvolveu-se em Julia.
 
@@ -1346,7 +1562,7 @@ using DifferentialEquations
 
 \subsubsection{Python portability}
 
-In a terminal using the package manager \texit{pip},
+In a terminal using the package manager \textit{pip},
 % Num terminal, utilizando-se do gerenciador de pacotes pip,
 \begin{verbatim}
 pip install diffeqpy
@@ -1485,11 +1701,11 @@ The norms prescribed by the canonical model are:
   Projeto de pesquisa - Apresentação.
 \end{itemize}
 
-\section{Canonical works on Computer Science}
+\section{Canonical works on Scientific Computer Science}
 \label{sec:scim}
 % \section{Trabalhos Canônicos na Área de Computação}
-% \subsection{Structure and Interpretation of Classical Mechanics (SCIM)}
-% \label{sec:scim}
+\subsection{Structure and Interpretation of Classical Mechanics (SCIM)}
+\label{sec:scim}
 The scientific library of classical mechanics, written in Scheme (a
 Lisp dialect), has been used to teach master's degree MIT
 students. Accompanied to the library there is the book, which servers
@@ -1685,7 +1901,7 @@ to the frequent interaction between the student and the advisor.
 
 \section{Presentation Organization}
 % \section{Organização da apresentação}
-The use of visual software coupled with org-mode\footnote{There are
+The use of visual software coupled with org-mode \footnote{There are
   dedicated packages in Emacs to make presentations with org-mode
   files https://github.com/howardabrams/demo-it} makes an presentation
 interactive. So, much of the work done in the monograph was reused for presentation.
@@ -1775,7 +1991,7 @@ We offer an example in the following setting. A hospital needs to create a sched
 % turnos de funcionários, em uma empresa; turnos de enfermeiros em um
 % hospital - exemplo dado na própria documentação do software etc.
 
-In this problem, the program would translate to\footnote{This problem
+In this problem, the program would translate to \footnote{This problem
 is a variation from the one on the project's documentation, https://developers.google.com/optimization/scheduling/employee_scheduling},
 % <\lstset{language=python}
 Importing the OR-Tools utilities,
@@ -2012,7 +2228,7 @@ cd studious-carnival/user_data/strategies
 \end{shell}
 
 % \clearpage
-Where the strategy-06-bb-rsi.py will have the strategy written in Python. One of the most important parts is the \textbf{definition of the indicators used (BB and RSI)}\footnote{Notes on terms: $\sigma$ means standard deviation.}.
+Where the strategy-06-bb-rsi.py will have the strategy written in Python. One of the most important parts is the \textbf{definition of the indicators used (BB and RSI)} \footnote{Notes on terms: $\sigma$ means standard deviation.}.
 
 \begin{python}
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
@@ -2095,7 +2311,7 @@ By configuring the file,
 cd studious-carnival/user_data/config.json
 \end{shell}
 
-We can hook the application to our Telegram account and our exchange. For example, one of the options of exchange is Binance\footnote{The markdown ``<<>>'' symbolizes that is a key you would need to provide}.
+We can hook the application to our Telegram account and our exchange. For example, one of the options of exchange is Binance \footnote{The markdown ``<<>>'' symbolizes that is a key you would need to provide}.
 
 \begin{python}
 "exchange": {
@@ -2141,7 +2357,7 @@ sudo docker-compose run --rm freqtrade backtesting --strategy bbrsi6 --timeframe
   \legend{Major information. Resource: The authors.}
 \end{figure}
 
-Finally, our application can be run in dry-mode (real-time simulation)\footnote{also configured under config.json}, or with real money.
+Finally, our application can be run in dry-mode (real-time simulation) \footnote{also configured under config.json}, or with real money.
 
 \begin{python}
 "dry_run": false,
@@ -2325,12 +2541,50 @@ under such changes (\autoref{fig:vis}).
 
 
 % \section{Organização cronológica}
-\section{Cronological Organization}
+\section{Chronological Organization}
 
-The present work has been manager through Gantt diagrams. Also, we
-used dynamic agendas builtin in Emacs. Thus all visual framing of time
-has been done by either one these two.
+The present work has been manager through Gantt
+diagrams\footnote{Using \LaTeX}. Also, we used dynamic agendas builtin
+in Emacs. Thus all visual framing of time has been done by either one
+these two.
 
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:calendar} Emacs's Calendar}
+  \includegraphics[width=0.7\linewidth]{Imagens/calendar.png}
+  \legend{Schedules, deadlines and vacations marked. Resource: The authors.}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:gantt} Gantt Chart produced with latex}
+  \includegraphics[width=0.7\linewidth]{Schedule/cronograma-tcc.pdf}
+  \legend{Gantt for July. Resource: The authors.}
+\end{figure}
+
+% \begin{figure}[ht]
+%   \centering
+%   \caption{\label{fig:gantt} Gantt Chart produced with latex}
+%   \includegraphics[width=0.7\linewidth]{Schedule/cronograma-tcc.pdf}
+%   \legend{Resource: The authors.}
+% \end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:org-pomodoro} Daily Pomodoro timing (Using Org-pomodoro)}
+  \includegraphics[width=0.4\linewidth]{Imagens/daily-pomodoro.png}
+  \legend{Tables written in Metrics.org file. Resource: The authors.}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \caption{\label{fig:org-agenda} Org-agenda, an Orgmode feature}
+  \includegraphics[width=0.7\linewidth]{Imagens/weekly-agenda.png}
+  \legend{Resource: The authors.}
+\end{figure}
+
+The system TGD (To Get Done) and TODO-NEXT-DONE has been implemented
+using Org-mode synchronized with Org-agenda.
 
 % A organização do projeto se deu utilizando os diagramas de Gantt, e as
 % agendas dinâmicas, /org-agenda/, nativas do Emacs. Por conseguinte,
@@ -2343,37 +2597,88 @@ has been done by either one these two.
 % Exploratória. O \textit{template} utilizado para escrita do projeto
 % foi o \abnTeX{}, biblioteca do \LaTeX dedicado a escrita de documentos sob as normas ABNT.
 
-% \section{Junção de notas}
+\section{Note collection and ABNTeX2}
+
+The \textit{org-mode} organizational toolkit has been developed in such a way
+that reproducible research is the default
+\cite{stanisic2015effective}\footnote{On a similar note, watch the
+  video entitled
+  ``\href{https://www.youtube.com/watch?v=AP4LX8L7MFM}{Reproducible
+    Research with GNU Emacs and Org-mode} by Thibault Lestang (University of Oxford)''}.
 % O \textbf{org-mode} é uma ferramenta de organização e anotação, desenvolvida
 % para pesquisa e reprodutibilidade de pesquisas. Assim, todas as etapas
 % de desenvolvimento do projeto foram desenvolvidas e documentas utilizando
 % essa ferramenta.
+\begin{figure}[ht]
+  \centering
+    \caption{\label{fig:literate-programming} Literate programming in Org-mode}
+    \includegraphics[width=0.7\linewidth]{Imagens/org-mode.png}
+  \legend{Mixing text, code and evaluation. Resource: The authors.}
+\end{figure}
 
+Org-mode enables \textit{Literate Programming}\footnote{conceptualized
+by Donald Knuth\cite{knuth1984literate}, and has been commonly adopted
+by design or naturally arose in GNU/Emacs, Org-mode and \LaTeX{}.}, which is mixing code
+and notes - not meant to be read by an interpreter/compiler. It's even
+possible to evaluate code inside Orgfiles. So, by reconstructing my
+earlier works in a orderly manner, this document was possible.
 % A documentação implícita ao desenvolvimento é uma
 % característica fundamental e pensada do Org-mode. Pois, segue o
 % paradigma de \textit{Literate Programming}. Assim, há uma mistura de
 % notas e códigos em um mesmo ambiente. Fazendo que a prototipação do
 % código seja automaticamente documentável.
 
-% Por fim, é possível exportar qualquer anotação de extensão .org para
-% .tex e consequentemente .pdf. Assim, reutilizar dessas anotações foi
-% uma tarefa natural.
+Converting .org files to .tex and thus .pdf files is as
+simple as calling a function in Emacs \footnote{Calling a function in
+  Emacs takes one to five key-strokes
+depending on how you call it.}. Emacs itself has been called a
+self-documenting system\footnote{https://www.emacswiki.org/emacs/SelfDocumentation}. And, truly, if one wishes, all documentation
+of Emacs is contained inside the help-system in pure-text format. To
+learn a certain thing about Emacs, one would never have to leave it's
+environment.
 
-% \subsection{Aplicações em Clojure}
+Finally, translating the main .tex output into ABNT norms consisted in
+utilizing the canonical features of the ``abntex2'' class document.
 
-% \subsection{Aplicações em Julia}
-% \subsection{Aplicações em Python}
+\begin{figure}[ht]
+  \centering
+  % \caption{\label{fig:tower} Esquemática de uma torre de interpretadores}
+  \caption{\label{fig:abntex} ABNT specification class in LaTeX}
+  \includegraphics[width=\linewidth]{abnt.png}
+  \legend{Source: the authors.}
+\end{figure}
 
+The cover and typographical details were constrained to the particular
+style prescribed by the Engineering School of Lorena - University of
+São Paulo (EEL-USP).
+
+\section{Bibliographical Research}
 % \section{Pesquisa bibliográfica}
+
+The bibliographical research was done majorly through sites, when
+dealing with historical data on programming or programs
+itself. Because these kinds of data are self-documented by the open
+community.
+
+In turn, when speaking about theoretical ideas or
+benchmarks, the research was done by DuckDuckGo, ACM, Google
+Scholar or ArXiv\footnote{Currently(2021) contains 1.9mi. papers
+  openly available}. The format found were mostly articles of books in
+these researches.
 % A pesquisa bibliográfica foi em grande parte encontrada em sites sem
 % autores. Pois, a documentação foi criada ou pela comunidade, ou por
 % instituições, não unicamente publicada em formato de livro ou artigo.
 
+Vast literature was found on Julia's
+DifferentialEquations.jl. Due to the fact that the Julia community
+arose from Academia (MIT), and it's main goal in applied research.
 % Da parte acadêmica, como o pacote de resolução de equações
 % diferenciais, em Júlia, encontrou-se vasta literatura. Até porque, a
 % língua foi criada para resolver problemas computacionais tocantes
 % principalmente a comunidade científica do MIT.
 
+Finally, some documentation was found only through GitHub, as OR-Tools
+and Clojure's Clojure2D library. These were entirely electronic publications.
 % Por fim, algumas ferramentas apenas existem documentadas e contidas
 % inteiramente em repositórios, como o Github. Foram os casos do
 % OR-Tools e as simulações em Clojure. São publicações puramente eletrônicas.
@@ -2392,12 +2697,31 @@ has been done by either one these two.
 % Emacs e do Org-mode, em particular, optou-se por utilizar uma de suas
 % funcionalidades dedicada a apresentações. 
 
+\chapter{Conclusion}
 % \chapter{Conclusão}
+Among the open source initiatives, there exist virtually an
+application for any one given field one may pick. That is, current
+research is mostly done using some kind of software application. Even
+more, Art, Organization, and Humanities also benefit from computation,
+not only Science, Technology, Engineering and Math (STEM) areas.
 % Dentro das iniciativas Open Sourced, existem virtualmente aplicações
 % para todas as áreas das aventuras do ser humano. Isto é, seja o uso de
 % computação gráfica, processamento de imagens, expressões artísticas,
 % ou ferramentas de organização, há um software escrito para esse fim.
 
+These open software almost majorly have State of the Art research on
+Computation backing them. Although the common belief may be that close
+software development has the upper-hand on quality and support, that
+is not the case.
+
+One of the motives may be giving to the copy-left
+licenses coercing users of pieces of it's application to publish their
+software under the same license. Or, one may argue that once a person
+is involved in the Open Community and benefits from free and quality
+support from other user-developers or project maintainers. Then,
+nothing is more fair than contributing, when he adds to the pile of
+data and knowledge which boosted his way forward. Thus, the community
+achieves grow and continuity.
 % É observável a falta de competição quanto a quantidade e qualidade de
 % softwares fechados e abertos. Ademais, a capacidade de
 % extensão dos softwares livres, por meio das quatro fundamentais
@@ -2407,6 +2731,9 @@ has been done by either one these two.
 % abertas - num grau e rapidez inimagináveis, comparados ao processo de
 % desenvolvimento por uma equipe fechada.
 
+We have demonstrated many different uses of open software, with no
+closed sourced, paid, software. These were both in the sector of
+Industry and Academia applications. OR-Tools, FreqTrade, DifferentialEquations.jl and Clojure2D library developed majorly by the community use State of the Art mathematical and computing tools. OR-Tools has been, for an example, the champion in three categories of MiniZinc Challenge in 2020\footnote{https://www.minizinc.org/challenge2020/results2020.html}.
 % Demonstrou-se diversos usos desses software, sem paralelos, na
 % Indústria e na Academia. Ambos possuem algorítimos na fronteira da
 % ciência, a qual o uso apenas é limitado pela imaginação e capacidade
@@ -2414,6 +2741,13 @@ has been done by either one these two.
 % curso de engenharia se tenha uma ampla formação com base nos softwares
 % livres, sob os quais a computação moderna subiste.
 
+We also pointed some entry doors to the use of FOSS-based systems. We
+discussed why to use the Kernel Linux, and the GNU applications which
+permeates GNU/Linux system's functionalities. Furthermore, we demonstrated
+the benefits of inserting oneself in the social community around these
+open sourced initiatives et al. Finally, the effectiveness and
+plausibility of an running under a entirely FOSS-based system -
+GNU/Linux with EXWM - has used to produce this work. 
 % Apontou-se algumas portas de entrada, fundamentais, a esse paradigma,
 % os sistemas com Kernel Linux, as aplicações GNU as quais lhe dão
 % roupagem, e por fim os sistemas sociais onde se desenvolve os

@@ -2,6 +2,58 @@
 # #+PROPERTY: header-args:clojure :tangle ~/PP/Clojure/clojure2d-examples/src/NOC/ch07/wolframca_figures_7_2.clj :mkdirp
 
 
+* Monograph objetives and synthesis
+** Exposition to key concepts of a FOSS environment
+- GNU/Linux [Bibliographical review]
+- Compilers [Bibliographical review]
+- Towers of interpreters. [Bibliographical review]
+** How to get the hang of FOSS workflow.
+- Bibliographical evidence of how FOSS adoption work. [Bibliographical review]
+- What benefits may follow from this adoption.  [Bibliographical review]
+** Applications to leaning Physics and Industry.
+*** Show the functionality of applications concerning Academia and Industry.
+- Academic
+  1. Example of well established programs used in teaching graduate level physics (SCIM and SCIP) [literature review].
+  2. Extension of different graphical and numerical libraries available as FOSS to understand math and physics [Results and Discussion].
+- Industry
+  1. OR-Tools [Results and Discussion]
+  2. Freqtrade [Results and Discussion]
+- Both Industry and Academic
+  1. Org-mode [Material and Methods/Results and Discussion]
+  2. Org-agenda [Material and Methods/Results and Discussion]
+  3. LaTeX charts [Material and Methods/Results and Discussion]
+
+* Drafts
+*** 17 Jul 2021
+**** Abstract
+In this monograph, we discuss key concepts for working with modern
+applications. These software have application both on Academic and/or
+Industrial contexts. The goal of these applications are to show how
+FOSS can be use to enhance a wide range of fields. We use a FOSS-based
+environment EXWM on Artix Linux OS, and discuss why the use GNU/Linux
+may enhance performance, easiness of use, and harbor learning useful
+to building these applications.
+% Furthermore, they are built top of a
+% development-environment based on free and open-source software
+% (FOSS). % The environment primarily consists of EXWM, Artix Linux OSS.
+The basic notions in FOSS and the ongoing trend for adopting FOSS in
+academic and industrial practice are reviewed. So to illustrate
+the later point.
+Some canonical works on Scientific Computing - SCIM and SICP - are
+considered and their relevance investigated. These serve as motivation
+for using simulations as a means of learning physics.
+Regarding application development, the discussions are carried out by
+focusing on some specific tools, which should be taken as formal
+examples. Their potentiality as particular tools for particular
+problems can be generalized, by taking any other field of inquiry and
+finding or extending applications built for this other field.
+In particular, we elaborate on these applied FOSS: Freqtrade, OR-Tools,
+DifferentialEquations.jl and Clojure2D. Showing that, once one have a
+suitable environment to run these applications, the easiness to use
+and extend them follow.
+% Moreover, we point out that Linux is arguably the best open-source
+% alternative for commercial operational systems.
+
 * Clojure
 ** TODO Use Clojure2D -> Celular Automata (Open Sourced)
  Hook with the ideia of "A new kind of science" by Stephen Wolfram.
