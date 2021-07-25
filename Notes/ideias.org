@@ -128,7 +128,6 @@ and extend them follow.
  # (... this is, as I said, my basic metaphysical assumption, which I won’t conceal from you – that existence is musical in nature, that is to say that it is not serious)
 
 *** Celular automata example
-
 **** Importações
     #+begin_src clojure
  (ns examples.NOC.ch07.wolframca-figures-7-2
