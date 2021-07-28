@@ -92,12 +92,17 @@ Presentation from João Baptista, in CSBC
 *Free and Open Source Software (FOSS)*
 ** Four Essential Freedoms
 - A program is free software if the program's users have the *four essential freedoms*: 
-  * The freedom to run the program as you wish, for any purpose (freedom 0).
-  * The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
-  * The freedom to redistribute copies so you can help others (freedom 2).
-  * The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+  * The freedom to *run the program as you wish*, for any purpose (freedom 0).
+  * The freedom to *study* how the program works, and change it so it
+    does your computing as you wish (freedom 1). Access to the source
+    code is a precondition for this.
+  * The freedom to *redistribute copies* so you can help others (freedom 2).
+  * The freedom to *distribute copies* of your *modified versions* to
+    others (freedom 3). By doing this you can give the whole community
+    a chance to benefit from your changes. Access to the source code
+    is a precondition for this.
 
-    *NOTE*: these definitions entail some kind of social structure
+*NOTE*: these definitions entail some kind of social structure
 * A common problem - Collapsing Towers of Interpreters
 #+ATTR_HTML: :width 1000
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/workspace-modulate.png][file:../../Imagens/Presentation/collapsing-towers.png]]
@@ -127,9 +132,9 @@ reality, of symbol to fact."
 - People in Quandaries, Wendell Johnson
 *** Mathematics: Isomorphism
 #+begin_quote
-*4.11 Definition* Let A and B be partially ordered classes; a function f : A → B
-is called an isomorphism if it is bijective and satisfies the following
-condition:
+*4.11 Definition* Let A and B be partially ordered classes; a function
+f : A → B is called an isomorphism if it is bijective and satisfies
+the following condition:
 
 For every two elements
 $x \in A$ and $y \in A$,  [ $f(x) \in B$ and $f(y) \in B$ ]:
@@ -190,7 +195,6 @@ How do the communities converse.
 *** How a Status of Contributions look like
 #+ATTR_HTML: :width 900
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/telegram-question-work.png][file:~/PP/LaTeX/TCC/Imagens/Presentation/research-gate.png]]
-
 
 ** Open Source Community
 *** Participation
@@ -437,7 +441,7 @@ Day 1
 Statistics
   - conflicts       : 17
   - branches        : 100376
-  - wall time       : 0.283777 s
+  - wall time       : 0.367541 s
   - solutions found : 11520
 #+end_example
 
