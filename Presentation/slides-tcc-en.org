@@ -2,49 +2,7 @@
 #+AUTHOR: Pedro G. Branquinho
 bibliography:../../bib.bib
 
-* COMMENT Summary
-** Considerations
-*** Benefits from generality
-*** How we behave, depending on environemental-structured
-**** Physical and the Cyberspace
-**** Social Rethoric in Cyberspaces
-**** How we learn based on structure
-**** EXWM
-** FOSS
-*** The Four Essential Freedoms
-** Community and Science
-*** Community (Scientific)
-**** Congresso da Sociedade Brasileira de Computação (CSBC)
-**** Association of Computing Machinery(ACM)
-**** Jornada de Atualização em Informática (JAI)
-**** ICFP
-**** Participation
-*** Community (Open Source)
-**** Participation
-**** Videos and tutorials
-**** Projects, Forums, Social groups
-*** Intersections
-** A FOSS-based system
-*** Operational System (OS) 
-**** Collpasing Towers
-*** An example of a system
-*** Example of Collapsing Towers in Practice
-** (some) Industry Applications
-*** Python
-**** OR-Tools 
-**** Freqtrade
-** (some) Academic Applications
-*** Julia
-**** DifferentialEquations.jl
-*** Clojure
-**** Physical Simulations
-** Initial employment experiences
-*** Clojure and FOSS (workflow)
-**** Lupo
-**** Flow
-** Conclusions
-** Comments on Org-mode for scheduling
-
+* COMMENT comment
 * Considerations
 ** Benefit from generality
 #+begin_quote
@@ -82,7 +40,7 @@ Presentation from João Baptista, in CSBC
 
  A little more radical than IDE's - Integrated Development Environment.
 **** Development experience
-#+ATTR_HTML: :width 800
+#+ATTR_HTML: :width 1000
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/emacs-development.png][file:~/PP/LaTeX/TCC/Imagens/Presentation/emacs-development.png]]
 **** General purpouse use of software
 
@@ -159,7 +117,7 @@ in the second language."
 ** General Qualities of Communities
 How do the communities converse.
 *** Autopoiesis 
-#+ATTR_HTML: :width 500
+#+ATTR_HTML: :width 700
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/Autopoieses.jpeg][file:~/PP/LaTeX/TCC/Imagens/Presentation/Autopoieses.jpeg]]
 
 ** Scientific Community
@@ -199,7 +157,7 @@ How do the communities converse.
 ** Open Source Community
 *** Participation
 **** Almost instant feedback
-#+ATTR_HTML: :width 400
+#+ATTR_HTML: :width 700
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/telegram-question-work.png][file:~/PP/LaTeX/TCC/Imagens/Presentation/telegram-question-work.png]]
 
 **** Explanation and discussion
@@ -441,7 +399,7 @@ Day 1
 Statistics
   - conflicts       : 17
   - branches        : 100376
-  - wall time       : 0.367541 s
+  - wall time       : 0.287195 s
   - solutions found : 11520
 #+end_example
 
@@ -473,13 +431,14 @@ Statistics
 Rumor propagation modeled by a system of ODEs (cite:piqueira2010rumor)
 
 \begin{equation*}
-\begin{cases*}
-  \begin{align*}
+\begin{cases}
+  \begin{align}
+
     \dot{I} &= − \beta k SI \\
     \dot{S} &= \beta kSI - \alpha kS (S+R)\\
     \dot{R} &= \alpha k S(S+R)
-  \end{align*}
-\end{cases*}
+  \end{align}
+\end{cases}
 \end{equation*}
 
 ***** Model the behavior of "hard to get information"
@@ -489,7 +448,6 @@ Rumor propagation modeled by a system of ODEs (cite:piqueira2010rumor)
 ***** Hints on strategical ways to diminish the propagation of rumors
 #+ATTR_HTML: :width 800
 [[file:~/PP/LaTeX/TCC/Imagens/Presentation/github-perfil.png][file:~/PP/LaTeX/TCC/Imagens/fig95.png]]
-
 
 ** Clojure
 *** Physical Simulations

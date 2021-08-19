@@ -22,11 +22,11 @@ english,			% idioma adicional para hifenização
 
 
 % ---
-% PACOTES
+% PACKAGES
 % ---
 
 % ---
-% Pacotes fundamentais
+% Fundamental Packages
 % ---
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
@@ -161,9 +161,11 @@ english,			% idioma adicional para hifenização
 \tipotrabalho{Dissertation}
 % O preambulo deve conter o tipo do trabalho, o objetivo,
 % o nome da instituição e a área de concentração
-% Orientador: Prof. Dr. Ismael Maciel de
-% Mancilha 
-\preambulo{This monograph is presented to the Engineer School of Lorena, the University of São Paulo, so to be obtained the title of Barchelor by the Graduation Program on Engineering Physics with emphasis on the Science of Materials.}
+\preambulo{This monograph is presented to the Engineer School of
+  Lorena, the University of São Paulo, to obtain the
+  title of Bachelor by the Graduation Program on Engineering Physics
+  with emphasis on the Science of Materials.}
+
 % ---
 
 % ---
@@ -203,13 +205,13 @@ english,			% idioma adicional para hifenização
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
 
 % ---
-% compila o indice
+% compiles the index.
 % ---
 \makeindex
 % ---
 
 % ----
-% Início do documento
+% Begin of the document
 % ----
 \begin{document}
 % Seleciona o idioma do documento (conforme pacotes do babel)
@@ -303,11 +305,20 @@ english,			% idioma adicional para hifenização
 % ---
 \begin{agradecimentos}
 
-  My acknowledgments wouldn't fit in a single page. But, for the purpose of conciseness, I will mention those who are closer to my work. I thank first my advisor, Wei-Liang Qian, who in his patience and kindness knew how to conduce me to produce the present work. I thank Juan Zapata for the support and enthusiasm on teaching Mathematics and showing me the way of how to study it myself. Also, Antônio Jefferson Machado who has ministered Solid State Physics classes in which I learned a lot about being an engineer, the roles of the scientific community in furthering the high-end applications related to matter. Last but not least, I thank Luiz Eleno who has been a role-model for me, and has teach me so much about computing through out the years.
+  My acknowledgments wouldn't fit on a single page. But, for
+  conciseness, I will mention those who are closer to my work. I thank
+  first my advisor, Wei-Liang Qian, who, in his patience and kindness,
+  knew how to conduce me to produce the present work. I thank Juan
+  Zapata for the support and enthusiasm in teaching Mathematics and
+  showing me the way of self-study. Also, Antônio Jefferson Machado
+  who has ministered Solid State Physics classes in which I learned a
+  lot about being an engineer, the roles of the scientific community
+  in furthering the high-end applications related to matter. Last but
+  not least, I thank Luiz Eleno, who has been a role model, and
+  has taught me so much about computation throughout the years.
 
-  And, in a big umbrella, I thank all those anonymous people who have contributed for my experience of communal sharing and understanding in the Open Source community. Specially, David Wilson, the founder of System's Crafter, from whom I derived the basis of my Emacs's system.
-
-  Thank you, all the member, peer, professors, and staff of EEL-USP, in which I spent a great part of my current life.
+  And, in a big umbrella, I thank all those anonymous people who have contributed to my experience of communal sharing and understanding in the Open Source community. Especially, David Wilson, the founder of Systems Crafter, from whom I derived the basis of my Emacs's system.
+  Thank you, all the members, peers, professors, and staff of EEL-USP, in which I spent a great part of my current life.
 \end{agradecimentos}
 % ---
 
@@ -338,36 +349,37 @@ english,			% idioma adicional para hifenização
 % ---
 
 % ---
-% RESUMOS
+% ABSTRACTS
 % ---
 
 % Abstract in English
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
-In this monograph, we discuss key theoretical concepts to keep in mind
-when working with modern applications. We chose applications
-concerning both Academic and/or Industrial contexts. These
-applications are built on a development-environment based on free and
-open-source software (FOSS). The environment primarily consists of EXWM, Artix Linux OSS.
-The basic notions and the ongoing trend for adopting FOSS in
-academic and in industrial practices are briefly reviewed. So to explain for
-what motives and how often FOSS are currently adopted.
+In this monograph, we discuss key concepts when working
+with modern Free and Open Source Software (FOSS) applications. These
+applications were chosen in contexts of both Academy and Industry. The
+development-environment to run these applications was a FOSS-based
+system, which primarily consists of Emacs X's Window Manager (EXWM)
+and Artix Linux OS.
+An explanation for motives, and how often FOSS is currently adopted, is
+given when we deal with the basic notions and the ongoing trend for
+adopting FOSS.
 Some canonical works on Scientific Computing - SCIM and SICP - are
-considered and their relevance investigated, as motivation for
-emphasizing in simulations as means of physics learning tools. 
+considered and their relevance investigated. We use these examples, as
+motives for giving emphasis to the role of simulations and how they
+can enhance physics-knowledge acquisition.
 Regarding application development, the discussions are carried out by
 focusing on some specific tools, which should be taken as formal
 examples. Their potentiality, as particular tools, for particular
-problems, can be generalized. Given that we chose any other field of
-inquiry and find or extend applications built for this field.
+problems, can be generalized - given that we chose any other field of
+inquiry and find or extend suited applications built for this field.
 In particular, we elaborate on these applied FOSS: Freqtrade, OR-Tools,
-DifferentialEquations.jl and Clojure2D. Showing, thus, that once one have a
-suitable environment to run these type applications, then the easiness to use
+DifferentialEquations.jl and Clojure2D. Showing, thus, that once one has a
+suitable environment to run these types of application, then the easiness to use
 and extend them follow.
 
-\textbf{Key-words}: modern application. academic context. industrial
-context. foss. physics leaning tools. scientific
-computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d.
+\textbf{Key-words}: modern application. academy. industry. foss. physics-knowledge
+acquisition. scientific computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d.
 \end{resumo}
 
 % Abstract (resumo) in Portuguese
@@ -409,7 +421,7 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 \end{resumo}
 
 % ---
-% inserir lista de ilustrações
+% Insert Illustration's list
 % ---
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
@@ -417,15 +429,7 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 % ---
 
 % ---
-% inserir lista de quadros
-% ---
-% \pdfbookmark[0]{\listofquadrosname}{loq}
-% \listofquadros*
-% \cleardoublepage
-% ---
-
-% ---
-% inserir lista de tabelas
+% Insert list of tables 
 % ---
 % \pdfbookmark[0]{\listtablename}{lot}
 % \listoftables*
@@ -433,7 +437,7 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 % ---
 
 % ---
-% inserir lista de abreviaturas e siglas
+% Insert list of abbreviations and acronyms
 % ---
 \begin{siglas}
 \item[FOSS] Free and Open Source Software
@@ -455,7 +459,7 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 % ---
 
 % % ---
-% % inserir lista de símbolos
+% % Insert list of symbols
 % % ---
 % \begin{simbolos}
 %   \item[$ \Gamma $] Letra grega Gama
@@ -466,7 +470,7 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 % % ---
 
 % ---
-% inserir o sumario
+% Insert Summary
 % ---
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
@@ -476,12 +480,12 @@ computing. simulations. freqtrade. or-tools. differentialequations.jl. clojure2d
 
 
 % ----------------------------------------------------------
-% ELEMENTOS TEXTUAIS
+% TEXTUAL CONTENTS
 % ----------------------------------------------------------
 \textual
 
 % ----------------------------------------------------------
-% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% Introduction
 % ----------------------------------------------------------
 
 \chapter[Introduction]{Introduction}
@@ -492,21 +496,18 @@ Among other valuable experiences that can be acquired through the
 training, the use of free and open-source software (FOSS) and
 participation in the open community constitute two essential pieces.
 
-% Na formação de um engenheiro físico, o qual, por definição, é um profissional generalista, os softwares abertos (FOSS - Free and Open Source Software) e a participação da comunidade Open Source (OS) são detrimentais para sua formação.
-
 The variability, which open source software (OSS) brings to existing
-applications and their extension, can change altogether user's experience. Thus, taking him closer to acting as a developer. This experience of interloping user and developer roles doesn't require that you are a computer scientist or a Information Technology (IT) professional by training. For, programming can be seen as both a Science and an Art \cite{knuth1968art} - e.g., an exercise of self-expression.
-% A diversidade os quais softwares extensíveis acarretam (\autoref{sec:diversidade}) podem mudar completamente a experiência do usuário, e o trazer mais próximo do papel de desenvolvedor. Essa experiência não necessita de ser exclusiva de cientistas da computação ou profissionais de TI. Pois, a programação pode ser encarada tanto como ciência e arte \cite{knuth1968art}.
+applications and their extension, can change altogether user's
+experience. Thus, taking him closer to acting as a developer. This
+experience of interloping user and developer roles doesn't require
+that you are a computer scientist or a Information Technology (IT)
+professional by training. For, programming can be seen as both a
+Science and an Art \cite{knuth1968art} - e.g., an exercise of
+self-expression.
 
 OSS guarantees four fundamental liberties \autoref{sec:opensource}, the right to study, copy, modify and redistribute it.
-% Os Softwares Abertos possuem quatro liberdades pétreas \autoref{sec:opensource}, garantindo os direitos de estudo, cópia, modificação e redistribuição.
 
 Just as the scientific enterprise benefits, with it's rapid development, by means of the global community's participation, which holds space for individuals with a variety of different training. Also, the computation enterprise benefits from the variety of people's training, which constitute the body of the open source community.
-% Bem como a ciência se beneficia com seus rápidos avanços, de uma
-% comunidade global de participantes, com as mais distintas
-% especializações profissionais. Também, beneficia-se a computação com
-% a comunidade aberta, e especialização eclética, tanto de membros
-% quanto de softwares.
 
 \subsection{Considerations on Mathematics and Physics historical developments}
 
@@ -653,53 +654,11 @@ Thus, the scheme of the current work is divided as follows,
 Lastly, we conclude by synthesizing what has been understood from the
 current work.
 
-% We will demonstrate the validity of the hypothesis that an engineer
-% professional, without strong training in computation, lags behind it's
-% current potential. Furthermore, we present a range of different
-% applications developed to the state of the art, which are distributed
-% under open licenses (copy-left). Thus, reinforcing the uniqueness of
-% open source phenomena and the need for it's use - the logic and
-% dynamic FOSS brings has no parallel on the economy or scientific
-% community \cite{hippel2003open,peters2009open}.
-
-% Moreover, we will make the case for the adoption of FOSS by showing,
-
-% \begin{enumerate}
-% \item An entirely FOSS-based system performance;
-% \item Softwares entirely developed by the community driven by intrinsic purpose, will to master tools and common interest;
-% \item Effectiveness and comparative performance on the state of the art software found on FOSS applications;
-% \item Picking applications with hardly any parallel in closed development.
-% \item Covering a wide range of applications with different languages backing them up, but showing virtually no difference among easiness of use. Thus proving existence of standard development.
-% \item Making reference and straightly running applications by following and understanding their Documentation.
-% \end{enumerate}
-
-% At the end of the document, one should get a sense of how it feels to develop and extend open software. 
-% Demonstramos a defassagem que um profissional de engenharia apresentaria, sem forte formação dentro da computação. Ademais, ao partir da gama de aplicações, em estado da arte, as quais são partilhadas de forma aberta e livre, pretende-se reinterar o caso da necessidade de compreensão do fenômeno dos softwares abertos. Pois, essa lógica e dinâmica não possui paralelos nem na economia, nem na comunidade científica \cite{hippel2003open,peters2009open}.
-
-% There exits debate around the meaning of \textit{Open Science}. This
-% term recently became popular and which has a obvious reference to the
-% \textit{Open Source}. Although, in the social literature, it's a phenomena
-% poorly depicted and rarely debated through the point view that the Open
-% Source Movement has anything to do with it. We cite the most cited
-% article on Google Scholar research on the topic ``Open Science'' -
-% called ``The future(s) of open science'' - and which only uses trice
-% the term ``Open Source'' and in dismissive way
-% \cite{mirowski2018future}.
-
-% Therefore, I argue that a strong basic
-% knowledge, for engineer training, is fundamental for understanding the
-% movement and how it has been shaped, so to critically asses the
-% validity of the current social-economic shift we live in. This
-% understand can, in turn, shape the carer path and formation of the
-% working engineer.
-% % Há até debates acirrados sobre o sentido de \textit{Open Science}, um termo que recentemente se popularizou e o qual constitui claro paralelo com o movimento \textit{Open Source}. Porém, mal compreendido e, raramente, debatido sob esse prisma, dentro das ciências sociais. Cita-se o mais citado dos artigos na busca no Google Scholar ``The future(s) of open science'', o qual somente cita três vezes o termo Open Source, em tom dismissivo \cite{mirowski2018future}. Assim, argumenta-se que a formação básica do engenheiro na área da computação precisa ser sólida, bem como o entendimento das forças que moldaram esse movimento, de forma a poder entender o futuro em que caminhamos, de forma crítica.
 
 \section{The interconnection between Applications and the OS}
 
 The author used an \textbf{Application} as to comprise any end product of software development.
-% \section{As interconexões das aplicações e o OS}
 
-%\subsection{Por quê o GNU/Linux nos importa?}
 \subsection{Why does GNU/Linux matter?}
 
 We will discuss, as a brief introduction, what is the Operational System
@@ -709,23 +668,11 @@ successful project carried out in the Open Source paradigm
 \cite{tu2000evolution,west2001open}. Therefore, it's use is a way to
 acquaintance, in practical terms, with how a business dependent on mainly
 using the open sourced development products might operate \cite{fink2003business}.   
-% Discutiremos introdutoriamente na monografia, o que é o sistema operacional
-% GNU/Linux, e o por quê de ser a porta de entrada à comunidade Open
-% Source. Primeiramente, o GNU/Linux é o primeiro e maior sucesso da lógica
-% de negócio Open Source \cite{tu2000evolution,west2001open} - dessa forma,
-% utilizá-lo é uma maneira de entender como a lógica de negócio
-% dependente de comunidades abertas funcionam \cite{fink2003business}.
-
 Furthermore, the new user-developer of the GNU/Linux framework must
 inherently learn about the accompanying software which comes with it's
 distribution - which increases it's chance of adoption
 \cite{west2001open}. This way, the user gradually becomes accostumed to
 participate on development and extend programs \cite{hertel2003motivation}.
-% Além do mais, o novo usuário-desenvolvedor de GNU/Linux,
-% inerentemente, tem de aprender sobre outros softwares os quais vêm
-% conjunto à sua distribuição - o que aumenta sua adoção
-% \cite{west2001open}. Desta forma, sente-se compelido a participar e
-% estender os comportamentos do programa \cite{hertel2003motivation}.
 
 Beyond it's initial philosophical appeal to user liberty, GNU/Linux is
 today's standard in Technological Enterprises. And, although
@@ -734,21 +681,10 @@ fundamentally opposed of many age-old \textit{modus operandus} of the
 analysis of the benefits it brings to the companies, general economy, and
 the society triad \cite{moody2009rebel}. To make use of GNU/Linux,
 thus, is a way to be inserted in this new economic paradigm \cite{hippel2003open,peters2009open}.
-% Para aquém da sua inicial expressão filosófica de liberdade, o
-% GNU/Linux hoje é o \textit{standard} em empresas te alta
-% tecnologia. E, sua lógica de negócio, por mais que desafie os moldes
-% empresariais econômicos do \textit{status quo}, sem sombra de dúvidas
-% funciona, traz resultados às empresas, a economia e à
-% comunidade. Usar-se do GNU/Linux, então, é uma maneira de se inserir
-% nesse novo contexto lógico econômico
-% \cite{moody2009rebel,hippel2003open,peters2009open}.
 
 \subsection{How high level applications benefit from an OS}
-% \subsection{Como as aplicações de alto nível se beneficiam de um \textit{OS}}
 
 In the hierarchy of software and applications, the Operational Systems (OSes) can be seen as a meta-application or meta-software. 
-% Na hierarquia de softwares e aplicações, os sistemas operacionais
-% podem ser vistos como um meta-aplicação.
 
 ``The evaluator, which determines the meaning of expressions in a
 programming language, is just another program.'' \cite{abelson1996structure}
@@ -758,11 +694,6 @@ application. That is, the concept of meta-programming and Towers of
 Interpreters comprise a common situation, for which a devoted field of
 study exists. Thus this area has direct implication for software
 development practice, as it's a ubiquitous problem faced in computing.
- % Thus, this area of study focus on how to optimize and simplify the behavior commonly found on computational systems which behold a chain of interpreters.
-% Existem níveis, ou camadas, de abstração em virtualmente qualquer
-% aplicação. Ou seja, o conceito de meta-programação e torres de
-% interpretadores é um problema um tanto quanto comum, e possui
-% implicações diretas no uso dos softwares.
 
 Any OS, as the GNU/Linux, comprise an essential layer in this tower of
 interpreters. Particularly, an OS communicates with \textit{firmwares}
@@ -772,15 +703,6 @@ software, among which contain the user-developer written or extended
 software. Therefore, the OS play a fundamental role, mediating between
 low and high level software. This function categorizes them as a
 \textit{middleware} software.     
-% Os sistemas operacionais, como o GNU/Linux, uma camada essencial
-% nessa torre de interpretadores. Em especial, eles se comunicam com
-% \textit{firmwares} - softwares de baixa expressividade e alta performance, os
-% quais controlam \textit{hardwares}. Também, comunicam-se com softwares de alta
-% expressividade, os quais comprazem as aplicações escritas, ou
-% estendidas, pelo usuário-desenvolvedor do sistema. Por conseguinte, o
-% Sistema Operacional possui um papel de mediador entre softwares de
-% alto e baixo nível - como são chamados pela literatura - o que
-% configura-os como uma espécie de \textit{middleware}.
 
 \begin{figure}[ht]
   \centering
@@ -798,17 +720,9 @@ own. And, this field is autonomous, detached, for an example, from
 which languages compose the Tower of Interpreters; or which type of
 application we are dealing with \cite{amin2017towers}. The object of
 study is the final behavior of the system, and if it's a collapsible system. 
-% O problema característico de concatenar sistemas de softwares um sob o
-% outro introduz complexidades em termos de manter compatibilidade entre
-% versões de programas e sua performance. O estudo desses comportamentos
-% e suas soluções teóricas possuem um ramo próprio, desvinculado, por
-% exemplo, de quais linguagens compõe a torre, ou qual aplicação estamos
-% lidando \cite{amin2017towers}. O que se interessa é com o
-% comportamento final do sistema, e se é possível colapsar o sistema.
 
 \begin{figure}[ht]
   \centering
-  %  \caption{\label{fig:tower2} Categorização do estudo de torres de interpretadores}
  \caption{\label{fig:tower2} Categorization of the study of towers of interpreters}
   \includegraphics[width=0.5\linewidth]{torres2.png}
   \legend{Reference: \cite{amin2017towers}}
@@ -818,15 +732,9 @@ Finally, the OSes consist in a big tower-collapser of
 interpreters. They are subordinate to collapsing firmware, middleware
 and high-level software. Therefore, as well as the OS conduct this task,
 as much the user-developer experience is facilitated.
-% Finalmente, os O.S. consistem em grandes colapsadores de torres de
-% interpretação. Encontram-se encarregados de colapsar firmware,
-% middlewares e softwares de alto nível. Por fim, o quão bem um sistema
-% operacional conduz essa tarefa, tanto mais a experiência do usuário
-% final é facilitada.
 
 \begin{figure}[ht]
   \centering
-  %  \caption{\label{fig:os} Torre de interpretadores e os Sistemas Operacionais.}
  \caption{\label{fig:os} Towers of interpreters and the Operational Systems.}
   \includegraphics[width=0.5\linewidth]{tower-os.png}
   \legend{Reference: \cite{tanenbaum2015modern}}
@@ -842,64 +750,24 @@ and to handle managing all the resources just mentioned. \cite{tanenbaum2015mode
 \end{citacao}
 
 \section{On the influence of education in adoption}
-% \section{Da influência da educação na adoção}
 
 In the bibliographical literature, it's clear that the rate of OSS adoption in the Industrial sector - commonly refereed as``Production'' - depends heavily on both: competency and the level of expertise a project require \cite{li2013all,gallego2015open,spinellis2012organizational}.
-% É claro, na literatura, de que a adoção dos softwares open source no
-% setor industrial
-% dependem da competência, e do quão profundo seus conhecimentos
-% precisam ser para resolução de seus problemas
-% \cite{li2013all,gallego2015open,spinellis2012organizational}. 
 
 At the same time, the adoption depends directly on the intrinsic inclination of the Informational Technology (IT) team \cite{racero2021can}. 
-% Ao mesmo tempo, a adoção depende diretamente das inclinações
-% intrínsecas da equipe de TI \cite{racero2021can}.
 
 Therefore, regardless of how much a professionalizing course may increase the \textit{intensity} and \textit{quickness} of adoption. Data shows that, generally, those students and professionals positively correlated to \textit{seeking autonomy} would adopt it \cite{racero2020predicting}. This means that intrinsic motivation is key \cite{gallego2015open}. Nonetheless, it's important to notice that there exist a net-effect in adoption \cite{spinellis2012organizational}. e.g., how much more peers adopt it, the more likely to any given individual to adopt it.      
-% Por fim, por mais que cursos profissionalizantes no tópico aumente a
-% intensidade e rapidez de sua adesão, por alunos
-% \cite{racero2020predicting} e profissionais inclinados à autonomia
-% \cite{gallego2015open}, a adoção final está mais ligada a fatores
-% intrínsecos de motivação. No entanto, é importante notar a existência de um
-% efeito-rede em adoções \cite{spinellis2012organizational} e.g., quanto mais semelhantes adotam
-% OSS, maior a chance de adoção.
 
 \section{Performance and the current trend as reasons for adoption}
-% \section{Performance e futuro do open source como motivos de adoção}
 
 Research with different areas of benchmarks state a performance gain, when utilizing GNU/Linux, compared to Windows \cite{sulaiman2021comparison}. Although, even more important, the key benefits are not in the differential performance \textit{per se}, but in the training one naturally goes through upon utilizing a totally community-dependent Operational System. 
-% Delineia-se que existe um ganho em performance ao se utilizar a
-% plataforma GNU/Linux em comparação ao Windows \cite{sulaiman2021comparison}. Porém, mais importante
-% ainda, é o fato de que os principais benefícios não estão no sistema
-% operacional em si, mas no treino que se obtém quando se utiliza um
-% sistema totalmente dependente de ferramentas e comunidades
-% abertas.
 
 Thereof, using GNU/Linux is a door for an individual professional shift. At the same time, this personal use increases the probability of adoption in whichever Industry carrer one may lead \cite{hauge2008adoption}. Combined with that fact, the Industry per se has no observable effect on Open Source development of projects - as so far as measured in 2008 \cite{hauge2008adoption}.
 
- % e.i., companies have a great return of it's use for nothing in exchange, but the little cost of giving professionals the space and flexibility to implement this workflow.
-
- % Pois, é nesse momento que se dá a transformação profissional
-% indivíduo, ao mesmo tempo que se aumenta a chance das empresas que
-% esse profissional irá trabalhar de adotarem OSS. Mesmo que, as
-% empresas em geral, e as de software em particular, beneficiam-se
-% grandemente da comunidade aberta e livre ao mesmo tempo que não
-% precisam e não incentivam nenhum direto incentivo ao trabalho da
-% comunidade \cite{hauge2008adoption}.
-
 \section{The set-conjunction between physics engineer and FOSS's users}
-% \section{O perfil do engenheiro e dos usuários de FOSS}
 
 We note that the deepness of training proposed, in graduation level, for a physics engineer makes them perfect candidates for the use of FOSS. Because, both trainings imply a \textit{a priori} necessity for autonomy and purposeness \cite{schrape2019open,racero2020predicting}; imply a profound and will for generalistic technical knowledge \cite{li2013all,gallego2015open}.
-% É notável que dado a profundidade que se procura a dar a formação,
-% ainda em nível de graduação, do engenheiro físico, espera-se que ele
-% seja um ideal candidato ao uso de FOSS. Pois, necessita de ambos de
-% inclínio a autonomia \cite{schrape2019open,racero2020predicting}, quanto profundidade em seu trabalho técnico,
-% para fomentar a necessidade e adoção de FOSS, em nível individual
-% \cite{li2013all,gallego2015open}.
 
 \section{How to leverage the potencial of OSS in Industry and Academia}
-% \section{Como podemos alavancar o potencial de OSS na Indústria e Academia}
 
 In the present work, we utilized of many concept demonstrations, in
 which the autor has developed or/and extended applications, in a
@@ -907,13 +775,6 @@ context of free and open source. Also, we present how can one
 collaborate in the community and how does that collaboration can imply
 significant professional connections. This way, both the so called
 ``soft skills'' and ``hard skills'' benefits have been elucidated, in practice.  
-% demonstrations served as a way to elucidade quatitatively how significant the 
-% No presente trabalho, utilizou-se de diversas demonstrações de
-% conceitos, onde o autor desenvolveu e estendeu aplicações
-% desenvolvidas num contexto livre e aberto. Também, discute-se como se
-% integrar e acrescentar à comunidade aberta. Nota-se o quão fundamental
-% e significante são as conexões profissionais que se faz nesse nicho.
-
 
 \chapter{Bibliography review}
 \section{Open Source}
@@ -922,23 +783,10 @@ significant professional connections. This way, both the so called
 Any program which permits the user-developer to have the following liberties:
 \begin{enumerate}
 \item The right to run the program, as seen fit, for any end.
-  % Direito de rodar o programa, como você desejar, para qualquer fim.
 \item The right to access the source code and study it.
-  % Direito ao acesso ao código-fonte, para estudá-lo.
 \item The right to copy and redistribute it.
-  % Direito de cópia e distribuição.
 \item The right to modify the software.
 \end{enumerate}
-
-% Qualquer programa que permita o usuário-programador ter as seguintes
-% liberdades:
-
-% \begin{enumerate}
-% \item Direito de rodar o programa, como você desejar, para qualquer fim.
-% \item Direito ao acesso ao código-fonte, para estudá-lo.
-% \item Direito de cópia e distribuição.
-% \item Direito à modificação do software.
-% \end{enumerate}
 
 Practically, the Open Source community fundamentally base itself upon
 the free distribution of it's tools and programs. One of the differential
@@ -947,12 +795,6 @@ software is that the advancement of the frontier of the program, in
 many directions, increases rapidly in relation to a program controlled
 by a limited number of programmers.
 
-% De maneira prática, a comunidade Open Source, fundamentalmente, se
-% baseia no compartilhamento de suas configurações. As vantagens de
-% existirem inúmeras outras pessoas utilizando o mesmo software é de
-% que a melhoria da fronteira do programa é expandida de forma
-% acrescida, em comparação a de um time restrito de usuários.
-
 \subsection{Diversity}
 \label{sec:diversity}
 
@@ -960,7 +802,6 @@ Given that one fundamental right of OSS is the modification and
 propagation of new modified versions. This right implies in the
 observable wide range of maintained versions of these software, which
 doesn't have a parallel in any other technological enterprise. 
-% Dado que um direito fundamental dos softwares livres é a modificação e propagação das versões modificadas, existe uma diversidade de expressividade, sem paralelos em outras áreas da tecnologia.
 
 For an example, one key application in any user's computer is a general
 Graphical User Interface (GUI)'s manager, commonly known as Window
@@ -969,32 +810,24 @@ e.g., Floating WM are those that the user must hover windows and
 adjust them manually; Tilling WM are those that a pre-defined program
 have a set of rules to resize automatically the windows in a screen.
 
-% Por exemplo, uma parte de software fundamental na configuração de um computador é seu gerenciador de interfaces (Window Manager). Onde, um programa é devotado a gerenciar como outros programas gráficos devem se dispor na tela de computador.
-
 While private Operational Systems (OS), as Windows and MacOS, have
 frequent releases - a total of twenty five releases for
 Windows. Generally, they've few \textit{active} versions; Windows have
 currently four \cite{wikipedia_2021W}. MacOS also have four active
 versions \cite{wikipedia_2021Mac}.
-% Enquanto sistemas operacionais (Operational Systems) privados, como Windows e MacOS possuem versões lançadas frequentemente - vinte e cinco versões lançadas de Windows. O Windows possui apenas quatro versões, com suporte ativo \cite{wikipedia_2021W}.
-
-% São vinte lançamentos de MacOS, e quatro verões mantidas \cite{wikipedia_2021Mac}.
 
 The fact there are only narrowly supported versions is due to, among
 many contributing factors, users lack the right to alter and extend
 the software's behavior. Therefore, they fall victims of discontinued
 support and restrictive access to the company's official upgrades. 
-% Essa estreiteza de versões se dá, dentre os fatores, pois os usuários são cerciados do direito de extender ou alterar os comportamentos programados no sistema. Assim, vítimas do suporte descontinuado e de sua atualização de versões restritivas.
 
 On the other hand, there exists, in parallel, around two hundred
 seventy eight available distributions of Linux
 \cite{wikipedia_2021Linux}. Of which, there are main/root
 distributions, which each embody a set of different principles; theoretical and practical philosophies of how to extend software.  
-% Em contra partida, existem, paralelamente, por volta de 278 distribuições de Linux \cite{wikipedia_2021Linux}. Onde, existem as distribuições raízes, com princípios e filosofias de desenvolvimentos teóricos e práticos diferentes.
 
 Thus, just as with any other scope of software, the variability of
 FOSS always will be grater than monopolized ones.
-% Assim, bem como em qualquer outro escopo de software, a variação dos softwares abertos e livres (FOSS) sempre serão superiores aos monopolizados.
 
 \section{GNU/Linux}
 There are root distributions of Linux, from which many other
@@ -1011,12 +844,10 @@ Independent Distributions ({\uni{}{}}/\faIcon{linux}).
   \caption{\label{fig:linux-genealogy} Genealogy of Linux's Distributions}
   \includegraphics[height=\textwidth, angle=-90]{diversidade}
   \legend{Genealogical history of Linux Distributions \cite{wikipedia_2021Linux}}
-  % \legend{Histórico de evolução das distribuições Linux \cite{wikipedia_2021Linux}}
 \end{figure}
 
 
 \subsection{\label{sec:linux-origin}Historical Origin}
-% \subsection{\label{sec:origem-linux} Origem Histórica}
 
 The GNU/Linux began as two separeted and different directions. GNU
 stands for ``GNU's Not Unix'', a recursive name. And GNU initialy has
@@ -1026,12 +857,6 @@ Science - LCS) \cite{stallman2002my,emacswiki2021history}. Amongst
 them, there was the still active Richard Stallman, which heavily
 worked on the text editor of the time - already ten years into
 development. This editor became Emacs \cite{emacswiki2021history}.   
-% O projeto do GNU/Linux iniciou-se separadamente, por duas frentes. O
-% GNU - abreviação de, GNU's Not Unix - por usuários revoltados com o
-% sistema de seguraça dos computadores do MIT (Laboratory of Computer
-% Science - LCS) \cite{stallman2002my,emacswiki2021history}. Dentre
-% eles, o ainda ativo Richard Stallman, após já dez anos de evolução do
-% editor de texto \cite{emacswiki2021history}.
 
 Parallel to these events, Linus Torvalds had been developing an open portatible
 operational system, as his master's thesis
@@ -1039,16 +864,10 @@ operational system, as his master's thesis
 
 Finally, both projects united in a symbiotic system, of which the OS
 was Linux (the formentined portible kernel) and the GNU's interface
-program whit all utilities one may have had in their computers at the
+program whit all utilities one may has had in their computers at the
 time \cite{stallman1997}  
-% Paralelamente, Linus Torvalds desenvolveu um sistema operacional
-% portável aberto, como sua tese de mestrado
-% \cite{torvalds1997linux}. Por fim, houve uma junção dos projetos, os
-% quais colaboravam o Linux, como sistema operacional, e GNU com todas
-% as aplicações utilitarias do sistema \cite{stallman1997}.
 
 \subsection{Emacs}
-% \subsection{O Emacs}
 
 As has been seen in \href{sec:linux-origin}, the GNU project already
 had developed a variety of applications, all of which, incorporated
@@ -1063,7 +882,6 @@ Lisp. Therefore, as an interpreter of a language, it has Turing
 complete capabilities. So it has a complete-system capability
 \footnote{The GNU/Guix implementation of Linux, has been implemented
   in Scheme - a cousin with better performance than Elisp}.      
-% Como foi visto na \href{sec:origem-linux}, o projeto GNU possuia muitas utilidades as quais foram incorporadas ao kernel Linux, para dar corpo a um sistema operacional. O Emacs, particularmente, caracteriza um dos primeiros softwares extensivamente estendidos dentro do projeto. Sendo classificado como um editor de texto, escrito em Elisp, o qual é um dialeto da família de linguagens Lisp.
 
 Even though Emacs usual use has been of an Integrated Development
 System (IDE), by it's unlimited potentiality and expressiveness, there
@@ -1071,7 +889,6 @@ exists packages and applications written in Elisp to become a fully
 featured Window Manager (WM). That is, Emacs, through Emacs's X Window
 Manager (EXWM), can serve as a graphical and manager interface to
 other applications. 
-% Por mais que seja um editor de texto, por natureza, dada a larga possibilidade de expansão de suas utilidades, existem pacotes e maneiras de o configurar como um sistema completo de Window Manager. Ou seja, pode-se servir como interface gráfica e gerenciadora de outras aplicações.
 
 \begin{figure}[ht]
   \centering
@@ -1083,32 +900,18 @@ other applications.
 
 \autoref{fig:exwm1} exemplifies a desktop environment which can render
 images, PDFs, Browsers et el, through Emacs. 
-% A \autoref{fig:exwm1} é um exemplo do ambiente de desktop totalmente manuseado por meio do Emacs, utilizando-se do EXWM. Pode-se notas que é possível rodar browsers modernos, bem como renderizadores de imagens e PDF.
-
-
-
 
 \section{Performance comparison among OS adoption}
-% \section{Comparações entre a performance e adoção de sistemas
-  % operacionais}
 
 \subsection{Performance}
 In user-level applications, the efficiency and processing benchmarks
 favor Linux over Windows \cite{sulaiman2021comparison}.
-% Quando testado em termos de eficiência, o Windows 10 performa-se bem
-% abaixo do Linux, em tarefas em nível de usuário \cite{sulaiman2021comparison}.
 
 In the same hardware, the underground/underlying programs maintaining
 a stationary Windows consume around 5\% of CPU and 41\% of RAM. In the
 mean time, Linux Mint - a popular distribution of Linux - consumed
 1.8\% of CPU and 24\% of RAM. A pronounced difference of more than
 200\% in CPU use efficiency and approximately 200\% in RAM efficienty \cite{sulaiman2021comparison}. 
-% Em um mesmo hardware, os programas que são
-% executados no pano de fundo, continuamente, pelo Windows consumem um
-% valor próximo de 5\%  de CPU e 41\% de RAM. Enquanto, no Linux Mint - uma
-% versão popular de Linux - o consumo é de 1.8\% de CPU e 24\% de
-% RAM. Uma diferença de performance de mais de mais de 200\% em CPU e
-% approximated 200\% em RAM \cite{sulaiman2021comparison}.
 
 A VBS-program script execution \footnote{An application concerning the
   labeled ``Office'' bundle.} amounts to a difference in
@@ -1116,10 +919,6 @@ time-execution of 4.249 seconds. In which, Linux
 Mint took 0.501 seconds, against a 4.75 seconds for Windows. E.g.,
 there exist a roughly $\frac{4,75-0,501}{0,501}= 423\%$ in
 time-execution performance \cite{sulaiman2021comparison}.
-% A execução de um programa escrito em VBS - relacionado aos programas
-% do pacote Office -, se dá com uma diferença de 0.501 segundos para o Linux
-% Mint e 4.75 segundos no Windows. E.g., existe uma diferença absoluta de
-% $\frac{4.75-0.501}{0.501}=423\%$ em performance \cite{sulaiman2021comparison}.
 
 Lastly, there also exists other researches done with technical rigor in a
 broad spectrum of other applications and hardware. To name a few, in
@@ -1134,19 +933,7 @@ depending of memory usage of the application \cite{ristov2013}, than Windows per
 multi-threaded and parallel systems, typically founded in cloud/cluster
 server use-case \cite{aveleda2010performance}.
 
-% Por fim, também existem pesquisas feitas com rigor técnico em todas as
-% outras área de manuseação de \textit{firmwares/harwares}, como
-% \textit{wireless} \cite{SDevan2013WINDOWS8V}; paralelismo e
-% manuseação de aplicações em servidores \cite{aveleda2010performance};
-% programas científicos (Fast Fourier Transform) et al
-% \cite{d2011performance}; performance em arquiteturas de Realidade Virtuais (VR)
-% \cite{thubaasini2010efficient} etc. Todas elas demonstram uma
-% performance superior na renderização e/ou no tempo de renderização em
-% plataformas GNU/Linux
-% \cite{aveleda2010performance,thubaasini2010efficient,SDevan2013WINDOWS8V,sulaiman2021comparison,d2011performance}.
-
 \subsection{FOSS adoption demography}
-% \subsection{Demografia da adoção de FOSS}
 
 Fritzgerald enunciated, in 2006, that the adoption profile of users of
 Open Source Software (OSS) passed through a phase ``OSS 2.0''. This
@@ -1156,14 +943,6 @@ only people who would be able to use the system would be ``hackers''
 were even becoming ``\textit{mainstream}''. That is, it became a common
 place in society and industry. He also professed the hypothesis that
 OSS project's activities were significant influenced due to big companies. 
-% Fritzgerald enunciou em 2006 que o perfil de adoção dos sistemas open
-% source estava numa fase ``OSS 2.0'', o qual transcendera a
-% generalização de que isso era algo inutilizável pela pessoa média e
-% uma ferramenta exclusiva de ``\textit{hackers}''
-% \cite{fitzgerald2006transformation}. E, que ainda haveriam
-% conseguintes transformações até um patamar \textit{mainstream}. Isto
-% é, se tornaria um lugar comum na sociedade e industria, e que grande
-% parte do desenvolvimento seria de autoria de grandes empresas.
 
 In 2008, another research tried to quantitatively verify the
 hypothesis. The data was obtained by questioners and interviews of
@@ -1174,14 +953,6 @@ community. Lastly, more than 30\% of these companies told that at
 least 40\% of their companies value on software was due to services
 done by the community \cite{hauge2008adoption}. Also relevant, these
 were mostly small to medium size enterprises.    
-% Em 2008, foi feita uma pesquisa sobre a adoção da indústria de
-% softwares, na Finlândia. Em contraste à caracterização de
-% Fritzgerald, 50\% das empresas utilizavam amplamente de Open Source
-% Software, porém, a participação era quase nula na comunidade
-% aberta. Por fim, mais de 30\% dessas empresas participantes relatavam que 40\%
-% do ganho era fruto de produtos e serviços desenvolvidos pela
-% comunidade aberta\cite{hauge2008adoption}. É importante se notar que
-% eram empresas de pequeno e médio porte, em sua maioria.
 
 In 2012, a study on big companies use of OSS - a thousand companies listed on US
 Fortune magazine - have derived some conclusions \cite{spinellis2012organizational}: 
@@ -1194,40 +965,17 @@ Fortune magazine - have derived some conclusions \cite{spinellis2012organization
 \item There exist a network effect and the effect is notorious in big companies.  
 \end{itemize}
 
-% Em 2012, um estudo em grande empresas - mil companias listadas na revista US
-% Fortune - derivou algumas conclusões \cite{spinellis2012organizational}:
-% \begin{itemize}
-% \item A adoção está diretamente associada à equipes de TI com
-%   trabalhos os quais demandam expertise e conhecimentos extensivos
-%   especializados, bem como busca por eficiência \cite{gallego2015open,
-%  li2013all}.
-% \item Aumento exponencial, à partir de um ponto de acumulação;
-% \item Existe um efeito-rede responsável pela adoção nas grandes.
-% empresas;  
-% \end{itemize}
-
 Therefore, adoption in small, medium and big companies process vary,
 and there are no salient effects caused by companies on the expansion
 of open source projects. Nonetheless, these companies still benefit
 from the later \cite{spinellis2012organizational,hauge2008adoption,
   fitzgerald2006transformation}. Still, the most relevant positive-effect on
 the OSS and community is due to small enterprises \cite{kshetri2004economics}.  
-% Assim, a adoção em empresas de pequeno, médio e grande porte variam
-% grandemente, e não possuem efeitos notáveis na expansão do
-% movimento. No entanto, ainda são positivamente influenciadas por ele
-% \cite{spinellis2012organizational,hauge2008adoption,fitzgerald2006transformation}. A
-% maior influência positiva no movimento, indica-se, é dado por pequenas
-% empresas \cite{kshetri2004economics}. 
 
 Regarding the expansion of the FOSS development paradigm and
 ecosystem, undoubtedly there is an grow and ubiquity of adoption
 \cite{schmidt2016agile}. Moreover, FOSS has been considered in
 economical papers as the innovatory cradle of software industry \cite{schrape2019open,schmidt2016agile}.
-
-% Observa-se no entando, de 2012 ao presente, uma intensificação de
-% adoção e ubiquidade da adoção dessas tecnologias abertas \cite{schmidt2016agile}. São
-% consideradas, atualmente, o berço inovatório da indústria de softwares
-% \cite{schrape2019open,schmidt2016agile}.
 
 More recent studies, dating to 2021 and 2020, determine that,
 independent of a company size, adoption depends directly on training
@@ -1236,17 +984,8 @@ of IT and autonomous inclination towards these tools
 on the effectiveness of these software depend primarily on intrinsic
 factors, and is independent of previous training. Even though,
 training on OSS notoriously escalates those users inclined for it \cite{racero2021can}.       
-% Pesquisas mais recentes determinam que, independente do tamanho da
-% empresa, a adoção da empresa depende diretamente do treinamento dos
-% agentes de TI e sua inclinação por autonomia
-% \cite{racero2020predicting}. Finalmente, a adoção e crença na
-% efetividade desses softwares depende de fatores principalmente
-% intrínsecos e independem de treinamento, por mais que os treinamentos
-% em OSS potencializa a adoção de usuários inclinados ao uso
-% \cite{racero2021can}.
 
 \section{Industry Application Demonstration}
-% \section{Demonstração de Aplicações na Indústria}
 \subsection{Freqtrade}
 The \emph{Freqtrade} software contains the essential pieces for a
 working-application of automated trading of crypto-currencies. By
@@ -1254,28 +993,17 @@ means of APIs, it's possible to extend the application so to
 communicate with the Telegram app. The program has been written in
 Python and the code base is open, which rely on one hundred and
 forty seven contributors. It's existence dates back to may 2017 \cite{fang2020cryptocurrency}.
-% contém as peças essenciais para se rodar
-% um aplicação de trocas-automatizadas entre crypto-moedas. Por meio de
-% APIs, pode-se estender a aplicação para comunicar-se com o
-% telegram. O programa foi escrito em Python e seu código é aberto à
-% estensão, possuindo centro e quarenta e sete contruibuidores, com existência datando de Maio de 2017 \cite{fang2020cryptocurrency}.
 
 
 
 The functioning of automated trading goes through a two-way
 communication between the local computer and a platform-server of
 trading - which would be Angles to a broker.
-% O funcionamento das trocas-automatizadas se por meio de uma
-% comunicação de mão dupla entre o computador local e um
-% servidor-plataforma de trocas - a qual seria análoga a uma
-% plataforma-corretora.
 
 \begin{figure}[ht]
   \centering
     \caption{\label{fig:diagrama-freqtrade} a simplified schema of
       client-server communication}
-  % \caption{\label{fig:diagrama-freqtrade} Diagrama esquemático simplificado -
-  %   comunicação cliente-servidor}
   \includegraphics[width=0.6\linewidth]{Imagens/server-client-fq_4.png}
   \legend{Resource: The authors.}
 \end{figure}
@@ -1287,26 +1015,16 @@ server which operations should happen, both as means of a response to
 the client - e.g., a ``store data on local machine'' request -, as
 well as internal operations that should take place on the server -
 e.g., execute buy and sell orders on crypto-current exchanges.  
-% Grande parte do trabalho de se escrever um robô autômato, para
-% qualquer fim, compraz em programar protocólogos de comunicação com
-% servidores. Pois, o robô deverá ser capaz de dizer o servidor quais
-% operações devem ocorrer, tanto gerando respostas ao cliente - dados a
-% serem armazenados no computador local -, quanto operações internas ao
-% servidor - como, executar uma compra e venda de criptomoeda.
 
 \begin{figure}[ht]
   \centering
     \caption{\label{fig:diagrama-freqtrade2} Schematic representation
       of client-server communication.}
-  % \caption{\label{fig:diagrama-freqtrade2} Diagrama esquemático -
-  %   comunicação cliente-servidor}
   \includegraphics[width=1\linewidth]{ditaa_4.png}
   \legend{Resource: the author.}
 \end{figure}
 
 Thus, a schematic representation of this complexity could be seen in \autoref{fig:diagrama-freqtrade2}.
-% Assim, um diagrama completo o qual captura essa complexidade poderia
-% esquematicamente ser visto na \autoref{fig:diagrama-freqtrade2}.
 
 By utilizing OSS, all this complexity
 (\autoref{fig:diagrama-freqtrade2}) becomes close to the first schema
@@ -1314,15 +1032,6 @@ By utilizing OSS, all this complexity
 abstraction has already been dealt of, by this application. To make
 use of this advantage, one just need to read and comprehend the
 documentation and extend the application to it's use.
-% Ao se utilizar o software aberto, toda essa complexidade da
-% \autoref{fig:diagrama-freqtrade2} se torna mais próxima à
-% \autoref{fig:diagrama-freqtrade}, pois toda a abstração-estrutural já
-% se encontra escrita. Basta, para quem decidir utilizar o programa ler,
-% entender e modificar o conteúdo disponível na documentação do projeto.
-
-
-% <<No que consiste o software; os métodos utilizados para seu funcionamento>>
-
 
 \clearpage
 \subsection{OR-Tools}
@@ -1339,9 +1048,6 @@ broad class of practical decision problems of great complexity. \cite{dantzig198
 The OR-Tools project translates into a series of code libraries
 developed in a open sourced manner, initially developed by
 Google. Possible ports exist to C++, Python, Java, C\# and .Net.  
-% A ferramenta OR-Tools traduz-se em bibliotecas largamente desenvolvida
-% pela comunidade aberta, e a empresa Google \cite{}; utilizável em C++,
-% Python, Java, (Clojure), C\#, .Net.
 
 The name is given due to Operational Researches Tools acronym, ORT.
 
@@ -1361,15 +1067,9 @@ The use of this tool can help solve the common problem of
 Scheduling. Structurally, this class of algorithms relate to solving
 puzzles as Sudoku - for which there are dynamical constraints upon
 interaction \cite{simonis2005sudoku}. 
-% OR-Tools possui a utilidade de resolver problemas como agendamento de
-% horários, o qual, estruturalmente, assemelha-se aos algorítimos de
-% solução de problemas como Sudoku \cite{}.
 
 In general, these problem fall under a mathematical and computational
 field called Constrained Optimization \cite{bertsekas2014constrained}. 
-% De forma geral, esses problemas caem dentro de um ramo da matemática e
-% computação chamado Problemas de Optimazação Constrita
-% (\textit{Constraint Optimization})
 
 Not rarely, the typical problem in Constrained Optimization can fall
 under a NP-hard problem (a problem for which the Combinatorics of the
@@ -1452,11 +1152,6 @@ relation in economic activities between environmental cost
 or value and environmental impact, has been proposed as a
 route to promote such a transformation \cite{mickwitz2006regional}.
 \end{citacao}
-% The problem so serious and complex, as the ecological can be managed
-% could be manage through policies. As annually Intergovernmental Panel
-% on Climate Change (IPCC) tend to calculate measures business should
-% follow. Further, these and calculated accurately with tools of operational
-% research.
 
 And we can see that this is the case-use, at least in quantitative
 researches in ecology; we look into one result from US eco-efficiency research on a decade of data,
@@ -1521,11 +1216,9 @@ performances among numerical software
 comparable to implementations in FORTRAN and C. Also, this library has
 many ports \footnote{Capability to interoperate besides the language it
 was written in.}, some of the languages in which you can use it are in Python, R and Julia itself.
-% A biblioteca numérica DifferentialEquations possui uma das melhores performances de softwares numéricos que existem \cite{rackauckas2017differentialequations}. Sua performace é comparativa à implementações em FORTRAN e C. Existem \textit{ports} da biblioteca para Python e R, porém, desenvolveu-se em Julia.
 
 Among the many different category of problems this library can deal
 with are \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit},
-% Dentre a categoria de problemas possíveis de se resolver, utilizando-se ferramentas próprias do pacote, lista-se  as seguintes categorias de equações diferenciais \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stability-optimized_2018,sykora2020stochasticdelaydiffeq,rackauckas2018comparison,rackauckas2019diffeqflux,rackauckas2020universal,gowda2019sparsity,ma2021modelingtoolkit},
 
 \begin{itemize}
 \item Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
@@ -1543,25 +1236,9 @@ with are \cite{rackauckas2019confederated,rackauckas2017adaptive,rackauckas_stab
 \item (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
 \end{itemize}
 
-
-% % Discrete equations (function maps, discrete stochastic (Gillespie/Markov) simulations)
-% % Ordinary differential equations (ODEs)
-% % Split and Partitioned ODEs (Symplectic integrators, IMEX Methods)
-% % Stochastic ordinary differential equations (SODEs or SDEs)
-% % Stochastic differential-algebraic equations (SDAEs)
-% % Random differential equations (RODEs or RDEs)
-% % Differential algebraic equations (DAEs)
-% % Delay differential equations (DDEs)
-% % Neutral, retarded, and algebraic delay differential equations (NDDEs, RDDEs, and DDAEs)
-% % Stochastic delay differential equations (SDDEs)
-% % Experimental support for stochastic neutral, retarded, and algebraic delay differential equations (SNDDEs, SRDDEs, and SDDAEs)
-% % Mixed discrete and continuous equations (Hybrid Equations, Jump Diffusions)
-% % (Stochastic) partial differential equations ((S)PDEs) (with both finite difference and finite element methods)
-
 \subsubsection{Julia portability}
 
 The steps to use the library in Julia are,
-% Para se utilizar do pacote, basta utilizar os seguintes comandos
 
 \begin{verbatim}
 # Using the package Pkg, so to manage packages. 
@@ -1575,25 +1252,21 @@ using DifferentialEquations
 \subsubsection{Python portability}
 
 In a terminal using the package manager \textit{pip},
-% Num terminal, utilizando-se do gerenciador de pacotes pip,
 \begin{verbatim}
 pip install diffeqpy
 \end{verbatim}
 
-% Num terminal, rodando-se o interpretador de Python,
 In a terminal, running the Python interpreter,
 \begin{verbatim}
 >>> import diffeqpy
 >>> diffeqpy.install()
 \end{verbatim}
 
-% Por fim, opcionalmente, utilize numba para aumentar a performance do código,
 An optional step is to add numba, so to optimize the code performance,
 \begin{verbatim}
 pip install numba
 \end{verbatim}
 
-% Ademais, apenas repita o comando, dentro de um aquivo python,
 Finally, import the package in a file and use in a program.
 \begin{verbatim}
 import diffeqpy
@@ -1601,7 +1274,6 @@ import diffeqpy
 
 \subsubsection{R portability}
 
-% Para instalação,
 To install, use
 \begin{verbatim}
 install.packages("diffeqr")
@@ -1773,9 +1445,9 @@ supporting multiple definitions of a function under a name
 (polymorphism), it's possible to very easily switch and integrate
 numerical and symbolical computations.
 
-Changing inputs one would have one or the other output, by inference
+Changing inputs one would has one or the other output, by inference
 of the Clojure compiler. This is particularly interesting when
-solving, for example, Lagrange equations of motion. One can have both
+solving, for example, Lagrange equations of motion. One can has both
 the symbolical results outputted in \TeX{}, and by a change in inputs,
 in the same procedure, have numerical data which can be used to
 simulate the behavior of physical systems. 
