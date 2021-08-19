@@ -1,0 +1,90 @@
+* This repository has my Final Monograph under EEL-USP norms
+Using ABNTeX2 and the EEL-USP orientations.
+** Folder structure
+Inside the project, we have the following strucute
+#+begin_src shell
+[buddhilw@re-lapse TCC]$ tree -d -L 2
+#+end_src
+
+#+begin_example
+.
+|-- Imagens
+|   |-- CA
+|   |-- Linux
+|   |-- Presentation
+|   |-- Random
+|   |-- self-organization
+|   `-- temp
+|-- Julia
+|   |-- DifferentialEquations
+|   `-- Rumor-propagation
+|-- Monograph-versions
+|-- Notes
+|   |-- Ditaa
+|   `-- target
+|-- Presentation
+|   |-- C2D-lab
+|   `-- ltximg
+|-- Schedule
+|   |-- calendary
+|   |-- fonts
+|   `-- reports
+`-- tests
+    `-- font-example
+
+23 directories
+#+end_example
+
+#+begin_src shell
+[buddhilw@re-lapse TCC]$ tree -L 1
+#+end_src
+
+#+begin_example
+.
+<directories>
+|-- Imagens
+|-- Julia
+|-- Monograph-versions
+|-- Notes
+|-- Presentation
+|-- Schedule
+<files>
+|-- TCC-en.tex
+|-- TCC.pdf
+|-- TCC.tex
+|-- bashhlt.sty
+|-- bib.bib
+|-- pythonhlt.sty
+`-- tests
+
+7 directories, 6 files
+#+end_example
+
+*** Significance of each file
+- In =TCC-en.tex=, we can combile the english version of the
+  Conclusion Thesis. which will generate a =TCC-en.pdf= file.
+- =bashhlt.sty= and =pythonhlt.sty= are files to highlight (hlt) bash
+  and python code inside the files.
+- =bib.bib= is where every citation used in =TCC-en.tex= is stored in
+  =json= sintax (BibTeX).
+
+*** Significance of each folder (directory)
+- =Imagens= contains all the image files I generated and used in both
+  the presentation and the TCC file.
+- =Julia= contains the code to reproduce the solution of the ODE
+  presented in the Monograph.
+- =Monograph-versions= has the many versions of Monograph that were
+  produced while working towards the final version.
+- =Notes= has org files at el. which are a collection of ideias I had
+  to use in the monograph and presentation
+- =Presentation= org-file with my presentation.
+- =Schedule= the Gantt diagram I used to orient myself in scheduling
+  the monograph steps.
+* Some known possible bugs
+** =\RequireXeTeX %Force XeTeX check=
+To solve this, comment before this line.
+
+This command is needed to force the compiler to use XeTeX. But, if
+your machine automatically does that, then just comment before this
+line.
+
