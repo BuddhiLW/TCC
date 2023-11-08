@@ -1,12 +1,18 @@
 * Requirements (Requerimentos)
 - Any =LaTeX= distribution (=TexLive=, =MikTex=, etc.)
 - Optionally, XeTeX (for ample unicode support, different fonts, local fonts and other extras).
+- ABNTeX2
 
 - Instalação de uma distribuição de =LaTeX= (=TexLive=, =MikTex=, etc.)
 - Opcionalmente, XeTeX (para ampla cobertura de unicodes, fontes locais e externas e mais).
+- ABNTeX2
 
 The monograph is more complete in the archive =TCC-en.tex=, in English.
 A monografia está mais customizada e completa, na versão =TCC-en.tex=, em Inglês.
+
+ABNTeX2:
+- Window: https://github.com/abntex/abntex2/wiki/InstalacaoWindows
+- Linux: https://github.com/abntex/abntex2/wiki/InstalacaoLinux
 
 * This repository has my Final Monograph under EEL-USP norms
 Using ABNTeX2 and the EEL-USP orientations.
