@@ -1,5 +1,5 @@
-%!Tex TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+%!Tex TS-program = xelatex       ********** % Remove if you don't want to use xelatex
+%!TEX encoding = UTF-8 Unicode   ********** % Remove if you don't want to use xelatex
 
 \documentclass[
 % -- opções da classe memoir --
@@ -18,7 +18,7 @@ a4paper,			% tamanho do papel.
 brazil,				% o último idioma é o principal do documento
 english,			% idioma adicional para hifenização
 ]{abntex2}
-\RequireXeTeX %Force XeTeX check
+\RequireXeTeX %Force XeTeX check  ******** % Remove if you don't want to use xelatex
 
 
 % ---
@@ -60,20 +60,16 @@ english,			% idioma adicional para hifenização
 % \usepackage{xltxtra}
 \usepackage{fontspec} %Font package
 \usepackage{xunicode}
+
 %Select fonts
-% \setmainfont[Mapping=tex-text]{Hack Nerd Font}
-% \setsansfont[Mapping=tex-text]{DroidSansMono Nerd Font}
-% \setmonofont{Quivira}
-\newfontfamily\uni[Mapping=tex-text]{Hack Nerd Font}
-% \newenvironment{uni}{\uni}{\par}
-\DeclareTextFontCommand{\unifont}{\uni}
+% \newfontfamily\uni[Mapping=tex-text]{Hack Nerd Font} % Uncomment if you have the font locally
+% \DeclareTextFontCommand{\unifont}{\uni} % Uncomment if you have the font locally
+%
 % Some unicode characters
 % 
-% \newcommand*{\uni}[1]{{\fontsize{12}{12}\fontfamily{}\selectfont \H{#1}}}
-\newfontfamily\ch[Mapping=tex-text]{HAN NOM A} 
-%AR PL UMing CN : light font
-%AR PL UKai TW MBE : drawn font (marked traces)
-\DeclareTextFontCommand{\unifont}{\ch}
+%
+% \newfontfamily\ch[Mapping=tex-text]{HAN NOM A} % Uncomment if you have the font locally
+% \DeclareTextFontCommand{\unifont}{\ch} % Uncomment if you have the font locally
 
 % \setmainfont{Source Han Sans CN}
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
@@ -81,8 +77,8 @@ english,			% idioma adicional para hifenização
 \usepackage{graphicx}
 \usepackage{graphics}
 
-\usepackage{fontawesome5} % renderização de unicode
-\usepackage{ucs}
+% \usepackage{fontawesome5} % renderização de unicode % Uncomment if you have the font locally **** %
+% \usepackage{ucs} % Uncomment if you have the font locally
 
 \usepackage{pythonhlt}%% python highlight
 \usepackage{bashhlt}  %% shell highlight
@@ -2442,3 +2438,7 @@ GNU/Linux with EXWM - has used to produce this work.
 \bibliography{bib}
 
 \end{document}
+
+% Local Variables:
+% TeX-engine: xetex
+% End:

@@ -1,0 +1,500 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Abelson e Sussman 1996]{abelson1996structure}
+\abntrefinfo{Abelson e Sussman}{ABELSON; SUSSMAN}{1996}
+{ABELSON, H.; SUSSMAN, G.~J. \emph{Structure and interpretation of computer
+  programs}. [S.l.]: The MIT Press, 1996.}
+
+\bibitem[ABNTEX 2012]{abntex2012}
+\abntrefinfo{ABNTEX}{ABNTEX}{2012}
+{ABNTEX, E. A classe abntex2: Modelo can{\^o}nico de trabalhos acad{\^e}micos
+  brasileiros compat{\'\i}vel com as normas abnt nbr 14724: 2011, abnt nbr
+  6024: 2012 e outras.[sl], 2012.
+\emph{http://code. google. com/p-/abntex2/>. Citado}, v.~2, p.~2, 2012.}
+
+\bibitem[Abrams 1975]{abrams1975optimization}
+\abntrefinfo{Abrams}{ABRAMS}{1975}
+{ABRAMS, R. Optimization models for regional air pollution control. In:
+  \emph{Mathematical Analysis of Decision Problems in Ecology}. [S.l.]:
+  Springer, 1975. p. 116--137.}
+
+\bibitem[Amin e Rompf 2017]{amin2017towers}
+\abntrefinfo{Amin e Rompf}{AMIN; ROMPF}{2017}
+{AMIN, N.; ROMPF, T. Collapsing towers of interpreters.
+\emph{Proc. ACM Program. Lang.}, Association for Computing Machinery, New York,
+  NY, USA, v.~2, n.~POPL, dez. 2017.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1145/3158140}.}
+
+\bibitem[Araujo 2018]{araujoclasse}
+\abntrefinfo{Araujo}{ARAUJO}{2018}
+{ARAUJO, L.~C. A classe abntex2.
+\emph{Documentos t{\'e}cnicos e cient{\'\i}ficos brasileiros}, 2018.}
+
+\bibitem[Aveleda et al. 2010]{aveleda2010performance}
+\abntrefinfo{Aveleda et al.}{AVELEDA et al.}{2010}
+{AVELEDA, A.~A. et al. Performance comparison of scientific applications on
+  linux and windows hpc server clusters.
+\emph{Mec{\'a}nica Computacional}, v.~29, n.~30, p. 2985--2997, 2010.}
+
+\bibitem[Bertsekas 2014]{bertsekas2014constrained}
+\abntrefinfo{Bertsekas}{BERTSEKAS}{2014}
+{BERTSEKAS, D.~P. \emph{Constrained optimization and Lagrange multiplier
+  methods}. [S.l.]: Academic press, 2014.}
+
+\bibitem[Bian et al. 2020]{bian2020sectoral}
+\abntrefinfo{Bian et al.}{BIAN et al.}{2020}
+{BIAN, Y. et al. A sectoral eco-efficiency analysis on urban-industrial
+  symbiosis.
+\emph{Sustainability}, Multidisciplinary Digital Publishing Institute, v.~12,
+  n.~9, p.~3650, 2020.}
+
+\bibitem[Bourbaki 2004]{bourbaki2004theory}
+\abntrefinfo{Bourbaki}{BOURBAKI}{2004}
+{BOURBAKI, N. Theory of sets. In:  \emph{Theory of Sets}. [S.l.]: Springer,
+  2004. p. 65--129.}
+
+\bibitem[Chen e Delmas 2011]{chen2011measuring}
+\abntrefinfo{Chen e Delmas}{CHEN; DELMAS}{2011}
+{CHEN, C.-M.; DELMAS, M. Measuring corporate social performance: An efficiency
+  perspective.
+\emph{Production and operations management}, Wiley Online Library, v.~20, n.~6,
+  p. 789--804, 2011.}
+
+\bibitem[Cook 2006]{cook2006p}
+\abntrefinfo{Cook}{COOK}{2006}
+{COOK, S. The p versus np problem.
+\emph{The millennium prize problems}, p. 87--104, 2006.}
+
+\bibitem[Costa et al. 2018]{costa2018socio}
+\abntrefinfo{Costa et al.}{COSTA et al.}{2018}
+{COSTA, M.~P. et al. A socio-eco-efficiency analysis of integrated and
+  non-integrated crop-livestock-forestry systems in the brazilian cerrado based
+  on lca.
+\emph{Journal of Cleaner Production}, Elsevier, v.~171, p. 1460--1471, 2018.}
+
+\bibitem[Daley e Kendall 1964]{daley1964epidemics}
+\abntrefinfo{Daley e Kendall}{DALEY; KENDALL}{1964}
+{DALEY, D.~J.; KENDALL, D.~G. Epidemics and rumours.
+\emph{Nature}, Nature Publishing Group, v.~204, n.~4963, p. 1118--1118, 1964.}
+
+\bibitem[Dantzig 1983]{dantzig1983}
+\abntrefinfo{Dantzig}{DANTZIG}{1983}
+{DANTZIG, G.~B. Reminiscences about the origins of linear programming. In:
+  \emph{Mathematical Programming The State of the Art}. [S.l.]: Springer, 1983.
+  p. 78--86.}
+
+\bibitem[D'Elia e Paciello 2011]{d2011performance}
+\abntrefinfo{D'Elia e Paciello}{D'ELIA; PACIELLO}{2011}
+{D'ELIA, M.; PACIELLO, V. Performance evaluation of labview on linux ubuntu and
+  window xp operating systems. In:  IEEE. \emph{2011 19thTelecommunications
+  Forum (TELFOR) Proceedings of Papers}. [S.l.], 2011. p. 1494--1498.}
+
+\bibitem[Dirac 2005]{dirac2005lagrangian}
+\abntrefinfo{Dirac}{DIRAC}{2005}
+{DIRAC, P.~A. The lagrangian in quantum mechanics. In:  \emph{Feynman's
+  Thesis—A New Approach To Quantum Theory}. [S.l.]: World Scientific, 2005.
+  p. 111--119.}
+
+\bibitem[Dyckhoff e Allen 2001]{dyckhoff2001measuring}
+\abntrefinfo{Dyckhoff e Allen}{DYCKHOFF; ALLEN}{2001}
+{DYCKHOFF, H.; ALLEN, K. Measuring ecological efficiency with data envelopment
+  analysis (dea).
+\emph{European Journal of Operational Research}, Elsevier, v.~132, n.~2, p.
+  312--325, 2001.}
+
+\bibitem[Emacs History 2021]{emacswiki2021history}
+\abntrefinfo{Emacs\ldots}{EMACS\ldots}{2021}
+{EMACS History. 2021. \url{https://www.emacswiki.org/emacs/EmacsHistory}.}
+
+\bibitem[Ezici, E{\u{g}}ilmez e Gedik 2020]{ezici2020assessing}
+\abntrefinfo{Ezici, E{\u{g}}ilmez e Gedik}{EZICI; E{\u{G}}ILMEZ; GEDIK}{2020}
+{EZICI, B.; E{\u{G}}ILMEZ, G.; GEDIK, R. Assessing the eco-efficiency of us
+  manufacturing industries with a focus on renewable vs. non-renewable energy
+  use: An integrated time series mrio and dea approach.
+\emph{Journal of Cleaner Production}, Elsevier, v.~253, p. 119630, 2020.}
+
+\bibitem[Fang et al. 2020]{fang2020cryptocurrency}
+\abntrefinfo{Fang et al.}{FANG et al.}{2020}
+{FANG, F. et al. Cryptocurrency trading: a comprehensive survey.
+\emph{arXiv preprint arXiv:2003.11352}, 2020.}
+
+\bibitem[Fink 2003]{fink2003business}
+\abntrefinfo{Fink}{FINK}{2003}
+{FINK, M. \emph{The business and economics of Linux and open source}. [S.l.]:
+  Prentice Hall Professional, 2003.}
+
+\bibitem[Fitzgerald 2006]{fitzgerald2006transformation}
+\abntrefinfo{Fitzgerald}{FITZGERALD}{2006}
+{FITZGERALD, B. The transformation of open source software.
+\emph{MIS quarterly}, JSTOR, p. 587--598, 2006.}
+
+\bibitem[Gallego et al. 2015]{gallego2015open}
+\abntrefinfo{Gallego et al.}{GALLEGO et al.}{2015}
+{GALLEGO, M.~D. et al. Open source software: The effects of training on
+  acceptance.
+\emph{Computers in Human Behavior}, Elsevier, v.~49, p. 390--399, 2015.}
+
+\bibitem[Gowda et al. 2019]{gowda2019sparsity}
+\abntrefinfo{Gowda et al.}{GOWDA et al.}{2019}
+{GOWDA, S. et al. Sparsity programming: Automated sparsity-aware optimizations
+  in differentiable programming.
+2019.}
+
+\bibitem[Hamilton 2020]{clojure2020}
+\abntrefinfo{Hamilton}{HAMILTON}{2020}
+{HAMILTON, A. \emph{Brazilian challenger Nubank acquires firm behind Clojure
+  and Datomic}. 2020.
+  \url{https://www.fintechfutures.com/2020/07/brazilian-challenger-nubank-acquires-firm-behind-clojure-and-datomic/}.}
+
+\bibitem[Haralambous 2007]{haralambous2007}
+\abntrefinfo{Haralambous}{HARALAMBOUS}{2007}
+{HARALAMBOUS, Y. \emph{Fonts \& encodings}. [S.l.]: " O'Reilly Media, Inc.",
+  2007.}
+
+\bibitem[Hauge, S{\o}rensen e Conradi 2008]{hauge2008adoption}
+\abntrefinfo{Hauge, S{\o}rensen e Conradi}{HAUGE; S{\O}RENSEN; CONRADI}{2008}
+{HAUGE, {\O}.; S{\O}RENSEN, C.-F.; CONRADI, R. Adoption of open source in the
+  software industry. In:  SPRINGER. \emph{IFIP International Conference on Open
+  Source Systems}. [S.l.], 2008. p. 211--221.}
+
+\bibitem[Heinz 2018]{heinz2018computational}
+\abntrefinfo{Heinz}{HEINZ}{2018}
+{HEINZ, J. The computational nature of phonological generalizations. In:
+  \emph{Phonological typology}. [S.l.]: De Gruyter Mouton, 2018. p. 126--195.}
+
+\bibitem[Hertel, Niedner e Herrmann 2003]{hertel2003motivation}
+\abntrefinfo{Hertel, Niedner e Herrmann}{HERTEL; NIEDNER; HERRMANN}{2003}
+{HERTEL, G.; NIEDNER, S.; HERRMANN, S. Motivation of software developers in
+  open source projects: an internet-based survey of contributors to the linux
+  kernel.
+\emph{Research policy}, Elsevier, v.~32, n.~7, p. 1159--1177, 2003.}
+
+\bibitem[Hippel e Krogh 2003]{hippel2003open}
+\abntrefinfo{Hippel e Krogh}{HIPPEL; KROGH}{2003}
+{HIPPEL, E.~v.; KROGH, G.~v. Open source software and the
+  “private-collective” innovation model: Issues for organization science.
+\emph{Organization science}, Informs, v.~14, n.~2, p. 209--223, 2003.}
+
+\bibitem[Jacobs, Kraude e Narayanan 2016]{jacobs2016operational}
+\abntrefinfo{Jacobs, Kraude e Narayanan}{JACOBS; KRAUDE; NARAYANAN}{2016}
+{JACOBS, B.~W.; KRAUDE, R.; NARAYANAN, S. Operational productivity, corporate
+  social performance, financial performance, and risk in manufacturing firms.
+\emph{Production and Operations Management}, Wiley Online Library, v.~25,
+  n.~12, p. 2065--2085, 2016.}
+
+\bibitem[Key{\ss}er e Lenzen 2021]{keysser20211}
+\abntrefinfo{Key{\ss}er e Lenzen}{KEY{SS}ER; LENZEN}{2021}
+{KEY{SS}ER, L.~T.; LENZEN, M. 1.5 c degrowth scenarios suggest the need for new
+  mitigation pathways.
+\emph{Nature communications}, Nature Publishing Group, v.~12, n.~1, p. 1--16,
+  2021.}
+
+\bibitem[Knuth 1968]{knuth1968art}
+\abntrefinfo{Knuth}{KNUTH}{1968}
+{KNUTH, D.~E. The art of computer programming, vol 1: Fundamental.
+\emph{algorithms}, p.~187, 1968.}
+
+\bibitem[Knuth 1984]{knuth1984literate}
+\abntrefinfo{Knuth}{KNUTH}{1984}
+{KNUTH, D.~E. Literate programming.
+\emph{The computer journal}, Oxford University Press, v.~27, n.~2, p. 97--111,
+  1984.}
+
+\bibitem[Knuth 1986]{knuth1986}
+\abntrefinfo{Knuth}{KNUTH}{1986}
+{KNUTH, D.~E. \emph{TEX: the Program}. [S.l.]: Addison-Wesley, 1986.}
+
+\bibitem[Kshetri 2004]{kshetri2004economics}
+\abntrefinfo{Kshetri}{KSHETRI}{2004}
+{KSHETRI, N. Economics of linux adoption in developing countries.
+\emph{IEEE software}, IEEE, v.~21, n.~1, p. 74--81, 2004.}
+
+\bibitem[Lamport 1994]{lamport1994}
+\abntrefinfo{Lamport}{LAMPORT}{1994}
+{LAMPORT, L. \emph{LATEX: a document preparation system: user's guide and
+  reference manual}. [S.l.]: Addison-wesley, 1994.}
+
+\bibitem[Li, Tan e Yang 2013]{li2013all}
+\abntrefinfo{Li, Tan e Yang}{LI; TAN; YANG}{2013}
+{LI, Y.; TAN, C.-H.; YANG, X. It is all about what we have: A discriminant
+  analysis of organizations' decision to adopt open source software.
+\emph{Decision support systems}, Elsevier, v.~56, p. 56--62, 2013.}
+
+\bibitem[Linux, list of distributions 2021]{wikipedia_2021Linux}
+\abntrefinfo{Linux\ldots}{LINUX\ldots}{2021}
+{LINUX, list of distributions. [S.l.]: Wikimedia Foundation, 2021.
+  \url{https://en.wikipedia.org/wiki/List_of_Linux_distributions}.}
+
+\bibitem[Luptacik et al. 2010]{luptacik2010mathematical}
+\abntrefinfo{Luptacik et al.}{LUPTACIK et al.}{2010}
+{LUPTACIK, M. et al. \emph{Mathematical optimization and economic analysis}.
+  [S.l.]: Springer, 2010.}
+
+\bibitem[Ma et al. 2021]{ma2021modelingtoolkit}
+\abntrefinfo{Ma et al.}{MA et al.}{2021}
+{MA, Y. et al. \emph{ModelingToolkit: A Composable Graph Transformation System
+  For Equation-Based Modeling}. 2021.}
+
+\bibitem[MacOS version history 2021]{wikipedia_2021Mac}
+\abntrefinfo{MacOS\ldots}{MACOS\ldots}{2021}
+{MACOS version history. [S.l.]: Wikimedia Foundation, 2021.
+  \url{https://en.wikipedia.org/wiki/MacOS_version_history}.}
+
+\bibitem[Mickwitz et al. 2006]{mickwitz2006regional}
+\abntrefinfo{Mickwitz et al.}{MICKWITZ et al.}{2006}
+{MICKWITZ, P. et al. Regional eco-efficiency indicators--a participatory
+  approach.
+\emph{Journal of Cleaner Production}, Elsevier, v.~14, n.~18, p. 1603--1611,
+  2006.}
+
+\bibitem[Microsoft, list of operating systems 2021]{wikipedia_2021W}
+\abntrefinfo{Microsoft\ldots}{MICROSOFT\ldots}{2021}
+{MICROSOFT, list of operating systems. [S.l.]: Wikimedia Foundation, 2021.
+  \url{https://en.wikipedia.org/wiki/List_of_Microsoft_operating_systems}.}
+
+\bibitem[Monache et al. 2019]{delle2019feedback}
+\abntrefinfo{Monache et al.}{MONACHE et al.}{2019}
+{MONACHE, M.~L. D. et al. Feedback control algorithms for the dissipation of
+  traffic waves with autonomous vehicles. In:  \emph{Computational Intelligence
+  and Optimization Methods for Control Engineering}. [S.l.]: Springer, 2019. p.
+  275--299.}
+
+\bibitem[Moody 2009]{moody2009rebel}
+\abntrefinfo{Moody}{MOODY}{2009}
+{MOODY, G. \emph{Rebel code: Linux and the open source revolution}. [S.l.]:
+  Hachette UK, 2009.}
+
+\bibitem[Panza 2003]{panza2003origins}
+\abntrefinfo{Panza}{PANZA}{2003}
+{PANZA, M. The origins of analytic mechanics in the 18th century.
+\emph{A history of analysis, ed. HN Jahnke, AMS}, p. 137--153, 2003.}
+
+\bibitem[Peters 2009]{peters2009open}
+\abntrefinfo{Peters}{PETERS}{2009}
+{PETERS, M.~A. Open education and the open science economy.
+\emph{Yearbook of the National Society for the Study of Education}, v.~108,
+  n.~2, p. 203--225, 2009.}
+
+\bibitem[Pinter 2014]{pinter2014book}
+\abntrefinfo{Pinter}{PINTER}{2014}
+{PINTER, C.~C. \emph{A book of set theory}. [S.l.]: Courier Corporation, 2014.}
+
+\bibitem[Piqueira, Zilbovicius e Batistela 2020]{piqueira2020daley}
+\abntrefinfo{Piqueira, Zilbovicius e Batistela}{PIQUEIRA; ZILBOVICIUS;
+  BATISTELA}{2020}
+{PIQUEIRA, J.~R.; ZILBOVICIUS, M.; BATISTELA, C.~M. Daley--kendal models in
+  fake-news scenario.
+\emph{Physica A: Statistical Mechanics and its Applications}, Elsevier, v.~548,
+  p. 123406, 2020.}
+
+\bibitem[Piqueira 2010]{piqueira2010rumor}
+\abntrefinfo{Piqueira}{PIQUEIRA}{2010}
+{PIQUEIRA, J. R.~C. Rumor propagation model: an equilibrium study.
+\emph{Mathematical Problems in Engineering}, Hindawi, v.~2010, 2010.}
+
+\bibitem[Potts et al. 2010]{potts2010harmonic}
+\abntrefinfo{Potts et al.}{POTTS et al.}{2010}
+{POTTS, C. et al. Harmonic grammar with linear programming: from linear systems
+  to linguistic typology.
+\emph{Phonology}, Cambridge University Press, v.~27, n.~1, p. 77--117, 2010.}
+
+\bibitem[Racero, Bueno e Gallego 2020]{racero2020predicting}
+\abntrefinfo{Racero, Bueno e Gallego}{RACERO; BUENO; GALLEGO}{2020}
+{RACERO, F.~J.; BUENO, S.; GALLEGO, M.~D. Predicting students’ behavioral
+  intention to use open source software: A combined view of the technology
+  acceptance model and self-determination theory.
+\emph{Applied Sciences}, Multidisciplinary Digital Publishing Institute, v.~10,
+  n.~8, p.~2711, 2020.}
+
+\bibitem[Racero, Bueno e Gallego 2021]{racero2021can}
+\abntrefinfo{Racero, Bueno e Gallego}{RACERO; BUENO; GALLEGO}{2021}
+{RACERO, F.~J.; BUENO, S.; GALLEGO, M.~D. Can the oss-focused education impact
+  on oss implementations in companies? a motivational answer through a
+  delphi-based consensus study.
+\emph{Electronics}, Multidisciplinary Digital Publishing Institute, v.~10,
+  n.~3, p.~277, 2021.}
+
+\bibitem[Rackauckas et al. 2019]{rackauckas2019diffeqflux}
+\abntrefinfo{Rackauckas et al.}{RACKAUCKAS et al.}{2019}
+{RACKAUCKAS, C. et al. Diffeqflux.jl-a julia library for neural differential
+  equations.
+\emph{arXiv preprint arXiv:1902.02376}, 2019.}
+
+\bibitem[Rackauckas et al. 2018]{rackauckas2018comparison}
+\abntrefinfo{Rackauckas et al.}{RACKAUCKAS et al.}{2018}
+{RACKAUCKAS, C. et al. A comparison of automatic differentiation and continuous
+  sensitivity analysis for derivatives of differential equation solutions.
+\emph{arXiv preprint arXiv:1812.01892}, 2018.}
+
+\bibitem[Rackauckas et al. 2020]{rackauckas2020universal}
+\abntrefinfo{Rackauckas et al.}{RACKAUCKAS et al.}{2020}
+{RACKAUCKAS, C. et al. Universal differential equations for scientific machine
+  learning.
+\emph{arXiv preprint arXiv:2001.04385}, 2020.}
+
+\bibitem[Rackauckas e Nie 2017]{rackauckas2017adaptive}
+\abntrefinfo{Rackauckas e Nie}{RACKAUCKAS; NIE}{2017a}
+{RACKAUCKAS, C.; NIE, Q. Adaptive methods for stochastic differential equations
+  via natural embeddings and rejection sampling with memory.
+\emph{Discrete and continuous dynamical systems. Series B}, NIH Public Access,
+  v.~22, n.~7, p.~2731, 2017.}
+
+\bibitem[Rackauckas e Nie 2017]{rackauckas2017differentialequations}
+\abntrefinfo{Rackauckas e Nie}{RACKAUCKAS; NIE}{2017b}
+{RACKAUCKAS, C.; NIE, Q. Differentialequations.jl--a performant and
+  feature-rich ecosystem for solving differential equations in julia.
+\emph{Journal of Open Research Software}, Ubiquity Press, v.~5, n.~1, 2017.}
+
+\bibitem[Rackauckas e Nie 2018]{rackauckas_stability-optimized_2018}
+\abntrefinfo{Rackauckas e Nie}{RACKAUCKAS; NIE}{2018}
+{RACKAUCKAS, C.; NIE, Q. Stability-{Optimized} {High} {Order} {Methods} and
+  {Stiffness} {Detection} for {Pathwise} {Stiff} {Stochastic} {Differential}
+  {Equations}.
+\emph{arXiv:1804.04344 [math]}, 2018.
+Dispon{\'\i}vel em: \url{http://arxiv.org/abs/1804.04344}.}
+
+\bibitem[Rackauckas e Nie 2019]{rackauckas2019confederated}
+\abntrefinfo{Rackauckas e Nie}{RACKAUCKAS; NIE}{2019}
+{RACKAUCKAS, C.; NIE, Q. Confederated modular differential equation apis for
+  accelerated algorithm development and benchmarking.
+\emph{Advances in Engineering Software}, Elsevier, v.~132, p.~1--6, 2019.}
+
+\bibitem[Ristov e Gusev 2013]{ristov2013}
+\abntrefinfo{Ristov e Gusev}{RISTOV; GUSEV}{2013}
+{RISTOV, S.; GUSEV, M. Performance vs cost for windows and linux platforms in
+  windows azure cloud. In:  \emph{2013 IEEE 2nd International Conference on
+  Cloud Networking (CloudNet)}. [S.l.: s.n.], 2013. p. 214--218.}
+
+\bibitem[Schiewe et al. 2020]{schiewe2020integrated}
+\abntrefinfo{Schiewe et al.}{SCHIEWE et al.}{2020}
+{SCHIEWE, P. et al. \emph{Integrated optimization in public transport
+  planning}. [S.l.]: Springer, 2020.}
+
+\bibitem[Schmidt 2016]{schmidt2016agile}
+\abntrefinfo{Schmidt}{SCHMIDT}{2016}
+{SCHMIDT, C. Agile software development. In:  \emph{Agile Software Development
+  Teams}. [S.l.]: Springer, 2016. p. 7--35.}
+
+\bibitem[Schrape 2019]{schrape2019open}
+\abntrefinfo{Schrape}{SCHRAPE}{2019}
+{SCHRAPE, J.-F. Open-source projects as incubators of innovation: From niche
+  phenomenon to integral part of the industry.
+\emph{Convergence}, SAGE Publications Sage UK: London, England, v.~25, n.~3, p.
+  409--427, 2019.}
+
+\bibitem[S.Devan 2013]{SDevan2013WINDOWS8V}
+\abntrefinfo{S.Devan}{S.DEVAN}{2013}
+{S.DEVAN, S. Windows 8 v/s linux ubuntu 12.10 - comparison of the network
+  performance.
+\emph{International Journal of Research in Engineering and Technology}, v.~02,
+  p. 577--580, 2013.}
+
+\bibitem[Simonis 2005]{simonis2005sudoku}
+\abntrefinfo{Simonis}{SIMONIS}{2005}
+{SIMONIS, H. Sudoku as a constraint problem. In:  CITESEER. \emph{CP Workshop
+  on modeling and reformulating Constraint Satisfaction Problems}. [S.l.],
+  2005. v.~12, p. 13--27.}
+
+\bibitem[Smith e Ritchie 2016]{sicmutils2016github}
+\abntrefinfo{Smith e Ritchie}{SMITH; RITCHIE}{2016}
+{SMITH, C.; RITCHIE, S. \emph{SICMUtils: Functional Computer Algebra in
+  Clojure}. 2016. \url{http://github.com/sicmutils/sicmutils}.}
+
+\bibitem[Spinellis e Giannikas 2012]{spinellis2012organizational}
+\abntrefinfo{Spinellis e Giannikas}{SPINELLIS; GIANNIKAS}{2012}
+{SPINELLIS, D.; GIANNIKAS, V. Organizational adoption of open source software.
+\emph{Journal of Systems and Software}, Elsevier, v.~85, n.~3, p. 666--682,
+  2012.}
+
+\bibitem[Stallman 1997]{stallman1997}
+\abntrefinfo{Stallman}{STALLMAN}{1997}
+{STALLMAN, R. \emph{Linux and GNU - GNU Project - Free Software Foundation}.
+  1997. \url{https://www.gnu.org/gnu/linux-and-gnu.html}.}
+
+\bibitem[Stallman 2002]{stallman2002my}
+\abntrefinfo{Stallman}{STALLMAN}{2002}
+{STALLMAN, R. My lisp experiences and the development of gnu emacs (transcript
+  of richard stallman’s speech, 28 oct 2002, at the international lisp
+  conference).
+\emph{URL (consulted December 2003): http://www. gnu. org/gnu/rms-lisp. html},
+  2002.}
+
+\bibitem[Stanisic, Legrand e Danjean 2015]{stanisic2015effective}
+\abntrefinfo{Stanisic, Legrand e Danjean}{STANISIC; LEGRAND; DANJEAN}{2015}
+{STANISIC, L.; LEGRAND, A.; DANJEAN, V. An effective git and org-mode based
+  workflow for reproducible research.
+\emph{ACM SIGOPS Operating Systems Review}, ACM New York, NY, USA, v.~49, n.~1,
+  p. 61--70, 2015.}
+
+\bibitem[Sulaiman e Raffi 2021]{sulaiman2021comparison}
+\abntrefinfo{Sulaiman e Raffi}{SULAIMAN; RAFFI}{2021}
+{SULAIMAN, N.~S.; RAFFI, A. S. H.~A. Comparison of operating system performance
+  between windows 10 and linux mint.
+\emph{International Journal of Synergy in Engineering and Technology}, v.~2,
+  n.~1, p. 92--102, 2021.}
+
+\bibitem[Sussman e Wisdom 2015]{sussman2015structure}
+\abntrefinfo{Sussman e Wisdom}{SUSSMAN; WISDOM}{2015}
+{SUSSMAN, G.~J.; WISDOM, J. \emph{Structure and interpretation of classical
+  mechanics}. [S.l.]: The MIT Press, 2015.}
+
+\bibitem[Sykora et al. 2020]{sykora2020stochasticdelaydiffeq}
+\abntrefinfo{Sykora et al.}{SYKORA et al.}{2020}
+{SYKORA, H.~T. et al. Stochasticdelaydiffeq. jl-an integrator interface for
+  stochastic delay differential equations in julia.
+2020.}
+
+\bibitem[Tanenbaum e Bos 2015]{tanenbaum2015modern}
+\abntrefinfo{Tanenbaum e Bos}{TANENBAUM; BOS}{2015}
+{TANENBAUM, A.~S.; BOS, H. \emph{Modern operating systems}. [S.l.]: Pearson,
+  2015.}
+
+\bibitem[Thubaasini, Rusnida e Rohani 2010]{thubaasini2010efficient}
+\abntrefinfo{Thubaasini, Rusnida e Rohani}{THUBAASINI; RUSNIDA; ROHANI}{2010}
+{THUBAASINI, P.; RUSNIDA, R.; ROHANI, S. Efficient comparison between windows
+  and linux platform applicable in a virtual architectural walkthrough
+  application. In:  \emph{Innovations in Computing Sciences and Software
+  Engineering}. [S.l.]: Springer, 2010. p. 337--342.}
+
+\bibitem[Torvalds 1997]{torvalds1997linux}
+\abntrefinfo{Torvalds}{TORVALDS}{1997}
+{TORVALDS, L. Linux: a portable operating system.
+\emph{Master's thesis, University of Helsinki}, 1997.}
+
+\bibitem[Tu et al. 2000]{tu2000evolution}
+\abntrefinfo{Tu et al.}{TU et al.}{2000}
+{TU, Q. et al. Evolution in open source software: A case study. In:  IEEE.
+  \emph{Proceedings 2000 International Conference on Software Maintenance}.
+  [S.l.], 2000. p. 131--142.}
+
+\bibitem[West e Dedrick 2001]{west2001open}
+\abntrefinfo{West e Dedrick}{WEST; DEDRICK}{2001}
+{WEST, J.; DEDRICK, J. Open source standardization: the rise of linux in the
+  network era.
+\emph{Knowledge, Technology \& Policy}, Springer, v.~14, n.~2, p. 88--112,
+  2001.}
+
+\bibitem[Wolfram 1983]{wolfram1983cellular}
+\abntrefinfo{Wolfram}{WOLFRAM}{1983}
+{WOLFRAM, S. Cellular automata.
+\emph{Los Alamos Science}, v.~9, n.~2-21, p.~42, 1983.}
+
+\bibitem[Zhang et al. 2008]{zhang2008eco}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2008}
+{ZHANG, B. et al. Eco-efficiency analysis of industrial system in china: A data
+  envelopment analysis approach.
+\emph{Ecological economics}, Elsevier, v.~68, n.~1-2, p. 306--316, 2008.}
+
+\bibitem[Zhang et al. 2019]{zhang2019review}
+\abntrefinfo{Zhang et al.}{ZHANG et al.}{2019}
+{ZHANG, J. et al. Review of job shop scheduling research and its new
+  perspectives under industry 4.0.
+\emph{Journal of Intelligent Manufacturing}, Springer, v.~30, n.~4, p.
+  1809--1830, 2019.}
+
+\end{thebibliography}

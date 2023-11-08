@@ -1,5 +1,6 @@
 *.aux
 *.log
 *.toc
+*.pdf
 /Cronograma/.#taskjuggler.org
 /Cronograma/fonts/Barlow/.#cronograma-tcc.tex
