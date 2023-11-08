@@ -1,5 +1,5 @@
-%!Tex TS-program = xelatex       ********** % Remove if you don't want to use xelatex
-%!TEX encoding = UTF-8 Unicode   ********** % Remove if you don't want to use xelatex
+%%   %!Tex TS-program = xelatex       ********** % Remove if you don't want to use xelatex
+%%   %!TEX encoding = UTF-8 Unicode   ********** % Remove if you don't want to use xelatex
 
 \documentclass[
 % -- opções da classe memoir --
@@ -13,12 +13,10 @@ a4paper,			% tamanho do papel.
 % subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 % subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
 % -- opções do pacote babel --
-% french,				% idioma adicional para hifenização
-% spanish,			% idioma adicional para hifenização
-brazil,				% o último idioma é o principal do documento
-english,			% idioma adicional para hifenização
+brazil,				% idioma adicional para hifenização
+english,			  % o último idioma é o principal do documento
 ]{abntex2}
-\RequireXeTeX %Force XeTeX check  ******** % Remove if you don't want to use xelatex
+% \RequireXeTeX %Force XeTeX check  ******** % Remove if you don't want to use xelatex
 
 
 % ---
@@ -36,29 +34,18 @@ english,			% idioma adicional para hifenização
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de
 % justificação
-% \usepackage{amsmath}
-\usepackage{xltxtra}
-% \setmainfont{Source Han Sans CN}
-% \usepackage{xeCJK}
-% ---
-% \usepackage[UTF8]{ctex}
-% \usepackage{xeCJK}
-% \setCJKmainfont{SimSun}
-% ---
 % Pacotes de citações
-%\usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
-% \usepackage{amsmath}
 \usepackage{textcomp}
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
-% \usepackage{xltxtra}
-\usepackage{fontspec} %Font package
+% \usepackage{fontspec} %Font package %% uncomment to use other fonts, but uses xetex
+% \usepackage{xltxtra} %% uncomment to use other fonts, but uses xetex
 \usepackage{xunicode}
 
 %Select fonts
