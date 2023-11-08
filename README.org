@@ -1,5 +1,20 @@
+* Requirements (Requerimentos)
+- Any =LaTeX= distribution (=TexLive=, =MikTex=, etc.)
+- Optionally, XeTeX (for ample unicode support, different fonts, local fonts and other extras).
+
+- Instalação de uma distribuição de =LaTeX= (=TexLive=, =MikTex=, etc.)
+- Opcionalmente, XeTeX (para ampla cobertura de unicodes, fontes locais e externas e mais).
+
+The monograph is more complete in the archive =TCC-en.tex=, in English.
+A monografia está mais customizada e completa, na versão =TCC-en.tex=, em Inglês.
+
 * This repository has my Final Monograph under EEL-USP norms
 Using ABNTeX2 and the EEL-USP orientations.
+
+The main file is =TCC-en.tex=.
+
+O arquivo principal é =TCC-en.tex=. E, está de acordo com as regras ABNT (até, 2021), bem como também segue as especificações da EEL-USP (a qual dá preferência a certas opções em aberto das normas).
+
 ** Folder structure
 Inside the project, we have the following strucute
 #+begin_src shell

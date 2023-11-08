@@ -2,5 +2,9 @@
 *.log
 *.toc
 *.pdf
+*.synctex.gz
+*.brf
 /Cronograma/.#taskjuggler.org
 /Cronograma/fonts/Barlow/.#cronograma-tcc.tex
+*.pdf
+*.gz
